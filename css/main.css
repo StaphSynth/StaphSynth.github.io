@@ -1,0 +1,157 @@
+/*==================================================
+main.css for Syntheta.se
+By David Allen
+===================================================*/
+
+
+
+
+/*==================================================
+Browser reset
+
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+===================================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*==================================================
+GENERAL
+===================================================*/
+img {
+  max-width: 100%;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+
+
+/*==================================================
+COLOURS
+===================================================*/
+
+#masthead h1, #mainMenu a, footer {
+  color: white;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#navIcon, #mainMenu ul, footer {
+  background-color: dimgrey;
+}
+
+#mainMenu ul ul {
+  background-color: grey;
+}
+
+/*==================================================
+MASTHEAD
+===================================================*/
+
+#masthead {
+  background-image: url("../img/pcbAbstract.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#masthead h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+}
+
+
+
+/*==================================================
+NAVIGATION
+===================================================*/
+
+#mainMenu a {
+  display: block;
+  padding: 0.75em;
+  /*color: white;*/
+}
+
+/*Initial menu state: don't show menu struct, just the nav icon*/
+#mainMenu ul {
+  display: none;
+  /*background-color: dimgrey;*/
+}
+
+
+
+#mainMenu ul ul {
+  padding-left: 2em;
+  background-color: grey;
+}
+
+#mainMenu ul li a {
+
+}
+
+/*==================================================
+MAIN CONTENT
+===================================================*/
+
+#mainContent {
+  margin: 1.5em 0;
+}
+
+/*==================================================
+FOOTER
+===================================================*/
+
+footer {
+  padding: 0.75em;
+}
+
+
+/*==================================================
+RESPONSIVE CSS
+===================================================*/
