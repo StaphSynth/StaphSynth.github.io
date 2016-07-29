@@ -2,3 +2,6 @@
 $("#navIcon").click(function(event){
   $("#mainMenu ul").toggle();
 });
+
+
+console.log("synth.js has loaded and run");
