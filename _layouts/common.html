@@ -10,43 +10,52 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header>
-      <noscript><div id="noscript">JavaScript is turned off. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> for full use of this site.</div></noscript>
-      <div id="masthead">
-        <div id="heading">
-        <a href="/"><h1>Synthetase's World of Nerd</h1></a>
-      </div>
-      </div>
-      <nav id="mainMenu">
-        <div id="navIcon">
-          <a href="#"><i class="fa fa-bars"></i></a>
+    <div id="pageWrapper">
+      <header>
+        <noscript><div id="noscript">JavaScript is turned off. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> for full use of this site.</div></noscript>
+        <div id="masthead">
+          <div id="heading">
+          <a href="/"><h1>Synthetase's World of Nerd</h1></a>
         </div>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/coding">Coding</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav><!-- /mainMenu -->
-    </header>
-    <div id="mainContent">
-      {{ content }}
-    </div>
+        </div>
+        <nav id="mainMenu">
+          <div id="navIcon">
+            <a href="#"><i class="fa fa-bars"></i></a>
+          </div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/coding">Coding</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </nav><!-- /mainMenu -->
+      </header>
+      <div id="contentWrapper">
+        <div id="article">
+          <!-- {{ content }} -->
+          <h2>Blah blah heading stuff!</h2>
+          <p>Placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text</p>
+          <p>placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text </p>
+        </div><!--/article -->
+      </div><!-- /contentWrapper-->
+      <footer>
+        <div id=footerContainer>
+          <div id="connect">
+            <ul>
+              <li><p>Connect with me:</p></li>
+              <li><a href="https://github.com/StaphSynth" target="_blank"><i class="fa fa-github-square social" aria-hidden="true"></i></a> <a href="http://www.linkedin.com/in/david-allen-102290119?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin-square social" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div id="licence">
+            <ul>
+              <li id="ccLogo"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="../img/cc.png" alt="Creative commons logo"></a></li>
+              <li>This site is licensed under a Creative Commons <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Attribution-ShareAlike</a> 4.0 International Licence.</li>
+            </ul>
+          </div>
+        </div> <!--/footerContainer -->
+      </footer>
+    </div> <!--/pageWrapper-->
   </body>
-  <footer>
-    <div id="connect">
-      <ul>
-        <li><p>Connect with me:</p></li>
-        <li><a href="https://github.com/StaphSynth" target="_blank"><i class="fa fa-github-square social" aria-hidden="true"></i></a> <a href="http://www.linkedin.com/in/david-allen-102290119?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin-square social" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
-    <div id="licence">
-      <ul>
-        <li id="ccLogo"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="../img/cc.png" alt="Creative commons logo"></a></li>
-        <li>This site is licensed under a Creative Commons <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Attribution-ShareAlike</a> 4.0 International Licence.</li>
-      </ul>
-    </div>
-  </footer>
 
   <!--Loads non-critical JavaScript after the page has been rendered-->
   <script type="text/javascript">
