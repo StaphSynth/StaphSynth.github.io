@@ -103,7 +103,7 @@ a, a:visited {
 FONTS
 ===================================================*/
 
-h1, h2, h3, h4, #mainMenu {
+h1, h2, h3, h4, #mainMenu, .postList a {
 	font-family: 'Audiowide', 'cursive';
 }
 
@@ -165,7 +165,9 @@ footer {
 	text-shadow: 0px 0px 2px  #ddd;
 }
 
-
+.postList a {
+	color: #0871D0;
+}
 
 /*==================================================
 MASTHEAD
@@ -235,13 +237,76 @@ MAIN CONTENT
   border-image-slice: 1;
 }
 
-h2 {
+h2, h3, h4 {
 	padding: 0.5rem 0;
 	text-shadow: 2px 2px 4px #000;
 }
 
 #article p {
 	text-align: justify;
+	padding: 0.5rem 0;
+}
+
+#article img {
+	/*display: block;
+	margin: 0 auto;*/
+}
+
+.postList a {
+	text-shadow: 2px 2px 4px #000;
+	padding: 0.5rem 0;
+}
+
+blockquote, .highlight {
+	background-color: #444;
+	color: #ddd;
+	margin-left: 1rem;
+	padding: 1rem;
+}
+
+#article blockquote p {
+	padding: 0;
+}
+
+#article p a {
+	text-decoration: underline;
+}
+
+em {
+	font-style: italic;
+}
+
+hr {
+	margin-bottom: 1rem;
+}
+
+.articleListItem {
+	margin: 0.5rem 0;
+}
+
+.postList li div {
+	display: inline-block;
+}
+
+.postTitle {
+	vertical-align: middle;
+}
+
+.byline, .postTitle h3 {
+	padding: 0;
+}
+
+.postThumb {
+	border-radius: 50%;
+	margin-right: 0.5rem;
+	vertical-align: middle;
+	height: 70px;
+	width: 70px;
+}
+
+.titleLine img {
+	float: left;
+	margin: 0.75rem;
 }
 
 /*==================================================
@@ -296,6 +361,7 @@ footer ul li {
 .social {
 	font-size: 2rem!important;
 	margin-left: 0.75rem;
+	vertical-align: middle;
 }
 
 

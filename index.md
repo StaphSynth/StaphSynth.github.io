@@ -1,7 +1,6 @@
 ---
 layout: common
-markdown: kramdown
+title: Syntheta.se
 ---
 
-## Welcome!
-Blurb text goes here...
+## Welcome to Syntheta.se!
