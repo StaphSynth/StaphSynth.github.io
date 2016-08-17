@@ -247,9 +247,9 @@ h2, h3, h4 {
 	padding: 0.5rem 0;
 }
 
-#article img {
-	/*display: block;
-	margin: 0 auto;*/
+.illustration {
+	display: block;
+	margin: 0 auto;
 }
 
 .postList a {
@@ -269,7 +269,8 @@ blockquote, .highlight {
 }
 
 #article p a {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	color: #3acfd5;
 }
 
 em {
@@ -281,7 +282,11 @@ hr {
 }
 
 .articleListItem {
-	margin: 0.5rem 0;
+	margin: 1rem 0;
+}
+
+.articleListItem img {
+	box-shadow: 0px 0px 7px #000;
 }
 
 .postList li div {
@@ -305,9 +310,15 @@ hr {
 }
 
 .titleLine img {
-	float: left;
-	margin: 0.75rem;
+	display: inline-block;
+	box-shadow: 0px 0px 5px #000;
 }
+
+.titleLine h2 {
+	display: inline-block;
+	margin-left: 0.5rem;
+}
+
 
 /*==================================================
 FOOTER
@@ -485,12 +496,39 @@ Desktop >=1024px width
 @media screen and (min-width: 1100px){
 
 	/*********************
+	Masthead
+	**********************/
+
+	#heading {
+		width: 600px;
+		margin-left: 0;
+		font-size: 1.33rem;
+	}
+
+	/*********************
 	Main content
 	**********************/
 
 	#article {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	#article p {
+		line-height: 1.6;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.125em;
+	}
+
+	.byline {
+		padding: 0;
+		line-height: 1;
 	}
 
 }/*End desktop res query*/

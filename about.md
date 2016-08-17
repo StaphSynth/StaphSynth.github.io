@@ -6,7 +6,7 @@ markdown: kramdown
 ## About Me
 It's true, I'm a nerd. My name is David Allen and I'm a thirty-ish year old boy, still pulling things apart to see how they work. If I learn anything useful, I apply it. My personal philosophy in this respect is two-fold: (1) knowledge is power, and; (2) don't learn what to think, learn _how_ to think.
 
-!["Artistic" shot of me playing guitar :)](/img/me-guitar.jpg)
+!["Artistic" shot of me playing guitar :)](/img/me-guitar.jpg){: .illustration}
 
 I studied science for years. I have a degree (with Honours! ;) in science (I studied [microbiology](https://en.wikipedia.org/wiki/Microbiology)). I've worked as a researcher, teacher, lab technician and general dogsbody. I have a few published peer-reviewed papers to my name. I even did most of a PhD. It's funny, in a way, how pulling things apart for science just didn't cut it for me any more. For various reasons, including an attempt to restore something of my sanity, I decided to leave science and shift my career to my other great love: computers.
 
