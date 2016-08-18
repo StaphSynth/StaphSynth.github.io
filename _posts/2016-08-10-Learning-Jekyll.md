@@ -4,6 +4,8 @@ title: Learning to use Jekyll
 year: 2016
 imageSource: /img/jekyll-logo.png
 byline: Making static sites with this interesting tool.
+category: code
+markdown: kramdown
 ---
 
 {% include posts.html %}

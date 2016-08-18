@@ -1,6 +1,2 @@
 name: Syntheta.se
 markdown: kramdown
-
-collections:
-  projects:
-    output: true

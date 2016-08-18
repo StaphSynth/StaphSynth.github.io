@@ -3,7 +3,8 @@ layout: common
 title: Team Treehouse
 year: 2015
 imageSource: /img/treehouse.png
-byline: Joined the online teaching resource Team Treehouse in 2015 to start my journey in development.
+byline: Joined the teaching resource Team Treehouse to start my journey in development.
+category: code
 ---
 
 {% include posts.html %}
