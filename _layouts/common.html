@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
+    <title>{% if page.url == "/" %}
+              Syntheta.se
+            {% else %}
+              {{ page.title | append: " | Syntheta.se" }}
+            {% endif %}
+    </title>
     <script type="text/javascript" src="https://use.fontawesome.com/0523816ffe.js"></script>
     <link type="text/css" rel="stylesheet" href="{{ site.url }}/css/main.css">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
@@ -23,10 +28,21 @@
             <a href="#"><i class="fa fa-bars"></i></a>
           </div>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href= "/coding.html">Coding</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/about">About</a></li>
+            {% assign navPages = site.pages | sort: 'navId' %}
+            {% for i in navPages %}
+              {% if i.navId %}
+                <li><a href="{{ i.url }}"
+                {% if page.url contains i.url %}
+                  {% if i.url != "/" and page.url.size > 1 %}
+                    class="selected"
+                  {% endif %}
+                  {% if i.url == page.url %}
+                    class="selected"
+                  {% endif %}
+                {% endif %}
+                >{{ i.title }}</a></li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </nav><!-- /mainMenu -->
       </header>

@@ -1,8 +1,10 @@
 ---
 layout: common
-title: Projects Blog | Syntheta.se
+title: Projects
 markdown: kramdown
-category: project #keyword for the listGenerator to select appropriate posts with which to populate the list
+category: projects #keyword for the listGenerator to select appropriate posts with which to populate the list
+permalink: /projects/
+navId: 3
 ---
 
 ## Projects Pages

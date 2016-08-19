@@ -1,8 +1,10 @@
 ---
 layout: common
-title: Coding Blog | Syntheta.se
+title: Coding
 markdown: kramdown
-category: code #keyword for the listGenerator to select appropriate posts with which to populate the list
+category: coding #keyword for the listGenerator to select appropriate posts with which to populate the list
+permalink: /coding/
+navId: 2
 ---
 
 ## Blogging the Learning Process

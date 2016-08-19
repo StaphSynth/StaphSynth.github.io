@@ -183,6 +183,11 @@ footer {
 	color: #3acfd5;
 }
 
+a.selected {
+	color: #0871D0!important;
+	text-shadow: 2px 2px 4px #000;
+}
+
 /*==================================================
 MASTHEAD
 ===================================================*/
@@ -575,8 +580,8 @@ Desktop >=1024px width
 	**********************/
 
 	#heading h1 {
-		font-size: 6rem;
-		padding: 3rem 0;
+		font-size: 4rem;
+		padding: 4rem 0;
 	}
 
 	/*********************
