@@ -323,6 +323,10 @@ p i {
 	padding: 0.5rem 0;
 }
 
+.postTitle a {
+	outline: 0;
+}
+
 blockquote, .highlight {
 	background-color: #444;
 	color: #ddd;
