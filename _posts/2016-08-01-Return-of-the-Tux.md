@@ -1,11 +1,9 @@
 ---
 layout: common
 title: Return of the Tux
-year: 2016
 imageSource: /img/tux-logo.jpg
 byline: Renewed my acquaintance with an old frienemy :)
 category: coding
-markdown: kramdown
 ---
 
 {% include posts.html %}

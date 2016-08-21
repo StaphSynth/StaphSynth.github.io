@@ -1,11 +1,9 @@
 ---
 layout: common
 title: Planit Software Testing Course
-year: 2015
-imageSource: /img/planit.png
+imageSource: /img/planit-logo.png
 byline: Did a week-long course on software testing and professional test practices.
 category: coding
-markdown: kramdown
 ---
 
 {% include posts.html %}

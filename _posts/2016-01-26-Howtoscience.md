@@ -1,11 +1,9 @@
 ---
 layout: common
 title: howtoscience.net
-year: 2016
 imageSource: /img/hts-logo.png
 byline: Designed and built howtoscience.net, a free resource for science students.
 category: coding
-markdown: kramdown
 ---
 
 {% include posts.html %}
@@ -14,7 +12,7 @@ markdown: kramdown
 
 It wasn't really mobile-friendly, but it worked well enough so I left that area aside while I focussed on writing the actual content. The content took much longer to write than I anticipated, (in fact, it's still on-going!) and so by the time I got back to the structural-side of the project, it was in dire need of stream-lining.
 
-![Screen-shot of the desktop layout of howtoscience.net](/img/hts-scrn01.jpg){: .illustration}
+{% include image.html caption="The desktop layout of howtoscience.net" url="/img/hts-scrn01.jpg" %}
 
 It had become somewhat bloated and difficult to maintain as the number of pages had expanded. The first task was to remove all the redundant code. I learnt enough PHP to allow me to strip out the common HTML from each page and put it in a single separate file. The nav section was an interesting challenge, but eventually PHP was pressed into service to generate the menu structures on the fly, restoring my use of 'selected' class markers to tell the user what page they were on.
 
@@ -22,7 +20,7 @@ To be honest, I'm not entirely sure that my approach with PHP is what you would 
 
 The next task was to truly make the site mobile-friendly. This was an important lesson in the mobile-first design paradigm, insofar as it hammered home the fact that I should have done it properly to start with. Still, much re-factoring of CSS code and it now works quite well.
 
-![Screen-shot of the mobile layout of howtoscience.net](/img/hts-scrn02.jpg){: .illustration}
+{% include image.html caption="The mobile layout of howtoscience.net" url="/img/hts-scrn02.jpg" %}
 
 Finally, I set about making the user experience as seemless and easy as possible. I minified the code, added some JavaScript that stops loading of scripts and assets irrelevant to the critical render path until after the page has been rendered. I fixed issues with my server configuration so it actually allowed compression and caching to reduce loading times.
 

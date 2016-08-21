@@ -11,5 +11,3 @@ $(window).resize(function() {
         $("#mainMenu ul").removeAttr("style");
   }
 });//end window resize event
-
-console.log("synth.js has loaded and run");

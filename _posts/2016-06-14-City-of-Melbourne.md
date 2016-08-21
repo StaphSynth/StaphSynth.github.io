@@ -1,11 +1,9 @@
 ---
 layout: common
 title: City of Melbourne Mock-up
-year: 2016
 imageSource: /img/cmelb01.png
 byline: Mocked up a quick demo site, playing with mobile navigation ideas.
 category: coding
-markdown: kramdown
 ---
 
 {% include posts.html %}

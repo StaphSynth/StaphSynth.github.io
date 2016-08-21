@@ -1,11 +1,9 @@
 ---
 layout: common
 title: Team Treehouse
-year: 2015
 imageSource: /img/treehouse.png
 byline: Joined the teaching resource Team Treehouse to start my journey in development.
 category: coding
-markdown: kramdown
 ---
 
 {% include posts.html %}

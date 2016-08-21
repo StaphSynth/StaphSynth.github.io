@@ -136,7 +136,6 @@ body {
 #masthead {
 	border-style: solid;
 	border-width: 0 0 5px;
-	/*border-color: #0871D0;*/
 	-moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
 	-webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
 	border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
@@ -150,6 +149,24 @@ body {
   -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
   border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
   border-image-slice: 1;
+}
+
+.figureContainer {
+	background-color: #444;
+	border: solid 2px #0871D0;
+	box-shadow: 2px 2px 4px #000;
+	-moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+.figure {
+	background-color: #444;
+}
+
+.figure p {
+	background-color: #444;
 }
 
 footer {
@@ -245,7 +262,8 @@ MAIN CONTENT
 ===================================================*/
 
 #article {
-  margin: 1.5rem 2.5%;
+	text-align: center; /*To centre child divs, not for the text which is set to justify*/
+ 	margin: 1.5rem 2.5%;
 	max-width: 1024px;
 	padding: 3%;
 }
@@ -255,7 +273,8 @@ h2, h3, h4 {
 	text-shadow: 2px 2px 4px #000;
 }
 
-h2 {
+h3 a {
+	text-decoration: underline;
 }
 
 #article p {
@@ -264,17 +283,39 @@ h2 {
 	line-height: 1.25;
 }
 
+p i {
+	font-style: italic;
+}
+
 #article p a:hover {
 	text-decoration: underline;
 }
 
 #article h2 {
 	font-size: 1.25rem;
+	text-align: left;
 }
 
-.illustration {
-	display: block;
-	margin: 0 auto;
+#article h3 {
+	text-align: left;
+}
+
+.figureContainer {
+	display: inline-block;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.figure {
+	display: table;
+}
+
+.figure p {
+	display: table-caption;
+	margin: 0 0.5rem;
+	caption-side: bottom;
+	background-color: #444;
+	white-space: wrap;
 }
 
 .postList a {
@@ -292,8 +333,6 @@ blockquote, .highlight {
 #article blockquote p {
 	padding: 0;
 }
-
-
 
 #article p.byline {
 	padding: 0.5rem 0 0;
@@ -351,9 +390,6 @@ hr {
 	align-items: center;
 }
 
-.titleLine h2 {
-	/*margin-left: 0.5rem;*/
-}
 
 
 /*==================================================
