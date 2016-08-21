@@ -554,11 +554,11 @@ Larger tablets >=800px width
 		margin: 1rem 0;
 	}
 
-	h2 {
+	#article h2 {
 		font-size: 1.5rem;
 	}
 
-	h3 {
+	#article h3 {
 		font-size: 1.125rem;
 	}
 
@@ -607,7 +607,7 @@ Larger tablets >=800px width
 
 
 /*-----------------------------------
-Desktop >=1024px width
+Desktop >=1100px width
 ------------------------------------*/
 
 @media screen and (min-width: 1100px){
