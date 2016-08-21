@@ -103,7 +103,7 @@ a, a:visited {
 FONTS
 ===================================================*/
 
-h1, h2, h3, h4, #mainMenu {
+h1, h2, h3, h4, #mainMenu, .postList a {
 	font-family: 'Audiowide', 'cursive';
 }
 
@@ -136,11 +136,37 @@ body {
 #masthead {
 	border-style: solid;
 	border-width: 0 0 5px;
-	/*border-color: #0871D0;*/
 	-moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
 	-webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
 	border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
 	border-image-slice: 1;
+}
+
+#article {
+	border: solid 5px #0871D0;
+	box-shadow: 4px 4px 8px #000;
+	-moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+.figureContainer {
+	background-color: #444;
+	border: solid 2px #0871D0;
+	box-shadow: 2px 2px 4px #000;
+	-moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+.figure {
+	background-color: #444;
+}
+
+.figure p {
+	background-color: #444;
 }
 
 footer {
@@ -165,7 +191,19 @@ footer {
 	text-shadow: 0px 0px 2px  #ddd;
 }
 
+.postList a {
+	color: #0871D0;
+}
 
+/*Main text link colour*/
+#article p a {
+	color: #3acfd5;
+}
+
+a.selected {
+	color: #0871D0!important;
+	text-shadow: 2px 2px 4px #000;
+}
 
 /*==================================================
 MASTHEAD
@@ -224,25 +262,135 @@ MAIN CONTENT
 ===================================================*/
 
 #article {
-  margin: 1.5rem 2.5%;
+	text-align: center; /*To centre child divs, not for the text which is set to justify*/
+ 	margin: 1.5rem 2.5%;
 	max-width: 1024px;
-	border: solid 5px #0871D0;
-	box-shadow: 4px 4px 8px #000;
-	padding: 2.5%;
-	-moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
-  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
-  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
-  border-image-slice: 1;
+	padding: 3%;
 }
 
-h2 {
+h2, h3, h4 {
 	padding: 0.5rem 0;
 	text-shadow: 2px 2px 4px #000;
 }
 
+h3 a {
+	text-decoration: underline;
+}
+
 #article p {
 	text-align: justify;
+	padding: 0.5rem 0;
+	line-height: 1.25;
 }
+
+p i {
+	font-style: italic;
+}
+
+#article p a:hover {
+	text-decoration: underline;
+}
+
+#article h2 {
+	font-size: 1.25rem;
+	text-align: left;
+}
+
+#article h3 {
+	text-align: left;
+}
+
+.figureContainer {
+	display: inline-block;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.figure {
+	display: table;
+}
+
+.figure p {
+	display: table-caption;
+	margin: 0 0.5rem;
+	caption-side: bottom;
+	background-color: #444;
+	white-space: wrap;
+}
+
+.postList a {
+	text-shadow: 2px 2px 4px #000;
+	padding: 0.5rem 0;
+}
+
+blockquote, .highlight {
+	background-color: #444;
+	color: #ddd;
+	margin-left: 1rem;
+	padding: 1rem;
+}
+
+#article blockquote p {
+	padding: 0;
+}
+
+#article p.byline {
+	padding: 0.5rem 0 0;
+	text-align: left;
+	text-shadow: none;
+}
+
+em {
+	font-style: italic;
+}
+
+hr {
+	margin: 1rem 0 1.5rem;
+}
+
+.articleListItem {
+	margin: 1.5rem 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.postList li {
+
+}
+
+.postThumb {
+	display: none;
+}
+
+.thumbContainer {
+	flex-shrink: 0;
+}
+
+.postTitle {
+	flex-shrink: 100;
+	padding-left: 0.75rem;
+}
+
+.byline, .postTitle h3 {
+	padding: 0;
+}
+
+.thumbContainer img {
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+}
+
+.titleLine {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+
 
 /*==================================================
 FOOTER
@@ -296,6 +444,7 @@ footer ul li {
 .social {
 	font-size: 2rem!important;
 	margin-left: 0.75rem;
+	vertical-align: middle;
 }
 
 
@@ -320,8 +469,8 @@ Small tablets >=500px width
 	Nav
 	**********************/
 	#mainMenu ul {
-		border-top: solid 0.75rem transparent;
-		border-bottom: solid 0.75rem transparent;
+		border-top: solid 0.5rem transparent;
+		border-bottom: solid 0.5rem transparent;
 	}
 
 	#mainMenu ul li {
@@ -342,6 +491,11 @@ Small tablets >=500px width
 	#article p {
 		line-height: 1.25em;
 	}
+
+	.postList li img {
+		display: inline-block;
+	}
+
 
 } /*End small tablet 500px query*/
 
@@ -365,7 +519,47 @@ Larger tablets >=800px width
 	Masthead
 	**********************/
 	#masthead h1 {
-		font-size: 3.5em;
+		font-size: 4rem;
+		padding: 1.25rem 0;
+	}
+
+	/*********************
+	Navigation
+	**********************/
+
+	#navIcon {
+		display: none;
+	}
+
+	#mainMenu ul {
+		display: block;
+		text-align: center;
+	}
+
+	#mainMenu ul li a {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		font-size: 1.125rem;
+	}
+
+	/*********************
+	Main content
+	**********************/
+
+	#article {
+		padding: 2.5%;
+	}
+
+	.articleListItem {
+		margin: 1rem 0;
+	}
+
+	#article h2 {
+		font-size: 1.5rem;
+	}
+
+	#article h3 {
+		font-size: 1.125rem;
 	}
 
 	/*********************
@@ -413,18 +607,62 @@ Larger tablets >=800px width
 
 
 /*-----------------------------------
-Desktop >=1024px width
+Desktop >=1100px width
 ------------------------------------*/
 
 @media screen and (min-width: 1100px){
+
+	/*********************
+	Masthead
+	**********************/
+
+	#heading h1 {
+		font-size: 4rem;
+		padding: 4rem 0;
+	}
+
+	/*********************
+	Navigation
+	**********************/
+
+	#mainMenu ul {
+		/*border: none;*/
+	}
+
+	#mainMenu ul li {
+		padding: 0 3rem;
+	}
+
+	#mainMenu ul li a {
+		padding: 0.5rem;
+		font-size: 1.25rem;
+	}
 
 	/*********************
 	Main content
 	**********************/
 
 	#article {
+		padding: 1.5%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	#article p {
+		line-height: 1.6;
+	}
+
+	#article h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.125em;
+	}
+
+	.byline {
+		padding: 0;
+		line-height: 1;
 	}
 
 }/*End desktop res query*/
