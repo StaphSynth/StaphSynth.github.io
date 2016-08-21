@@ -6,7 +6,7 @@ navId: 4
 ---
 
 ## About Me
-It's true, I'm a nerd. My name is David Allen and I'm a thirty-ish year old boy, still pulling things apart to see how they work. If I learn anything useful, I apply it.
+It's true, I'm a nerd. My name is David Allen and I'm a thirty-ish year old boy, still pulling things apart to see how they work. If I learn anything useful, I apply it. The blog name is derived from the word 'synthetase'. Synthetases are a class of enzyme that use energy to produce new compounds. It seemed apt. Although, it's mostly just because I've always like the sound of the word ;)
 
 Personal philosophy: (1) Don't be a dick. (2) Don't learn what to think, learn _how_ to think.
 
