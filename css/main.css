@@ -344,6 +344,13 @@ blockquote, .highlight {
 	text-shadow: none;
 }
 
+#article code {
+	background-color: #444;
+	font-family: monospace;
+	font-size: 1rem;
+	padding: 0.25rem;
+}
+
 em {
 	font-style: italic;
 }
