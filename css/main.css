@@ -200,6 +200,10 @@ footer {
 	color: #3acfd5;
 }
 
+#article .gitLink a {
+	color: #ddd;
+}
+
 a.selected {
 	color: #0871D0!important;
 	text-shadow: 2px 2px 4px #000;
@@ -400,6 +404,19 @@ hr {
 	align-items: center;
 }
 
+.gitLink {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+#article .gitLink p {
+	text-align: center;
+}
+
+.gitLink .fa-github-square {
+	padding-right: 0.5rem;
+	margin-left: 0;
+}
 
 
 /*==================================================
