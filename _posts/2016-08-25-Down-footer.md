@@ -32,7 +32,7 @@ So I decided to do it with a [flex-box](https://scotch.io/tutorials/a-visual-gui
     <footer>
       <!-- boring legal stuff... -->
     </footer>
-  <body>
+  </body>
 </html>
 ```
 
