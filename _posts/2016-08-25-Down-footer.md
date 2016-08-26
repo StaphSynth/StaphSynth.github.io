@@ -45,7 +45,7 @@ html, body {
 
 body {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
 }
 
 #mainContent {
