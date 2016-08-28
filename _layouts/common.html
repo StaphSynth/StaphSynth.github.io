@@ -71,9 +71,12 @@
       </footer>
     </div> <!--/pageWrapper-->
   </body>
-
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="{{ site.url }}/js/synth.js"></script>
+    
   <!--Loads non-render-critical JavaScript after the page has been rendered-->
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
     function loadScriptPostRender() {
       var element = document.createElement("script");
       element.src = "https://code.jquery.com/jquery-1.11.0.min.js";
@@ -92,5 +95,5 @@
     else if (window.attachEvent)
       window.attachEvent("onload", loadScriptPostRender);
     else window.onload = loadScriptPostRender;
-  </script>
+  </script>-->
 </html>
