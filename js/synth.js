@@ -22,3 +22,5 @@ $(function() {
     $(".gitLink .social").css("text-shadow", "");
   });
 });
+
+console.log("synth.js has loaded and run");
