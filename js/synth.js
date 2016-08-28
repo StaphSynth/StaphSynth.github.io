@@ -1,6 +1,6 @@
 //show/hide the main menu when nav icon clicked/tapped on mobile view
 $("#navIcon").click(function(event){
-  console.log("click!");
+  //console.log("click!");
   $("#mainMenu ul").toggle();
 });
 
@@ -24,4 +24,4 @@ $(function() {
   });
 });
 
-console.log("synth.js has loaded and run");
+//console.log("synth.js has loaded and run");
