@@ -388,7 +388,7 @@ hr {
 }
 
 .postThumb {
-	display: none;
+	/*display: none;*/
 }
 
 .thumbContainer {
@@ -406,8 +406,8 @@ hr {
 
 .thumbContainer img {
 	border-radius: 50%;
-	height: 70px;
-	width: 70px;
+	height: 40px;
+	width: 40px;
 }
 
 .titleLine {
@@ -534,6 +534,11 @@ Small tablets >=500px width
 
 	.postList li img {
 		display: inline-block;
+	}
+
+	.thumbContainer img {
+		height: 70px;
+		width: 70px;
 	}
 
 	#article h2 {
