@@ -1,7 +1,7 @@
 //show/hide the main menu when nav icon clicked/tapped on mobile view
 $("#navIcon").click(function(event){
   //console.log("click!");
-  $("#mainMenu ul").toggle();
+  $("#mainMenu ul").slideToggle("fast","swing");
 });
 
 /*Remove inline style from #mainMenu ul if window width > 800px on window resize event.
