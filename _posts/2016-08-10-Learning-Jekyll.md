@@ -1,12 +1,10 @@
 ---
-layout: common
+layout: post
 title: Learning to use Jekyll
 imageSource: /img/jekyll-logo.png
 byline: Making static sites with this interesting tool.
 category: coding
 ---
-
-{% include posts.html %}
 
 I was introduced to the [Jekyll](http://www.jekyllrb.com){: target="\_blank"} static site generator by some dev friends a little while ago. I was telling them about some of the interesting challenges I'd had to overcome while I was writing my first proper web dev project, [howtoscience.net](http://www.howtoscience.net/){: target="\_blank"}. They'd both been using Jekyll for a while and explained its advantages over what I'd been doing previously, as well as other, more complex systems like Wordpress and the like. I'd dabbled with Wordpress at this point and found it annoying. I liked the idea of a stripped-down site generator that eschewed unnecessary complexity for simple tasks like making the blog you're reading now.
 

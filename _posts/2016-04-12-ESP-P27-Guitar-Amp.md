@@ -1,12 +1,10 @@
 ---
-layout: common
+layout: post
 title: P27 100W Guitar Amplifier Build
 imageSource: /img/speaker-logo.jpg
 byline: Part 2 - The Guts
 category: projects
 ---
-
-{% include posts.html %}
 
 ### A two-part post on construction of my guitar amplifier. Part one [here]({% post_url 2016-04-10-ESP-P27-Guitar-Amp %}).
 

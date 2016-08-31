@@ -1,12 +1,10 @@
 ---
-layout: common
+layout: post
 title: Return of the Tux
 imageSource: /img/tux-logo.jpg
 byline: Renewed my acquaintance with an old frienemy :)
 category: coding
 ---
-
-{% include posts.html %}
 
 Ah, Linux. Like many Linux users, I both love and hate it. I've been using DOS and Windows pretty much my whole life, and first encountered Linux as a student writing C projects. We were required to use it both to get used to the system and for GCC. So I ran it for a while on an old laptop in a dual boot with Windows. I loved that it was free, open and flexible - but this was always a double-edged sword.
 
