@@ -330,6 +330,11 @@ p i {
 	outline: 0;
 }
 
+#article .postDate {
+	font-style: italic;
+	text-decoration: underline;
+}
+
 blockquote, .highlight {
 	background-color: #444;
 	color: #ddd;
