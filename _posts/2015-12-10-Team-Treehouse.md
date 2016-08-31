@@ -1,12 +1,10 @@
 ---
-layout: common
+layout: post
 title: Team Treehouse
 imageSource: /img/treehouse.png
 byline: Joined the teaching resource Team Treehouse to start my journey in development.
 category: coding
 ---
-
-{% include posts.html %}
 
 I joined the online teaching resource [Team Treehouse](http://www.teamtreehouse.com) in 2015 to start my journey in development.
 I completed the front-end track, learning HTML, CSS and JavaScript. More important than language-specifics, I learnt to how to approach web-design: from a dynamic,

@@ -1,0 +1,13 @@
+---
+layout: common
+---
+<div class="titleLine">
+  <div class="thumbContainer">
+    <img src="{{ page.imageSource }}" alt="{{ page.title }}">
+  </div>
+  <div class="postTitle">
+    <h2>{{ page.title }}</h2>
+  </div>
+</div>
+<p class="postDate">Posted on {{ page.date | date_to_long_string }}.</p>
+{{ content }}
