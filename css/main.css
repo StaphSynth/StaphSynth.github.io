@@ -383,14 +383,6 @@ hr {
 	align-items: center;
 }
 
-.postList li {
-
-}
-
-.postThumb {
-	/*display: none;*/
-}
-
 .thumbContainer {
 	flex-shrink: 0;
 }
