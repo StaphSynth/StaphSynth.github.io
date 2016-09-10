@@ -8,7 +8,6 @@ navId: 2
 ---
 
 ## Blogging the Learning Process
-I quit my job in academia at the end of the year in 2015 to focus full time on learning new development skills.
-I thought it would be helpful to blog about my progress to use as both a reference and a source of perspective.
+At the end of 2015, I decided to change my career from science/academia and move back to tech. I thought it would be helpful, as both a reference and a source of perspective, to blog about my progress as I learn new development skills.
 
 {% include listGenerator.html %}
