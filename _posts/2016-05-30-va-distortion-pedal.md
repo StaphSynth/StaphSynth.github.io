@@ -26,6 +26,6 @@ Step4: Profit!
 
 {% include image.html url="/img/va-running.jpg" caption="The top needed a bit of jazzing up. I quite like the lo-fi effect of simply drawing on it with a paint marker." %}
 
-And there it is, a proper effects pedal for just over $20. The most expensive components were the case and the foot switch, which made up the bulk of the cost. The rest of it was jelly-bean parts I already had lying around. It also uses an NE5532 opamp instead of the noisy 4558.
+And there it is, a proper effects pedal for around $30. The most expensive components were the case and the foot switch, which made up the bulk of the cost. The rest of it was jelly-bean parts I already had lying around. It also uses an NE5532 opamp instead of the noisy 4558.
 
 As I said above, it's basically a knock-off of the Tube Screamer, but with a modified tone circuit and a slightly different feed-back path. I use it to play things like Judas Priest, Black Sabbath and The Offspring. If you turn the distortion right down, you can get a pretty cool 'dirty blues' kind of sound out of it as well. Well worth the effort :)
