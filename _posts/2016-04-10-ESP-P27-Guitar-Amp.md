@@ -39,7 +39,7 @@ Once I'd worked out the positions of all the major components, I covered the ins
 
 Spread the glue across the wood with an old paint brush, apply the foil, smooth it down, and then use a sharp hobby knife to trim the foil just inside the edge of the wood panel. For connecting pieces, such as the side panels, the foil is folded around the inside edge so as it makes electrical contact with the top and bottom to form a continuous shield all the way around the enclosure.
 
-{% include image.html url="/img/P27-shielded.jpg" caption="The cassis panels with shielding applied. The aluminium strips on the side panels are load-bearing washers to which the M6 bolts apply force. Since the holes for the bolts are recessed, the timber would crack under repeated strain without them." %}
+{% include image.html url="/img/P27-shielded.jpg" caption="The chassis panels with shielding applied. The aluminium strips on the side panels are load-bearing washers to which the M6 bolts apply force. Since the holes for the bolts are recessed, the timber would crack under repeated strain without them." %}
 
 After marking, drilling and tapping M6 thread into the brackets that will bold the lid to the bottom, they were attached to the base and bolted to the side panels. Before the top could be attached to the sides, they needed to be aligned perfectly so that the whole thing would be square.
 
