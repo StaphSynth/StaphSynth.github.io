@@ -4,6 +4,7 @@ title: P113 Headphone Amplifier
 imageSource: /img/headphones-logo.jpg
 byline: Just the thing to drive power-hungry 'phones.
 category: projects
+comments: true
 ---
 
 For a short time when I was working at a university, I was working three jobs on campus at the same time. A small wad of disposible income burning a hole in my pocket, I cast around for something to spend it on. My old headphones, Sennheiser HD575s, had done me very well for over a decade by this point, but the wear was starting to show as they were beginning to fall apart. So I thought it might be time for an upgrade. I went and listened to a whole bunch of high-end 'phones and eventually settled on a set of Sennheiser HD800s. They totally. Freaking. Rock. Extraordinarily revealing and solid.  No pretense at being 'good' at bass, or whatever, just _clear_ sound. They are rather pricey, though...
