@@ -4,6 +4,7 @@ title: Valve Approximator Distortion Pedal
 imageSource: /img/guitar-logo.jpg
 byline: Re-live the hey days of heavy metal.
 category: projects
+comments: true
 ---
 
 My [P27 amplifier]({% post_url 2016-04-10-ESP-P27-Guitar-Amp %}) has a nice sound but its distortion tone is pretty useless for various flavours of heavy rock/metal. I've made a few overdrive distortion circuits on my bread board and this is the first one I liked enough to decide to commit to a pedal. The circuit is modelled on the (in?)famous Ibanez [Tube Screamer](http://www.electrosmash.com/tube-screamer-analysis), but with modifications to suit my taste. I also ditched their [JFET effects bypass](http://www.electrosmash.com/tube-screamer-analysis#jfet) scheme in favour of a triple pole double throw foot switch which also illuminates an LED to tell me when the circuit is engaged (it's common for pedal manufacturers to use these BOM-heavy schemes because parts are cheap, but labour to wire up 3PDT switches is not). It runs from a 9V battery, but can also be run from a plug-pack. When the plug-pack is inserted, the battery is bypassed. To stop the quiescent current of the circuit draining the battery when not in use, a switching jack socket is used on the input. When the plug is absent, power is disconnected.
