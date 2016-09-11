@@ -51,4 +51,4 @@ body {
 }
 ```
 
-There are some problems with this solution - namely browser compatability issues. Older browsers that don't support flex box/HTML5 won't display the page properly (you can remove the HTML5 by replacing the header and footer tags with ```<div id="header">```, etc). To be honest, at this point, I don't really care. The site I'm using the solution on is targeted at new users with modern devices, so it's a non-issue for me. However, if you're writing something that _must_ work with IE 6, then you'll have to do it the old way.
+There are some problems with this solution - namely browser compatability issues. Older browsers that don't support flex box/HTML5 won't display the page properly (you can remove the HTML5 by replacing the header and footer tags with `<div id="header">`, etc). To be honest, at this point, I don't really care. The site I'm using the solution on is targeted at new users with modern devices, so it's a non-issue for me. However, if you're writing something that _must_ work with IE 6, then you'll have to do it the old way.

@@ -5,14 +5,13 @@ By David Allen
 
 
 
-
-/*==================================================
+/*===============================================
 Browser reset
 
 http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
-===================================================*/
+================================================*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -62,7 +61,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*End browser reset*/
+
 
 
 /*==================================================
@@ -104,11 +103,15 @@ FONTS
 ===================================================*/
 
 h1, h2, h3, h4, #mainMenu, .postList a {
-	font-family: 'Audiowide', 'cursive';
+	font-family: 'Audiowide', cursive;
 }
 
 p, footer {
 	font-family: 'Open Sans', sans-serif;
+}
+
+#article code {
+	font-family: 'Fira Mono', monospace;
 }
 
 
@@ -209,6 +212,8 @@ a.selected {
 	text-shadow: 2px 2px 4px #000;
 }
 
+
+
 /*==================================================
 MASTHEAD
 ===================================================*/
@@ -251,7 +256,6 @@ NAVIGATION
 /*Initial menu state: don't show menu struct, just the nav icon*/
 #mainMenu ul {
   display: none;
-	/*padding: 0 0.75rem;*/
 	border-left: solid 0.75rem transparent;
 	border-right: solid 0.75rem transparent;
 }
@@ -263,6 +267,10 @@ NAVIGATION
 /*==================================================
 MAIN CONTENT
 ===================================================*/
+
+/*-------------------
+General content style
+--------------------*/
 
 #article {
 	text-align: center; /*To centre child divs, not for the text which is set to justify*/
@@ -303,6 +311,15 @@ p i {
 	text-align: left;
 }
 
+#article .postDate {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/*-------------------
+Figures
+--------------------*/
+
 .figureContainer {
 	display: inline-block;
 	margin-top: 0.5rem;
@@ -321,6 +338,11 @@ p i {
 	white-space: normal;
 }
 
+/*-------------------
+Post list generator
+styling
+--------------------*/
+
 .postList a {
 	text-shadow: 2px 2px 4px #000;
 	padding: 0.5rem 0;
@@ -330,54 +352,10 @@ p i {
 	outline: 0;
 }
 
-#article .postDate {
-	font-style: italic;
-	text-decoration: underline;
-}
-
-blockquote, .highlight {
-	background-color: #444;
-	color: #ddd;
-	margin-left: 1rem;
-	padding: 1rem;
-}
-
-#article blockquote p {
-	padding: 0;
-}
-
 #article p.byline {
 	padding: 0.5rem 0 0;
 	text-align: left;
 	text-shadow: none;
-}
-
-#article div.highlighter-rouge {
-	display: flex;
-}
-
-#article pre {
-	line-height: 1.125rem;
-	text-align: left;
-	margin-left: 0;
-	overflow: hidden;
-	white-space: pre-wrap;
-	margin-bottom: 0.5rem;
-}
-
-#article code {
-	background-color: #444;
-	font-family: monospace;
-	font-size: 1rem;
-	/*padding: 0.25rem;*/
-}
-
-em {
-	font-style: italic;
-}
-
-hr {
-	margin: 1rem 0 1.5rem;
 }
 
 .articleListItem {
@@ -414,6 +392,53 @@ hr {
 	align-items: center;
 }
 
+/*-------------------
+Block auotes, code,
+emphasis, etc
+--------------------*/
+
+blockquote, .highlight {
+	background-color: #444;
+	color: #ddd;
+	margin-left: 1rem;
+	padding: 1rem;
+}
+
+#article blockquote p {
+	padding: 0;
+}
+
+#article div.highlighter-rouge {
+	display: flex;
+}
+
+#article pre {
+	line-height: 1.125rem;
+	text-align: left;
+	margin-left: 0;
+	overflow: hidden;
+	white-space: pre-wrap;
+	margin-bottom: 0.5rem;
+}
+
+#article code {
+	background-color: #444;
+	font-size: 1rem;
+}
+
+em {
+	font-style: italic;
+}
+
+hr {
+	margin: 1rem 0 1.5rem;
+}
+
+/*-------------------
+Github link at end
+of code articles
+--------------------*/
+
 .gitLink {
 	width: 100%;
 	margin-top: 1rem;
@@ -427,6 +452,7 @@ hr {
 	padding-right: 0.5rem;
 	margin-left: 0;
 }
+
 
 
 /*==================================================
@@ -587,8 +613,7 @@ Larger tablets >=800px width
 	}
 
 	#mainMenu ul li a {
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding: 0.66rem 1.5rem;
 		font-size: 1.125rem;
 	}
 
@@ -695,7 +720,7 @@ Desktop >=1100px width
 	}
 
 	#article p {
-		line-height: 1.6;
+		line-height: 1.5;
 	}
 
 	#article h2 {
