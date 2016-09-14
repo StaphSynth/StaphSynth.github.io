@@ -2,3 +2,6 @@ name: Syntheta.se
 markdown: kramdown
 
 url: http://syntheta.se
+
+gems:
+  - jekyll-sitemap
