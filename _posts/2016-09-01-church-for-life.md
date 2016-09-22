@@ -4,6 +4,10 @@ title: Church For Life Site
 imageSource: /img/c4l-logo.jpg
 byline: Made a modern site for my parents' church.
 category: coding
+tags:
+  - portfolio
+  - web
+  - development
 ---
 
 I'm not a religious person. However, I do believe in freedom of speech. One of the unwritten rules of free speech should be that if you're going to have an internet presence, you should at least try to make the most of it. My parents' church has (at the time of writing) a pretty bad site. It's not well put together, confusing to navigate, and has an air of neglect. This doesn't induce new users to interact with the site and consequently they'll never hear the message. It's not their fault; the person who set it up is not techy and did the best he could with what he knew. They also don't have the almost infinite resources of the mega churches.

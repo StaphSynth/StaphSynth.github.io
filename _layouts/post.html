@@ -9,6 +9,18 @@ layout: common
     <h2>{{ page.title }}</h2>
   </div>
 </div>
-<p class="postDate">Posted on {{ page.date | date_to_long_string }}.</p>
+<ul class="postData">
+  <li><p><i class="fa fa-calendar" aria-hidden="false"></i><noscript>Posted on</noscript> {{ page.date | date_to_long_string }}{% if page.modified or page.tags.size >= 1 %}&ensp;|&ensp;{% endif %}</p></li>
+  {% if page.modified %}
+     <li><p><i class="fa fa-edit" aria-hidden="false"></i><noscript>Last modified on</noscript> {{ page.modified | date_to_long_string }}{% if page.tags.size >= 1 %}&ensp;|&ensp;{% endif %}</p></li>
+  {% endif %}
+  {% if page.tags.size >= 1 %}
+     <li><p><i class="fa fa-tags" aria-hidden="false"></i><noscript>Tagged in</noscript>
+    {% for tag in page.tags %}
+      <a href="/tags#{{ tag }}">{{ tag }}</a>{% unless forloop.last %},{% else %}.{% endunless %}
+    {% endfor %}
+  </p></li>
+  {% endif %}
+</ul> <!-- /postDate -->
 {{ content }}
 {% include disqus.html %}

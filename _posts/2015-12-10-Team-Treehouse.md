@@ -4,6 +4,10 @@ title: Team Treehouse
 imageSource: /img/treehouse.png
 byline: Joined the teaching resource Team Treehouse to start my journey in development.
 category: coding
+tags:
+  - course
+  - development
+  - web
 ---
 
 I joined the online teaching resource [Team Treehouse](http://www.teamtreehouse.com) in 2015 to start my journey in development.
