@@ -307,6 +307,10 @@ p i {
 	text-align: left;
 }
 
+/*-------------------
+Tags and post meta-data
+--------------------*/
+
 #article .postData {
 	color: #ddd;
 	font-style: italic;
@@ -342,8 +346,6 @@ p i {
 	display: flex;
 	flex-direction: column;
 }
-
-
 
 /*-------------------
 Figures
@@ -442,7 +444,7 @@ styling
 }
 
 /*-------------------
-Block auotes, code,
+Block quotes, code,
 emphasis, etc
 --------------------*/
 
