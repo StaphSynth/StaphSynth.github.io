@@ -5,6 +5,11 @@ imageSource: /img/speaker-logo.jpg
 byline: Part 2 - The Guts
 category: projects
 comments: true
+modified: 2016-09-15
+tags:
+  - electronics
+  - amplifiers
+  - guitar
 ---
 
 ### A two-part post on construction of my guitar amplifier. Part one [here]({% post_url 2016-04-10-ESP-P27-Guitar-Amp %}).

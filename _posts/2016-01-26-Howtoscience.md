@@ -4,6 +4,12 @@ title: howtoscience.net
 imageSource: /img/hts-logo.png
 byline: Designed and built howtoscience.net, a free resource for science students.
 category: coding
+modified: 2016-09-19
+tags:
+  - portfolio
+  - web
+  - development
+  - science
 ---
 
 [Howtoscience.net](http://www.howtoscience.net){: target="\_blank"} was my first major project and taught me a lot about web design. It's actually gone through several different iterations as I've learned new things and applied them to the site. To begin with, it was just a collection of HTML files linked together by a fairly straight-forward nav section at the top of the page.

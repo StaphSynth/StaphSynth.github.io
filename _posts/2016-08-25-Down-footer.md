@@ -4,6 +4,9 @@ title: Down Footer!
 imageSource: /img/foot-logo.jpg
 byline: A simple solution to an annoying problem.
 category: coding
+tags:
+  - development
+  - css
 ---
 
 Ah, footers. The little space at the bottom of the page for copyright legalese, contact info - and in a slightly weird turn of events in recent years, search and navigation options. Although they're useful for displaying all the boiler-plate info in a non-distracting way, to be honest I always thought they just made the page look nice.

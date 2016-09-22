@@ -5,6 +5,11 @@ imageSource: /img/speaker-logo.jpg
 byline: Part 1 - The Chassis
 category: projects
 comments: true
+modified: 2016-09-15
+tags:
+  - electronics
+  - amplifiers
+  - guitar
 ---
 
 ### A two-part post on construction of my guitar amplifier. Part two [here]({% post_url 2016-04-12-ESP-P27-Guitar-Amp %}).

@@ -4,6 +4,9 @@ title: Ruby on Rails Installfest
 imageSource: /img/ruby-logo.jpg
 byline: Went to a meet-up and installfest in Melbourne with fellow nerds.
 category: coding
+tags:
+  - ruby
+  - development
 ---
 
 A friend invited me along to a Rails installfest being run in Melbourne by [Reinteractive](https://reinteractive.net/). It's basically a meetup for Rails n00bs so they can get the environment installed and running on their machines. After installation, they had a simple blog example project to build to get us started.
