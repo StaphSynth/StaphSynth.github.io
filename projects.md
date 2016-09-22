@@ -1,7 +1,6 @@
 ---
 layout: common
 title: Projects
-markdown: kramdown
 category: projects #keyword for the listGenerator to select appropriate posts with which to populate the list
 permalink: /projects/
 navId: 3

@@ -1,7 +1,6 @@
 ---
 layout: common
 title: Coding
-markdown: kramdown
 category: coding #keyword for the listGenerator to select appropriate posts with which to populate the list
 permalink: /coding/
 navId: 2
