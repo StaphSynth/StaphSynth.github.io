@@ -5,14 +5,13 @@ By David Allen
 
 
 
-
-/*==================================================
+/*===============================================
 Browser reset
 
 http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
-===================================================*/
+================================================*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -62,7 +61,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*End browser reset*/
+
 
 
 /*==================================================
@@ -94,7 +93,7 @@ a, a:visited {
 }
 
 #contentWrapper {
-	padding-bottom: 165px; /*Must be equal to footer height + footer border*/
+	padding-bottom: 190px; /*Must be equal to footer height + footer border (5px)*/
 }
 
 
@@ -103,12 +102,16 @@ a, a:visited {
 FONTS
 ===================================================*/
 
-h1, h2, h3, h4, #mainMenu {
-	font-family: 'Audiowide', 'cursive';
+h1, h2, h3, h4, #mainMenu, .postList a {
+	font-family: 'Audiowide', cursive;
 }
 
 p, footer {
 	font-family: 'Open Sans', sans-serif;
+}
+
+#article code {
+	font-family: 'Fira Mono', monospace;
 }
 
 
@@ -136,18 +139,40 @@ body {
 #masthead {
 	border-style: solid;
 	border-width: 0 0 5px;
-	/*border-color: #0871D0;*/
-	-moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
-	-webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
+	-o-border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
+	border-image: -webkit-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
 	border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
 	border-image-slice: 1;
+}
+
+#article {
+	border: solid 5px #0871D0;
+	box-shadow: 4px 4px 8px #000;
+ -o-border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+ border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+ border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+.figureContainer {
+	background-color: #444;
+	border: solid 2px #0871D0;
+	box-shadow: 2px 2px 4px #000;
+ -o-border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+ border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+ border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+.figure, .figure p {
+	background-color: #444;
 }
 
 footer {
 	border-style: solid;
 	border-width: 5px 0 0;
-	-moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
-	-webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
+	-o-border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
+	border-image: -webkit-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
 	border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
 	border-image-slice: 1;
 }
@@ -165,6 +190,24 @@ footer {
 	text-shadow: 0px 0px 2px  #ddd;
 }
 
+.postList a {
+	color: #0871D0;
+}
+
+/*Main text link colour*/
+#article p a {
+	color: #3acfd5;
+}
+
+#article .gitLink a {
+	color: #ddd;
+}
+
+a.selected {
+	color: #0871D0!important;
+	text-shadow: 2px 2px 4px #000;
+}
+
 
 
 /*==================================================
@@ -176,10 +219,9 @@ header {
 }
 
 #masthead {
-  background-image: url("../img/pahead.jpg");
+  background-image: url("../img/banner1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-	/*opacity: 0.5;*/
 }
 
 #masthead h1 {
@@ -191,7 +233,7 @@ header {
 
 /*Produce the 'faded' effect on the background image so the heading is easier to read*/
 #heading {
-	background-color: rgba(255, 255, 255, 0.35);
+	background-color: rgba(255, 255, 255, 0.5);
 	width: 100%;
 	height: 100%;
 }
@@ -210,7 +252,6 @@ NAVIGATION
 /*Initial menu state: don't show menu struct, just the nav icon*/
 #mainMenu ul {
   display: none;
-	/*padding: 0 0.75rem;*/
 	border-left: solid 0.75rem transparent;
 	border-right: solid 0.75rem transparent;
 }
@@ -223,26 +264,249 @@ NAVIGATION
 MAIN CONTENT
 ===================================================*/
 
+/*-------------------
+General content style
+--------------------*/
+
 #article {
-  margin: 1.5rem 2.5%;
+	text-align: center; /*To centre child divs, not for the text which is set to justify*/
+ 	margin: 1.5rem 2.5%;
 	max-width: 1024px;
-	border: solid 5px #0871D0;
-	box-shadow: 4px 4px 8px #000;
-	padding: 2.5%;
-	-moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
-  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
-  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
-  border-image-slice: 1;
+	padding: 3%;
 }
 
-h2 {
+h2, h3, h4 {
 	padding: 0.5rem 0;
 	text-shadow: 2px 2px 4px #000;
 }
 
+h3 a {
+	text-decoration: underline;
+}
+
 #article p {
 	text-align: justify;
+	padding: 0.5rem 0;
+	line-height: 1.25;
 }
+
+p i {
+	font-style: italic;
+}
+
+#article p a:hover {
+	text-decoration: underline;
+}
+
+#article h2 {
+	font-size: 1.25rem;
+	text-align: left;
+}
+
+#article h3 {
+	text-align: left;
+}
+
+/*-------------------
+Tags and post meta-data
+--------------------*/
+
+#article .postData {
+	color: #ddd;
+	font-style: italic;
+	margin: 0.5rem 0;
+	line-height: 1.5;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+#article .postData .fa {
+	vertical-align: middle;
+}
+
+#article .tags {
+	text-align: justify;
+	font-family: 'open sans', sans-serif;
+	color: #ddd;
+	line-height: 1.2rem;
+}
+
+#article .tags a:hover {
+	color: #3acfd5;
+	text-decoration: underline;
+}
+
+#tags {
+	display: flex;
+	flex-direction: column;
+}
+
+/*-------------------
+Figures
+--------------------*/
+
+.figureContainer {
+	display: inline-block;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.figure {
+	display: table;
+}
+
+#article .figure p {
+	display: table-caption;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	caption-side: bottom;
+	background-color: #444;
+	white-space: normal;
+}
+
+/*-------------------
+Post list generator
+styling
+--------------------*/
+
+.postList a {
+	text-shadow: 2px 2px 4px #000;
+	padding: 0.5rem 0;
+}
+
+.postTitle a {
+	outline: 0;
+}
+
+#article p.byline {
+	padding: 0.5rem 0 0;
+	text-align: left;
+	text-shadow: none;
+	margin: 0;
+}
+
+.articleListItem {
+	margin: 1.5rem 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.thumbContainer {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+}
+
+.postTitle {
+	-ms-flex-negative: 100;
+	flex-shrink: 100;
+	padding-left: 0.75rem;
+}
+
+.byline, .postTitle h3 {
+	padding: 0;
+}
+
+.thumbContainer img {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+.titleLine {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+/*-------------------
+Block quotes, code,
+emphasis, etc
+--------------------*/
+
+blockquote, .highlight {
+	background-color: #444;
+	color: #ddd;
+	margin-left: 1rem;
+	padding: 1rem;
+}
+
+#article blockquote p {
+	padding: 0;
+}
+
+#article div.highlighter-rouge {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#article pre {
+	line-height: 1.125rem;
+	text-align: left;
+	margin-left: 0;
+	overflow: hidden;
+	white-space: pre-wrap;
+	margin: 0.5rem 0;
+}
+
+#article code {
+	background-color: #444;
+	font-size: 1rem;
+}
+
+em {
+	font-style: italic;
+}
+
+hr {
+	margin: 1.25rem 0 1.25rem;
+}
+
+/*-------------------
+Github link at end
+of code articles
+--------------------*/
+
+.gitLink {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+#article .gitLink p {
+	text-align: center;
+}
+
+.gitLink .fa-github-square {
+	padding-right: 0.5rem;
+	margin-left: 0;
+}
+
+
 
 /*==================================================
 FOOTER
@@ -250,13 +514,11 @@ FOOTER
 
 footer {
 	width: 100%;
-	height: 160px;
+	height: 185px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	/*padding: 0 0.75rem;*/
 	box-shadow: 0px -4px 8px #000;
-	/*border-left: solid 0.75em transparent;*/
 }
 
 #footerContainer {
@@ -264,12 +526,11 @@ footer {
 }
 
 footer div div {
-	padding: 0.75rem 0;
+	padding: 0.75rem 1rem;
 }
 
 footer ul li {
 	text-align: center;
-	/*margin: 0.5rem 0;*/
 }
 
 #connect {
@@ -277,10 +538,21 @@ footer ul li {
 	text-align: center;
 }
 
-#connect ul li {
-	display: inline-block;
+#connect ul {
+	padding-top: 0.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
+#connect ul li~li {
+	padding-left: 0.75rem;
+}
 
 #connect p {
 }
@@ -295,7 +567,7 @@ footer ul li {
 
 .social {
 	font-size: 2rem!important;
-	margin-left: 0.75rem;
+	vertical-align: middle;
 }
 
 
@@ -320,8 +592,8 @@ Small tablets >=500px width
 	Nav
 	**********************/
 	#mainMenu ul {
-		border-top: solid 0.75rem transparent;
-		border-bottom: solid 0.75rem transparent;
+		border-top: solid 0.5rem transparent;
+		border-bottom: solid 0.5rem transparent;
 	}
 
 	#mainMenu ul li {
@@ -339,9 +611,41 @@ Small tablets >=500px width
 	Main content
 	**********************/
 
+	#article .postData .fa {
+		font-size: 1.5rem;
+	}
+
 	#article p {
 		line-height: 1.25em;
 	}
+
+	.postList li img {
+		display: inline-block;
+	}
+
+	.thumbContainer img {
+		height: 70px;
+		width: 70px;
+	}
+
+	#article h2 {
+		font-size: 1.5rem;
+	}
+
+	#article h3 {
+		font-size: 1.125rem;
+	}
+
+	/*---Tags---*/
+
+	#tags {
+		flex-flow: row wrap;
+	}
+	#tags li {
+		flex: 1 0 50%;
+		max-width: 50%;
+	}
+
 
 } /*End small tablet 500px query*/
 
@@ -358,14 +662,55 @@ Larger tablets >=800px width
 	**********************/
 
 	#contentWrapper {
-		padding-bottom: 133px; /*Must == footer height + footer border width (==5px)*/
+		padding-bottom: 135px; /*Must == footer height + footer border width (==5px)*/
 	}
 
 	/*********************
 	Masthead
 	**********************/
 	#masthead h1 {
-		font-size: 3.5em;
+		font-size: 4rem;
+		padding: 2.25rem 0;
+	}
+
+	/*********************
+	Navigation
+	**********************/
+
+	#navIcon {
+		display: none;
+	}
+
+	#mainMenu ul {
+		display: block;
+		text-align: center;
+	}
+
+	#mainMenu ul li a {
+		padding: 0.66rem 1.5rem;
+		font-size: 1.125rem;
+	}
+
+	/*********************
+	Main content
+	**********************/
+
+	#article {
+		padding: 2.5%;
+	}
+
+	.articleListItem {
+		margin: 1rem 0;
+	}
+
+	#article h2 {
+		font-size: 1.5rem;
+	}
+
+	/*---tags---*/
+	#tags li {
+		flex: 1 0 33.33%;
+		max-width: 33.33%;
 	}
 
 	/*********************
@@ -373,23 +718,25 @@ Larger tablets >=800px width
 	**********************/
 
 	footer {
-		height: 128px;
+		height: 130px;
 	}
 
 	#footerContainer {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 		border-top: solid 1rem transparent;
 		padding: 0 2.5%;
 	}
 
 	#licence {
+		-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
 		order: -1;
 		border-right: solid 1px #444;
-	}
-
-	#licence ul {
-		padding-right: 2em;
 	}
 
 	#licence ul li {
@@ -400,31 +747,70 @@ Larger tablets >=800px width
 		border: none;
 	}
 
-	#connect ul {
-		padding-left: 2em;
-	}
-
-	#connect ul li {
-		margin: 0.5rem 0;
-		display: block;
-	}
-
 } /*End large tablet query*/
 
 
 /*-----------------------------------
-Desktop >=1024px width
+Desktop >=1100px width
 ------------------------------------*/
 
 @media screen and (min-width: 1100px){
 
 	/*********************
+	Masthead
+	**********************/
+
+	#heading h1 {
+		font-size: 4rem;
+		padding: 4rem 0;
+	}
+
+	/*********************
+	Navigation
+	**********************/
+
+	#mainMenu ul {
+		/*border: none;*/
+	}
+
+	#mainMenu ul li {
+		padding: 0 3rem;
+	}
+
+	#mainMenu ul li a {
+		padding: 0.5rem;
+		font-size: 1.25rem;
+	}
+
+	/*********************
 	Main content
 	**********************/
 
+	#article .postData {
+		margin-bottom: 0.75rem;
+	}
+
 	#article {
+		padding: 1.5%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	#article p {
+		line-height: 1.33em;
+	}
+
+	#article h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.125em;
+	}
+
+	.byline {
+		padding: 0;
+		line-height: 1;
 	}
 
 }/*End desktop res query*/

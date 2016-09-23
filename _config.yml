@@ -1,2 +1,8 @@
 name: Syntheta.se
 markdown: kramdown
+description: A personal blog of code snippets and electronics projects
+url: http://syntheta.se
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag

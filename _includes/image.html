@@ -1,0 +1,10 @@
+{% comment %}
+  For easier insertion of figures with captions into posts.
+  Usage: {% include image.html url="/path/to/image" caption="Your description here..." %}
+{% endcomment %}
+<div class="figureContainer">
+  <div class="figure">
+    <img class="illustration" src="{{ include.url }}" alt="{{ include.caption }}">
+    <p class="caption">{{ include.caption }}</p>
+  </div>
+</div>

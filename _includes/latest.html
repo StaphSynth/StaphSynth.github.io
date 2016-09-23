@@ -1,0 +1,30 @@
+{% comment %}Generates a list of two posts for the front page: one from each major site category, then breaks.{% endcomment %}
+
+<ul class="postList">
+  {% assign codePost = false %}
+  {% assign projectPost = false %}
+  {% assign allPosts = site.posts %}
+  {% for post in allPosts %}
+    {% if codePost == false %}
+      {% if post.category == "coding" %}
+        <li class="articleListItem">
+          <div class="thumbContainer"><a href="{{ post.url }}"><img class="postThumb" src="{{ post.imageSource }}" alt="{{ post.title }}"></a></div><div class="postTitle"><a href="{{ post.url }}"><h3>{{ post.title }}</h3></a><a href="{{ post.url }}"><p class="byline">{{ post.byline }}</p></a></div>
+        </li>
+        {% assign codePost = true %}
+      {% endif %}
+    {% endif %}
+
+    {% if projectPost == false %}
+      {% if post.category == "projects" %}
+        <li class="articleListItem">
+          <div class="thumbContainer"><a href="{{ post.url }}"><img class="postThumb" src="{{ post.imageSource }}" alt="{{ post.title }}"></a></div><div class="postTitle"><a href="{{ post.url }}"><h3>{{ post.title }}</h3></a><a href="{{ post.url }}"><p class="byline">{{ post.byline }}</p></a></div>
+        </li>
+        {% assign projectPost = true %}
+      {% endif %}
+    {% endif %}
+
+    {% if codePost == true and projectPost == true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+</ul>
