@@ -1,7 +1,11 @@
 ---
 layout: common
 title: About
+<<<<<<< HEAD
+=======
+permalink: /about/
 markdown: kramdown
+>>>>>>> 7a7d1f4ceb47a85a178ec39f951c7edb9cac6360
 navId: 4
 ---
 
