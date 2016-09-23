@@ -1,6 +1,7 @@
 ---
 layout: common
 title: About
+permalink: /about/
 markdown: kramdown
 navId: 4
 ---
