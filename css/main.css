@@ -106,7 +106,8 @@ h1, h2, h3, h4, #mainMenu, .postList a {
 	font-family: 'Audiowide', cursive;
 }
 
-p, footer {
+p, footer,
+#article .tags {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -199,10 +200,15 @@ footer {
 	color: #3acfd5;
 }
 
-#article .gitLink a {
+/*text at top and bottom of post (meta data and github link)
+also tag.html colour*/
+#article .gitLink a,
+#article .postData,
+#article .tags {
 	color: #ddd;
 }
 
+/*Main nav 'selected' colour*/
 a.selected {
 	color: #0871D0!important;
 	text-shadow: 2px 2px 4px #000;
@@ -312,7 +318,6 @@ Tags and post meta-data
 --------------------*/
 
 #article .postData {
-	color: #ddd;
 	font-style: italic;
 	margin: 0.5rem 0;
 	line-height: 1.5;
@@ -331,10 +336,8 @@ Tags and post meta-data
 }
 
 #article .tags {
-	text-align: justify;
-	font-family: 'open sans', sans-serif;
-	color: #ddd;
-	line-height: 1.2rem;
+	text-align: left;
+	line-height: 1.5rem;
 }
 
 #article .tags a:hover {
@@ -345,6 +348,10 @@ Tags and post meta-data
 #tags {
 	display: flex;
 	flex-direction: column;
+}
+
+#article .entry-date {
+	color: #999;
 }
 
 /*-------------------
