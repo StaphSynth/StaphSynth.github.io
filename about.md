@@ -1,7 +1,6 @@
 ---
 layout: common
 title: About
-markdown: kramdown
 navId: 4
 ---
 
