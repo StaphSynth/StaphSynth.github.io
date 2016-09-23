@@ -470,7 +470,7 @@ blockquote, .highlight {
 	text-align: left;
 	margin-left: 0;
 	overflow: hidden;
-	white-space: pre-wrap;
+	overflow: auto;
 	margin: 0.5rem 0;
 }
 
