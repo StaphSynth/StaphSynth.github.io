@@ -2,9 +2,10 @@
 layout: post
 title: Modding my Stratocaster
 imageSource: /img/guitar-logo.jpg
-byline: Add extra dimension to your guitar
+byline: Add an extra dimension to your guitar
 description: Modifying a Stratocaster for nine-way pick-up selection and dual capacitor tone knobs. Also bonus fret maintenance and polishing.
 category: projects
+comments: true
 modified: 2016-09-26
 tags:
   - guitar
@@ -13,7 +14,9 @@ tags:
 
 My Stratocaster had been in need of some maintenance for a while. It had some fret wear around the first position and the strings really needed changing. I decided that since I needed to pull the neck off to polish out the fret wear, it was high time I pulled the scratch plate off and had a poke around inside with a soldering iron.
 
-The guitar is a 2013 Sienna Sunburst American Standard with a rosewood fretboard. I bought it for my thirtieth birthday after it became clear to me that playing guitar was not just going to be a passing phase. It's a beautiful instrument and really nice to play. Like all single coil strats, it has a five-way selecter switch and a certain amount of pick-up noise - especially when only a single pick-up is selected. The bridge pick-up is also very bright and can be difficult to tame in its default configuration.
+The guitar is a 2013 Sienna Sunburst American Standard with a rosewood fretboard. I bought it for my thirtieth birthday after it became clear to me that playing guitar was not just going to be a passing phase. It's a beautiful instrument and really nice to play.
+
+Like all single coil strats, it has a five-way selecter switch and a certain amount of pick-up noise - especially when only a single pick-up is selected. The bridge pick-up is also very bright and can be difficult to tame in its default configuration.
 
 I have therefore, for some time, wanted to modify the default wiring scheme to give me better tonal control over the guitar. As a bonus, it would be nice to add more pick-up selection options than the usual five.
 
