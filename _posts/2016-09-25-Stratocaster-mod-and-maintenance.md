@@ -42,7 +42,7 @@ On a Stratocaster, the rear case of the volume pot is used as the 'star' ground 
 
 {% include image.html url="strat-switch.jpg" caption="The default Stratocaster wiring scheme with the new switch mounted and ready to be wired in. Note all the black ground leads going to the rear of the volume pot." %}
 
-After following the wiring instructions detailed in the [youtube]((https://www.youtube.com/watch?v=zaylqAbpUAM)) video I previously mentioned, it looked like this:
+After following the wiring instructions detailed in the [youtube](https://www.youtube.com/watch?v=zaylqAbpUAM) video I previously mentioned, it looked like this:
 
 {% include image.html url="strat-modded.jpg" caption="This wiring job really strectched my solding iron, which is only really good for fine electronics. It's not really powerful enough to reliably melt such large solder blobs attached to big metal surfaces. They just suck the heat out of the tip." alt="Statocaster with wiring mod applied" %}
 
