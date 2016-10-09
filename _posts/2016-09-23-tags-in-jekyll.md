@@ -3,7 +3,10 @@ layout: post
 title: Implementing Tags in Jekyll
 imageSource: /img/jekyll-logo.jpg
 byline: A work-around to solve this niggling issue.
+description: How to implement tags in Jekyll/Github pages without plugins.
 category: coding
+modified: 2016-10-09
+comments: true
 tags:
   - jekyll
   - web
@@ -61,14 +64,16 @@ Then simply loop through the array to print out the tags. Interestingly, we can 
 {% comment %} List all the tags at the top of the page {% endcomment %}
 
 <ul id="tags">
-  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <li>
-      <a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
-        <span>({{ site.tags[this_word].size }})</span>
-      </a>
-    </li>
-  {% endunless %}{% endfor %}
+  {% for item in (0..site.tags.size) %}
+    {% unless forloop.last %}
+      {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
+      <li>
+        <a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
+          <span>({{ site.tags[this_word].size }})</span>
+        </a>
+      </li>
+    {% endunless %}
+  {% endfor %}
 </ul>
 ```
 {% endraw %}
@@ -83,9 +88,13 @@ Finally, loop through all the tags, printing out a list of all the posts that us
   {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
   <h3 id="{{ this_word | cgi_escape }}">{{ this_word }}</h3>
   <ul class="posts">
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-    <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time></span> &bull; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}{% endfor %}
+    {% for post in site.tags[this_word] %}
+      {% if post.title != null %}
+        <li itemscope><span class="entry-date">
+          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time></span> &bull; <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
   </ul>
   {% endunless %}
 {% endfor %}
