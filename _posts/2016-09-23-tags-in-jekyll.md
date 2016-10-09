@@ -6,6 +6,7 @@ byline: A work-around to solve this niggling issue.
 description: How to implement tags in Jekyll/Github pages without plugins.
 category: coding
 modified: 2016-10-09
+comments: true
 tags:
   - jekyll
   - web
