@@ -300,6 +300,10 @@ p i {
 	font-style: italic;
 }
 
+p strong {
+	font-weight: bold;
+}
+
 #article p a:hover {
 	text-decoration: underline;
 }
