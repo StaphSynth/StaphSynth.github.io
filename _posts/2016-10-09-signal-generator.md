@@ -27,7 +27,7 @@ Anyway, I could have just replaced them with TL072s that I knew were good, but I
 
 {% include image.html url="tl062-compare.jpg" caption="Comparison between a new legitimate TI chip on the left and one of the dead fakes on the right. My TL072s also have the same style markings as the left-hand opamp, further suggesting the other is indeed a fake. Apologies for the poor photography. One of these days, I'll get a decent camera and learn how to use it." alt="comparison between legitimate and fake opamps, chips, electronic components"  %}
 
-Anyway, the circuit works now, so here are some photos of completed unit. I built it into a neat little rounded plastic case I got at the local electronics retailer for only a few bucks.
+Anyway, the circuit works now, so here are some photos of the completed unit. I built it into a neat little rounded plastic case I got at the local electronics retailer for only a few bucks.
 
 {% include image.html url="p86-front.jpg" caption="The front of the oscillator. The front and rear panels of the case were just grey plastic and had become a bit scratched, so I decided to give them a coat of paint." alt="Front panel of ESP P86 audio oscillator, signal generator" %}
 
