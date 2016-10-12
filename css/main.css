@@ -93,7 +93,7 @@ a, a:visited {
 }
 
 #contentWrapper {
-	padding-bottom: 190px; /*Must be equal to footer height + footer border (5px)*/
+	padding-bottom: 210px; /*Must be equal to footer height + footer border (5px)*/
 }
 
 
@@ -525,7 +525,7 @@ FOOTER
 
 footer {
 	width: 100%;
-	height: 185px;
+	height: 205px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -561,8 +561,9 @@ footer ul li {
 	justify-content: center;
 }
 
+/*Social icons padding*/
 #connect ul li~li {
-	padding-left: 0.75rem;
+	padding-left: 1rem;
 }
 
 #connect p {
@@ -577,7 +578,7 @@ footer ul li {
 }
 
 .social {
-	font-size: 2rem!important;
+	font-size: 3rem!important;
 	vertical-align: middle;
 }
 
@@ -756,6 +757,15 @@ Larger tablets >=800px width
 
 	#connect {
 		border: none;
+	}
+
+	.social {
+		font-size: 2rem!important;
+	}
+
+	/*Social icons padding*/
+	#connect ul li~li {
+		padding-left: 0.75rem;
 	}
 
 } /*End large tablet query*/
