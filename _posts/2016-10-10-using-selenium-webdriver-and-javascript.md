@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Using Selenium-Webdriver with JavaScript Bindings in Linux
+title: Getting Started Using Selenium-Webdriver JavaScript Bindings in Linux
 imageSource: /img/selenium-logo.jpg
 byline: Down the rabbit-hole of web automation testing.
-# description: How to implement tags in Jekyll/Github pages without plugins.
+description: A 'Getting Started' tutorial on Selenium-Webdriver JavaScript bindings in Linux. Installation, set-up, and running your first test.
 category: coding
 # comments: true
 published: false
@@ -14,7 +14,7 @@ tags:
   - linux
 ---
 
-I recently fell down the rabbit-hole of web automation testing. It's been an interesting journey, so I thought I'd document what I've learned so far in a series of posts as a reference for others following the same path. Before we go any further, I should point out that I'm still very much a n00b here as well. These posts are meant to collate information I've gathered into a single resource and clear up some confusion I've come across. After reading, you should know how to get some basic test functionality up and running. However, it is not comprehensive.
+I recently fell down the rabbit-hole of web automation testing. It's been an interesting journey, so I thought I'd document what I've learned so far in a series of posts as a reference for others following the same path. Before we go any further, I should point out that I'm still very much a n00b here. These posts are meant to collate information I've gathered from across the web into a single resource and clear up some confusion I've come across. After reading, you should know how to get some basic test functionality up and running. However, it is not comprehensive.
 
 First, some definitions:
 
@@ -91,3 +91,40 @@ $ sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 ```
 
 ### Executing Your First Test
+
+Finally, we can actually write some code. Create a new file `yourFileName.js` and save it anywhere convenient. Fire up your favourite text editor and add the following code:
+
+```
+var webdriver = require('/usr/local/node_modules/selenium-webdriver'),
+    By = webdriver.By,
+    until = webdriver.until;
+
+var driver = new webdriver.Builder()
+    .forBrowser('chrome')
+    .build();
+```
+
+This code sets up the `webdriver` and `driver` objects and allows you to begin controlling the browser. Note that the first line is telling node.js that you need the selenium-webdriver module. I just put the path to the module on my machine to get it up and running. I don't like this method as it's brittle, but it's good enough for now.
+
+Once we've set up the environmet, we can start telling the browser what to do:
+
+```
+driver.get('http://www.google.com/ncr');
+driver.findElement(By.name('q')).sendKeys('webdriver');
+driver.findElement(By.name('btnG')).click();
+driver.wait(until.titleIs('webdriver - Google Search'), 1000);
+//driver.quit();
+```
+
+This code snippet is from the Selenium-Webdriver [node package](https://www.npmjs.com/package/selenium-webdriver) doc and instructs the browser to perform a google search for the term "webdriver". If you uncomment out the last line, it will also kill the browser when it's finished running.
+
+You can see that controlling the browser is done by calling methods from the `driver` object. For a list of commands and operations you can perform, see this [documentation](http://docs.seleniumhq.org/docs/03_webdriver.jsp#selenium-webdriver-api-commands-and-operations) page on the Selenium site. The JavaScript example is always the last of the code snippet examples listed.
+
+To execute the test script, use node from the command line:
+
+```
+$ cd /path/to/your/testScript
+$ node testScript.js
+```
+
+That's it for this post. As you can tell, we've barely scratched the surface and there's plenty more to cover. Stay tuned for the next post in the series dealing with testing environments and JavaScript promises.
