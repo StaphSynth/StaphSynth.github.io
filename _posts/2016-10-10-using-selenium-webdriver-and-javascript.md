@@ -69,6 +69,7 @@ What's important is that the browser and its driver are installed and available 
 In my case, just to get something up and running, I decided to start from scratch with Chrome for the time being (for ordinary browsing, I use Firefox).
 
 Chrome installation (Ubuntu):
+
 ```
 $ sudo apt-get install libxss1 libappindicator1 libindicator7
 $ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -78,6 +79,7 @@ $ sudo apt-get install -f
 ```
 
 Chromedriver installation (Ubuntu):
+
 ```
 $ sudo apt-get install unzip
 
