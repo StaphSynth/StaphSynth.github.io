@@ -5,8 +5,8 @@ imageSource: /img/selenium-logo.jpg
 byline: Down the rabbit-hole of web automation testing.
 description: A 'Getting Started' tutorial on Selenium-Webdriver JavaScript bindings in Linux. Installation, set-up, and running your first test.
 category: coding
-# comments: true
-published: false
+comments: true
+modified: 2016-10-13
 tags:
   - testing
   - selenium
@@ -118,7 +118,7 @@ driver.wait(until.titleIs('webdriver - Google Search'), 1000);
 
 This code snippet is from the Selenium-Webdriver [node package](https://www.npmjs.com/package/selenium-webdriver) doc and instructs the browser to perform a google search for the term "webdriver". If you uncomment out the last line, it will also kill the browser when it's finished running.
 
-You can see that controlling the browser is done by calling methods from the `driver` object. For a list of commands and operations you can perform, see this [documentation](http://docs.seleniumhq.org/docs/03_webdriver.jsp#selenium-webdriver-api-commands-and-operations) page on the Selenium site. The JavaScript example is always the last of the code snippet examples listed.
+You can see that controlling the browser is done by calling methods on the `driver` object. For a list of commands and operations you can perform, see this [documentation page](http://docs.seleniumhq.org/docs/03_webdriver.jsp#selenium-webdriver-api-commands-and-operations) on the Selenium site. The JavaScript example is always the last of the code snippet examples listed.
 
 To execute the test script, use node from the command line:
 
@@ -128,3 +128,5 @@ $ node testScript.js
 ```
 
 That's it for this post. As you can tell, we've barely scratched the surface and there's plenty more to cover. Stay tuned for the next post in the series dealing with testing environments and JavaScript promises.
+
+As I said at the start, I'm still learning this myself, so comments, suggestions and corrections are welcome :)
