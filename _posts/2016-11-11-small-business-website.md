@@ -39,7 +39,7 @@ For the template, I've gone with a look similar to the [church for life]({% post
 
 {% include image.html url="pcelec-desktop.jpg" caption="The desktop layout of the site. The mobile one is much the same, only it shifts the header into a single column and replaces the navigation menu with a drop-down one almost exactly the same as the site you're reading now. What's really important is that the phone number is almost the first thing seen by the user." %}
 
-The site itself still needs some more content. My electrician friend is going to give me some photos of himself installing solar panels and doing other electrical work so we can jazz it up with a few images. Then I'll right a bit more editorial content and upload it to his webserver.
+The site itself still needs some more content. My electrician friend is going to give me some photos of himself installing solar panels and doing other electrical work so we can jazz it up with a few images. Then I'll write a bit more editorial content and upload it to his webserver.
 
 If you'd like to see it in its "still slightly unfinished" form, its temporary home is [here](http://orthanc.neocities.org).
 
