@@ -1,0 +1,14 @@
+{% comment %}
+  contents of the article list UL.
+{% endcomment %}
+
+<li class="articleListItem">
+  <a href="{{ post.url }}">
+    <div class="thumbContainer">
+      <img class="postThumb" src="{{ include.img }}" alt="{{ inclue.title }}">
+    </div>
+    <div class="postTitle">
+      <h3>{{ include.title }}</h3><p class="byline">{{ include.byline }}</p>
+    </div>
+  </a>
+</li>

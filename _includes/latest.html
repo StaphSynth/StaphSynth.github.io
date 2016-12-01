@@ -7,18 +7,14 @@
   {% for post in allPosts %}
     {% if codePost == false %}
       {% if post.category == "coding" %}
-        <li class="articleListItem">
-          <div class="thumbContainer"><a href="{{ post.url }}"><img class="postThumb" src="{{ post.imageSource }}" alt="{{ post.title }}"></a></div><div class="postTitle"><a href="{{ post.url }}"><h3>{{ post.title }}</h3></a><a href="{{ post.url }}"><p class="byline">{{ post.byline }}</p></a></div>
-        </li>
+        {% include articleListItem.html url=post.url img=post.imageSource title=post.title byline=post.byline %}
         {% assign codePost = true %}
       {% endif %}
     {% endif %}
 
     {% if projectPost == false %}
       {% if post.category == "projects" %}
-        <li class="articleListItem">
-          <div class="thumbContainer"><a href="{{ post.url }}"><img class="postThumb" src="{{ post.imageSource }}" alt="{{ post.title }}"></a></div><div class="postTitle"><a href="{{ post.url }}"><h3>{{ post.title }}</h3></a><a href="{{ post.url }}"><p class="byline">{{ post.byline }}</p></a></div>
-        </li>
+        {% include articleListItem.html url=post.url img=post.imageSource title=post.title byline=post.byline %}
         {% assign projectPost = true %}
       {% endif %}
     {% endif %}
