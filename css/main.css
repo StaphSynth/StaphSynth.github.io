@@ -266,6 +266,19 @@ NAVIGATION
 	border-top: solid 1px #444;
 }
 
+/*Mobile drop-down button*/
+#navIcon {
+	color: #ddd;
+	border: none;
+	padding: 1em;
+	display: block;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	font-size: 1rem;
+	/*outline: none;*/
+}
+
 /*==================================================
 MAIN CONTENT
 ===================================================*/
