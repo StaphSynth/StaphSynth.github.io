@@ -27,9 +27,9 @@
           </div>
         </div>
         <nav id="mainMenu">
-          <div id="navIcon">
-            <a href="#"><i class="fa fa-bars"></i></a>
-          </div>
+          <!-- <div id="navIcon"> -->
+            <button id="navIcon" type="button"><i class="fa fa-bars"></i> <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <!-- </div> -->
           <ul>
             {% assign navPages = site.pages | sort: 'navId' %}
             {% for i in navPages %}
