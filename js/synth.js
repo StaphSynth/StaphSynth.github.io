@@ -1,7 +1,9 @@
-//show/hide the main menu when nav icon clicked/tapped on mobile view
+/*show/hide the main menu when nav icon clicked/tapped on mobile view
+also blurs the button after event and rotates the menu direction caret*/
 $("#navIcon").click(function(event){
-  //console.log("click!");
   $("#mainMenu ul").slideToggle("fast","swing");
+  $("#navIcon").blur();
+  $(".fa-caret-down").toggleClass("fa-rotate-180");
 });
 
 /*Remove inline style from #mainMenu ul if window width > 800px on window resize event.
@@ -24,4 +26,4 @@ $(function() {
   });
 });
 
-//console.log("synth.js has loaded and run");
+// console.log("synth.js has loaded and run");

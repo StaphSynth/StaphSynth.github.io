@@ -279,6 +279,10 @@ NAVIGATION
 	/*outline: none;*/
 }
 
+#navIcon:hover {
+	outline: none!important;
+}
+
 /*==================================================
 MAIN CONTENT
 ===================================================*/
