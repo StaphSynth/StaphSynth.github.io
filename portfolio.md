@@ -15,9 +15,7 @@ In each project, my attention was directed toward developing a certain feature, 
 <ul class="postList">
   {% for post in site.tags['portfolio'] %}
     {% if post.title %}
-      <li class="articleListItem">
-        <div class="thumbContainer"><a href="{{ post.url }}"><img class="postThumb" src="{{ post.imageSource }}" alt="{{ post.title }}"></a></div><div class="postTitle"><a href="{{ post.url }}"><h3>{{ post.title }}</h3></a><a href="{{ post.url }}"><p class="byline">{{ post.byline }}</p></a></div>
-      </li>
+      {% include articleListItem.html url=post.url img=post.imageSource title=post.title byline=post.byline %}
     {% endif %}
   {% endfor %}
 </ul>
