@@ -4,7 +4,7 @@ title: LED Strip Room Lighting
 imageSource: /img/LED-logo.png
 byline: Construction, repair and lessons learned.
 category: projects
-#comments: true
+comments: true
 tags:
   - electronics
   - lighting
