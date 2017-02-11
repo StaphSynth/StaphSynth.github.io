@@ -19,7 +19,7 @@ I've been learning AngularJS, and decided to write some simple single-page apps 
 {% raw %}
 <div class="calc" ng-app="calc-app">
   <div ng-controller="calc-controller">
-    <table>
+    <table class="calcTable">
       <tbody>
         <tr><td colspan="4" align="right" class="display">{{display}}</td></tr>
         <tr ng-repeat="row in buttons"><td ng-repeat="digit in row"><button class="calcButton" ng-click="push(digit)">{{digit}}</button></td></tr>
