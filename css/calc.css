@@ -1,0 +1,13 @@
+td {
+  padding: 0.25rem;
+}
+
+
+
+table {
+  margin: 0 auto;
+}
+.calcButton {
+  color: blue;
+  background-color: grey;
+}
