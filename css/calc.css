@@ -9,6 +9,8 @@
   margin: 0 auto;
   background-color: #ddd;
   padding: 0.25rem;
+  width: 200px;
+  overflow: hidden;
 }
 
 .display {
@@ -20,14 +22,15 @@
 
 .calcTable td {
   padding: 0.25rem;
+  overflow: hidden;
 }
 
 .calcButton {
   color: #ddd;
   background-color: #2f2f2f;
   font-size: 1.25em;
-  min-width: 40px;
-  min-height: 30px;
+  min-width: 50px;
+  min-height: 40px;
 }
 
 .calcButton:active {
