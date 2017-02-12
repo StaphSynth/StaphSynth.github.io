@@ -4,24 +4,22 @@
   src: url('http://127.0.0.1:4000/resources/digital-7.ttf');
 }
 
-.calc {
-  /*max-width: 200px;*/
+.calcTable {
+  border-collapse: separate;
+  margin: 0 auto;
+  background-color: #ddd;
+  padding: 0.25rem;
 }
 
 .display {
   font-family: 'digital-7', monospace;
   font-size: 2.25rem;
   max-width: 100%;
-}
-
-td {
   padding: 0.25rem;
 }
 
-.calcTable {
-  margin: 0 auto;
-  background-color: #ddd;
-  max-width: 95%;
+.calcTable td {
+  padding: 0.25rem;
 }
 
 .calcButton {
@@ -30,6 +28,11 @@ td {
   font-size: 1.25em;
   min-width: 40px;
   min-height: 30px;
+}
+
+.calcButton:active {
+  background-color: #444;
+  color: #fff;
 }
 
 .calcTable, .calcButton {

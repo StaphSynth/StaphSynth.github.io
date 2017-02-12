@@ -8,6 +8,7 @@ calcApp.controller('calc-controller', function($scope){
   $scope.postDecPresses = 0;
   $scope.operator = '';
   $scope.buttons = [
+    [':)',';)',':D','C'],
     [7,8,9,'+'],
     [4,5,6,'-'],
     [1,2,3,'/'],
