@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'digital-7';
-  src: url('http://127.0.0.1:4000/resources/digital-7.ttf');
+  src: url('{{site.url}}/resources/digital-7.ttf');
 }
 
 .calcTable {
