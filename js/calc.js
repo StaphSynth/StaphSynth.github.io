@@ -26,7 +26,7 @@ calcApp.controller('calc-controller', function($scope){
     //small number with a lot of decimal places?
     var tempString = $scope.display.toString();
     if(tempString.length > 9){
-      $scope.display = $scope.display.toFixed(9);
+      $scope.display = $scope.display.toFixed(8);
     }
     return $scope.display;
   };
