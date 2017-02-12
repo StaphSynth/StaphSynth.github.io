@@ -14,8 +14,8 @@ Most of my time with JavaScript has been spent with vanilla JS or jQuery. There 
 I've been learning AngularJS, and decided to write some simple single-page apps to quickly get to grips with the new paradigm. Presented here is my first one: a (very) simple calculator.
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
-<script type="text/javascript" src="http://127.0.0.1:4000/js/calc.js"></script>
-<link type="text/css" rel="stylesheet" href="http://127.0.0.1:4000/css/calc.css">
+<script type="text/javascript" src="{{site.url}}/js/calc.js"></script>
+<link type="text/css" rel="stylesheet" href="{{site.url}}/css/calc.css">
 {% raw %}
 <div class="calc" ng-app="calc-app">
   <div ng-controller="calc-controller">
