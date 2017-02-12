@@ -21,12 +21,14 @@ calcApp.controller('calc-controller', function($scope){
   $scope.theDisplay = function(){
     if($scope.display > 1000000000){
       $scope.display = $scope.display.toExponential(2);
-      return $scope.display;
     }
+
     //small number with a lot of decimal places?
     var tempString = $scope.display.toString();
+    console.log($scope.display.toString());
+    console.log(typeof $scope.display);
     if(tempString.length > 9){
-      $scope.display = $scope.display.toFixed(9);
+      $scope.display = $scope.display;
     }
     return $scope.display;
   };
@@ -78,12 +80,10 @@ calcApp.controller('calc-controller', function($scope){
     //is value a number?
     if(!isNaN(parseFloat(value))) {
       if($scope.decPoint === false) {
-        if(($scope.display === 0) && ($scope.operator === '-') && ($scope.operand === 0)) {
-          $scope.display = (($scope.display * 10) + value) * -1;
-          $scope.operator = '';
-        } else {
+        if($scope.display >= 0)
           $scope.display = ($scope.display * 10) + value;
-        }
+        else
+          $scope.display = ($scope.display * 10) + (value * -1);
       } else { //if decimal point pressed
         $scope.postDecPresses++;
         $scope.display += value * Math.pow(10, ($scope.postDecPresses * -1));
