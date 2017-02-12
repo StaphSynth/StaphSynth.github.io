@@ -4,7 +4,7 @@ title: Learning AngularJS
 imageSource: /img/angularjs-logo.jpg
 byline: Includes single-page calculator app! :0
 category: coding
-draft: true
+published: false
 tags:
   - javascript
   - development
