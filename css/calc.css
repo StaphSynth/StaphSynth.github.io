@@ -1,7 +1,12 @@
 
 @font-face {
+<<<<<<< HEAD
   font-family: 'digital-7-mono';
   src: url('../resources/digital-7-mono.ttf');
+=======
+  font-family: 'digital-7';
+  src: url('../resources/digital-7.ttf');
+>>>>>>> master
 }
 
 .calcTable {
