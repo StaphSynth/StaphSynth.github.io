@@ -45,7 +45,6 @@ calcApp.controller('calc-controller', function($scope){
       display = 'ERROR';
       return display;
     }
-<<<<<<< HEAD
     //if not an error, continue with formatting...
     var limit = $scope.limit; //limit the chars to be displayed
     //if the string contains a '.', it doesn't count as a char column, so limit++
@@ -71,12 +70,6 @@ calcApp.controller('calc-controller', function($scope){
         op1 = op1.toExponential(2);
         display = op1.toString();
       }
-=======
-    //small number with a lot of decimal places?
-    var tempString = $scope.display.toString();
-    if(tempString.length > 9){
-      $scope.display = $scope.display.toFixed(8);
->>>>>>> master
     }
     return display;
   };
@@ -162,7 +155,6 @@ calcApp.controller('calc-controller', function($scope){
   $scope.push = function(value) {
     var limit = $scope.limit;
     //is value a number?
-<<<<<<< HEAD
     if(!isNaN(parseFloat(value)) || value === '.') {
       //special starting conditions/just finished solving condition
       if(($scope.operand1 === '0' && value !== '.') || $scope.justSolved === true) {
@@ -173,19 +165,6 @@ calcApp.controller('calc-controller', function($scope){
           limit++;
         if($scope.operand1.length !== limit) //if length less than limit, keep adding to string, else don't
           $scope.operand1 = $scope.operand1.concat(value);
-=======
-    if(!isNaN(parseFloat(value))) {
-      if($scope.decPoint === false) {
-        if(($scope.display === 0) && ($scope.operator === '-') && ($scope.operand === 0)) {
-          $scope.display = (($scope.display * 10) + value) * -1;
-          $scope.operator = '';
-        } else {
-          $scope.display = ($scope.display * 10) + value;
-        }
-      } else { //if decimal point pressed
-        $scope.postDecPresses++;
-        $scope.display += value * Math.pow(10, ($scope.postDecPresses * -1));
->>>>>>> master
       }
       if($scope.operator !== '')  //set flag for display persistence of prev input
         $scope.postOpInput = true;
