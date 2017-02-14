@@ -50,7 +50,7 @@ The P126 PWM MOSFETs are mounted off the board directly on the heatsink, with a 
 
 {% include image.html url="/img/P126-lightbox4.jpg" caption="The finished box mounted to the wall near the room entrance. The switch is for power and the knob for brightness." %}
 
-The unit is built into a wooden box made of pieces of pine and tasmanian oak off-cuts. The inside is lined with earthed aluminium foil to help sink EMI. Connections to the outside world are via holes drilled in the wooden panels with a hole-saw. The connectors were then mounted onto a thinner piece of material (such as aluminium sheet) and then screwed to the panels behind the holes.
+The unit is built into a wooden box made of pieces of pine and Tasmanian oak off-cuts. The inside is lined with earthed aluminium foil to help sink EMI. Connections to the outside world are via holes drilled in the wooden panels with a hole-saw. The connectors were then mounted onto a thinner piece of material (such as aluminium sheet) and then screwed to the panels behind the holes.
 
 {% include image.html url="/img/P126-lightbox5.jpg" caption="Underside of the completed light controller, showing the power cord socket and lower ventillation holes produced using a hole saw." %}
 
