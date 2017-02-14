@@ -1,8 +1,8 @@
-/******************************************
+/***************************************************
 Very basic four-banger AngularJS calc app
 by David Allen 2017-02-13
 https://github.com/StaphSynth/calc
-*******************************************/
+****************************************************/
 
 var calcApp = angular.module('calc-app', []);
 
@@ -13,7 +13,7 @@ calcApp.controller('calc-controller', function($scope){
   $scope.operand2 = '0';        //secondary register
   $scope.postOpInput = false;   //controls persistence of prev value on screen
   $scope.minus = false;         //neg number flag
-  $scope.justSolved = true;     //controls answer persistence
+  $scope.justSolved = false;    //controls answer persistence
   $scope.operator = '';         //operator register
   $scope.buttons = [            //button layout "ROM"
     [':)',':D','±','C'],
@@ -39,12 +39,30 @@ calcApp.controller('calc-controller', function($scope){
     }
 
     //now format the string for output
+
+    //error checking
+    if(display === 'NaN') {
+      display = 'ERROR';
+      return display;
+    }
+    //if not an error, continue with formatting...
     var limit = $scope.limit; //limit the chars to be displayed
     //if the string contains a '.', it doesn't count as a char column, so limit++
     if(display.includes('.') && !(display.includes('e')) && !(display.includes('-'))) {
       limit++;
       if(display.length > limit) {
         display = display.slice(0, limit)
+      }
+      //make sure answer isn't full of trailing zeros (thanks floating point inaccuracies!)
+      if($scope.justSolved === true) {
+        var nonZero = false;
+        while(!nonZero) {
+          if(display[display.length - 1] === '0' || display[display.length - 1] === '.') {
+            display = display.substring(0, display.length - 1);
+          } else {
+            nonZero = true;
+          }
+        }
       }
     } else { //if no decimal point & no 'e' (ie: a really big or really small number)
       if(display.length > limit) {
@@ -58,9 +76,13 @@ calcApp.controller('calc-controller', function($scope){
 
   //sets up operator conditions when operator selected
   $scope.operation = function(operator) {
+    //these registers only need to be set once per operation
+    //if the user keeps hitting operator buttons during one sum, they don't change
+    if($scope.operator === '') {
+      $scope.operand2 = $scope.operand1;
+      $scope.operand1 = '0'
+    }
     $scope.operator = operator;
-    $scope.operand2 = $scope.operand1;
-    $scope.operand1 = '0'
     $scope.minus = false;
   }; //operation
 
@@ -131,18 +153,23 @@ calcApp.controller('calc-controller', function($scope){
 
   //called when the user pushes a button on the calc
   $scope.push = function(value) {
+    var limit = $scope.limit;
     //is value a number?
     if(!isNaN(parseFloat(value)) || value === '.') {
       //special starting conditions/just finished solving condition
-      if(($scope.operand1 === '0' && value != '.') || $scope.justSolved === true) {
+      if(($scope.operand1 === '0' && value !== '.') || $scope.justSolved === true) {
         $scope.operand1 = value;
         $scope.justSolved = false;
-      } else { //normal operating condition accept user input, add to number string
-        $scope.operand1 = $scope.operand1.concat(value);
+      } else { //normal operating condition accept user input, append to number string
+        if($scope.operand1.includes('.')) //dec point doesn't count towards limit
+          limit++;
+        if($scope.operand1.length !== limit) //if length less than limit, keep adding to string, else don't
+          $scope.operand1 = $scope.operand1.concat(value);
       }
-      if($scope.operator !== '') {
+      if($scope.operator !== '')  //set flag for display persistence of prev input
         $scope.postOpInput = true;
-      }
+      if($scope.operand1[0] === '.') //add zero to start of string if user begins with dec point.
+        $scope.operand1 = '0' + $scope.operand1;
     } else { //if value is an operation, do maths logic
       if((value === '+') || (value === '-') || (value === '×') || (value === '÷')) {
         $scope.operation(value);

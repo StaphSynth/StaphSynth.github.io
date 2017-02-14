@@ -4,14 +4,17 @@ title: Learning AngularJS
 imageSource: /img/angularjs-logo.jpg
 byline: Includes single-page calculator app! :0
 category: coding
+# published: false
+modified: 2017-02-14
 tags:
   - javascript
   - development
+  - portfolio
 ---
 
 Most of my time with JavaScript has been spent with vanilla JS or jQuery. There are, of course, any number of other bandwagons to ride, so I've decided to have a look at some of them.
 
-I've been learning AngularJS, and decided to write some simple single-page apps to quickly get to grips with the new paradigm. Presented here is my first one: a (very) simple calculator.
+I've been learning AngularJS, and decided to write some simple single-page apps to quickly get to grips with the new paradigm. Presented here is my first one: a simple calculator.
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
 <script type="text/javascript" src="{{site.url}}/js/calc.js"></script>
@@ -21,7 +24,7 @@ I've been learning AngularJS, and decided to write some simple single-page apps 
   <div ng-controller="calc-controller">
     <table class="calcTable">
       <tbody>
-        <tr><td colspan="4" align="right" class="display" ng-bind="theDisplay()"></td></tr>
+        <tr><td colspan="4" align="right" class="display" ng-bind="display()"></td></tr>
         <tr ng-repeat="row in buttons"><td ng-repeat="digit in row"><button class="calcButton" ng-click="push(digit)">{{digit}}</button></td></tr>
       </tbody>
     </table>
@@ -29,10 +32,12 @@ I've been learning AngularJS, and decided to write some simple single-page apps 
 </div>
 {% endraw %}
 
-As I'm sure you've figured out, this calculator doesn't behave exactly like your traditional primary school issue Casio [four-banger](http://www.urbandictionary.com/define.php?term=Four+Banger&defid=1918795), but it works well enough and was really only an AngularJS learning exercise, rather than an attempt to faithfully re-create the hardware in software.
+The calculator acts mostly like your standard primary school issue [four-banger](http://www.urbandictionary.com/define.php?term=Four+Banger&defid=1918795), except that it supports a wider range of values and will dip into scientific notation if its screen size is exceeded by the length of the answer.
 
-For example, it doesn't support negative numbers very well. You can input one as the first operand, but due to the limitations in the way it handles the expression operators, you can't enter one as the second operand. Well, you can try, but the result will be incorrect.
+It handles input and output as strings to simplify formatting for the "screen". The strings are parsed into Floats for the actual mathematical operations, then the result is turned back into a string and formatted for display.
 
-There are plenty of other ways it could be improved, but I'm just happy I got the basic functionality up and running. I think my time would be better spent learning more AngularJS than re-engineering this as a useful tool - especially since there is already no shortage of calculator apps out there.
+I was thinking about how I might go about implementing it in hardware as I was writing it, so it uses global variables as flags and registers and is written procedurally, rather than object oriented. In hindsight, I think doing it OO would have been a much better idea and would certainly simplify the code base. Oh well.
+
+It was really only meant to be an AngularJS learning exercise, but turned into a lesson in the pitfalls of formatting pure numbers in JavaScript, as well as the limitations of using precedural programming techniques to build something that would be far easier to implement using OO practices.
 
 {% include gitLink.html url="https://github.com/StaphSynth/calc" %}
