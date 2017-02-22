@@ -4,6 +4,10 @@
   flex-direction: row;
 }
 
+.ui {
+  font-family: 'open sans';
+}
+
 #todoAppRoot {
   max-width: 500px;
   margin: 0 auto;

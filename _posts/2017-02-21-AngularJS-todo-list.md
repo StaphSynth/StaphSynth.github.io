@@ -13,27 +13,29 @@ tags:
 
 Inspired by playing with the [TodoMVC example](http://todomvc.com/examples/angularjs/#/), I decided my next AngularJS app would be a simple to-do list.
 
-I've added a couple of extra features, including a task priority property and the ability to sort the list by priority level or state of completion. The app is mostly finished, but one thing I'm still reading up on is how to get it to continually save the task list object to a browser cookie as changes are being made so all additions are retained for when the user returns to the page.
+I've added a couple of extra features, including a task priority property and the ability to sort the list by priority level or state of completion. The app is mostly finished, but one thing I'm still reading up on is how to get it to continually save the task list object to a browser cookie as changes are being made. This is important for usability - there's no point in a to-do list app that loses all your tasks the second you navigate away from the page.
 
 The above TodoMVC example uses an angular service to accoumplish this task, but I'm still not entirely sure how that works, so it's my next area of study.
+
+Other than that missing feature, the app is largely complete. To avoid UI clutter, the priority marker (red for high, orange for medium, and green for low priority respectively) acts as the 'mark as complete' button. There's also the option to mark all tasks as complete, as well as delete them all. 
 
 {% raw %}
 <link rel="stylesheet" type="text/css" href="http://127.0.0.1:4000/css/todolist.css">
 <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 <script type="text/javascript" src="http://127.0.0.1:4000/js/todolist.js"></script>
-<div class="angApp">
+<div class="angApp" style="text-align: left;">
   <h2><center>To Do List</center></h2>
   <div id="todoAppRoot" ng-app="todolistApp">
     <div ng-controller="todolistController as ctrl">
-      Order by:
+      <span class="ui">Order by:</span>
       <select ng-model="ctrl.order">
         <option value="priority,complete">Priority</option>
         <option value="complete,priority">Completion</option>
       </select>
       <div id="inputContainer">
         <div class="priorityDiv">
-          Priority:
+          <span class="ui">Priority:</span>
           <select ng-options="priority.id as priority.level for priority in ctrl.priorities" class="prioritySelect" ng-model="ctrl.userPriority">
             <option>High</option>
             <option>Medium</option>
