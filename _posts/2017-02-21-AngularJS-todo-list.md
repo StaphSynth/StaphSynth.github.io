@@ -14,9 +14,9 @@ tags:
 
 Inspired by playing with the [TodoMVC example](http://todomvc.com/examples/angularjs/#/), I decided my next AngularJS app would be a simple to-do list.
 
-I've added a couple of extra features, including a task priority property and the ability to sort the list by priority level or state of completion. The app is mostly finished, but one thing I'm still reading up on is how to get it to continually save the task list object to a browser cookie as changes are being made. This is important for usability - there's no point in a to-do list app that loses all your tasks the second you navigate away from the page.
+I've added a couple of extra features, including a task priority property, and the ability to sort the list by priority level or state of completion. The app is mostly finished, but one thing I'm still reading up on is how to get it to continually save the task list object to a browser cookie as changes are being made. This is important for usability - there's no point in a to-do list app that loses all your tasks the second you navigate away from the page.
 
-The above TodoMVC example uses an angular service to accoumplish this task, but I'm still not entirely sure how that works, so it's my next area of study. Other than that missing feature, however, the app is largely complete.
+The above TodoMVC example uses an angular service to accomplish this task, but I'm still not entirely sure how that works, so it's my next area of study. Other than that missing feature, however, the app is largely complete.
 
 <link rel="stylesheet" type="text/css" href="/css/todolist.css">
 <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
