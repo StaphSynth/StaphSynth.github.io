@@ -22,13 +22,13 @@ listApp.controller('todolistController', function(){
   ctrl.order ='priority,complete';
   ctrl.userTask = null;
   ctrl.userPriority = 0;
+  ctrl.masterCompleted = false;
 
   //adds an item to the list
   ctrl.add = function() {
     if(ctrl.userTask == null)
       return false;
 
-    console.log("inputted task: ", ctrl.userTask);
     priorityVal = parseInt(ctrl.userPriority);
     var item = {
       task: ctrl.userTask,
@@ -59,8 +59,56 @@ listApp.controller('todolistController', function(){
 
   //mark list item as complete
   //pass a list item object to mark
+  //or pass string 'all' to mark whole list either complete or incomplete
   ctrl.complete = function(item) {
+    if(item === 'all' && ctrl.masterCompleted == false) {
+      for(var i = 0; i < ctrl.list.length; i++) {
+        ctrl.list[i].complete = true;
+      }
+      ctrl.masterCompleted = true;
+    } else if(item === 'all' && ctrl.masterCompleted == true) {
+      for(var i = 0; i < ctrl.list.length; i++) {
+        ctrl.list[i].complete = false;
+      }
+      ctrl.masterCompleted = false;
+    } else {
     item.complete ? item.complete = false : item.complete = true;
+    }
+  };
+
+  ctrl.getCompletedItems = function(type) {
+    var complete = 0;
+    var incomplete = 0;
+
+    for(var i = 0; i < ctrl.list.length; i++) {
+      if(ctrl.list[i].complete)
+        complete++;
+      else
+        incomplete++;
+    }
+
+    if(type === 'complete')
+      return complete;
+    else if(type === 'incomplete')
+      return incomplete;
+  };
+
+  //returns a string explaining number of items in list,
+  //items complete, items incomplete, etc.
+  ctrl.getReport = function() {
+    var report = ctrl.list.length.toString();
+
+    if(ctrl.list.length > 1)
+      report += ' Tasks: ';
+    else
+      report += ' Task: ';
+
+    report += ctrl.getCompletedItems('complete').toString();
+    report += ' complete, ';
+    report += ctrl.getCompletedItems('incomplete').toString();
+    report += ' incomplete.';
+
+    return report;
   };
 
   //flips the boolean item.editing flag on an item.

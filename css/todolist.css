@@ -1,21 +1,43 @@
+#appContainer {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+}
+
 .itemContainer,
-#inputContainer {
+#inputContainer,
+.taskDiv {
   display: flex;
   flex-direction: row;
 }
 
+#inputContainer {
+  flex-wrap: nowrap;
+}
+
+.taskDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.taskDiv span select,
+.taskDiv span input {
+  margin: 0.25rem;
+}
+
 #todoAppRoot {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 10px;
 }
 
 .priorityDiv,
 .taskDiv,
 .deleteDiv {
-  vertical-align: middle;
 }
 
 .taskDiv {
@@ -23,11 +45,23 @@
   line-height: 1.5rem;
 }
 
-#todolist {
-  padding: 0;
+.reportingContainer {
+  border-top: solid 1px black;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: center;
+
 }
 
-#article p .task {
+.priorityDiv form input {
+  margin: 0.25rem;
+}
+
+.reports {
+  font-size: 0.75rem;
+}
+
+#todolist {
   padding: 0;
 }
 
@@ -40,7 +74,7 @@
   padding: 0.5rem;
 }
 
-#inputContainer {
+#masterContainer {
   margin: 1rem 0;
   border: 1px solid black;
   border-radius: 10px;
@@ -73,6 +107,10 @@
   color: green;
 }
 
+.submitButton {
+  padding: 0;
+}
+
 .priorityButton {
   width: 30px;
   height: 30px;
@@ -84,6 +122,19 @@
   color: white;
   outline: none;
 }
+
+.masterCompleted {
+  background-color: black;
+}
+
+.mComplete {
+  background-color: green;
+}
+
+.masterCompleted:hover {
+  background-color: green;
+}
+
 
 .done {
   text-decoration: line-through;
@@ -98,7 +149,7 @@
 }
 
 .taskInput {
-  margin: 0 1rem;
+  /*margin: 0 1rem;*/
 }
 
 form {
@@ -111,8 +162,6 @@ form {
 
 button {
   padding: 0;
-  /*display: flex;
-  align-items: center;*/
   line-height: 25px;
 }
 
