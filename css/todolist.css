@@ -1,0 +1,192 @@
+#appContainer {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.itemContainer,
+#inputContainer,
+.taskDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+#inputContainer {
+  flex-wrap: nowrap;
+}
+
+.taskDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.taskDiv span select,
+.taskDiv span input {
+  margin: 0.25rem;
+}
+
+.ui {
+  font-family: 'open sans';
+}
+
+#todoAppRoot {
+}
+
+.priorityDiv,
+.taskDiv,
+.deleteDiv {
+}
+
+.taskDiv {
+  flex-grow: 2;
+  line-height: 1.5rem;
+}
+
+.reportingContainer {
+  border-top: solid 1px black;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: center;
+
+}
+
+.priorityDiv form input {
+  margin: 0.25rem;
+}
+
+.reports {
+  font-size: 0.75rem;
+}
+
+#todolist {
+  padding: 0;
+}
+
+#todolist li {
+  font-family: 'Shadows Into Light', cursive;
+  list-style: none;
+  margin: 1rem 0;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+#masterContainer {
+  margin: 1rem 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+#inputContainer .deleteButton {
+  color: black;
+  border: 2px solid black;
+}
+
+#inputContainer .deleteButton:hover,
+#inputContainer .deleteButton:active {
+  color: red;
+  border: 2px solid red;
+}
+
+.high {
+  background-color: red;
+  color: red;
+}
+
+.med {
+  background-color: orange;
+  color: orange;
+}
+
+.low {
+  background-color: green;
+  color: green;
+}
+
+.submitButton {
+  padding: 0;
+}
+
+.priorityButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.masterCompleted {
+  background-color: black;
+}
+
+.mComplete {
+  background-color: green;
+}
+
+.masterCompleted:hover {
+  background-color: green;
+}
+
+
+.done {
+  text-decoration: line-through;
+}
+.complete {
+  color: grey;
+}
+
+.task {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.taskInput {
+  /*margin: 0 1rem;*/
+}
+
+form {
+  margin: 0;
+}
+
+.edit {
+  margin: 0 1rem;
+}
+
+button {
+  padding: 0;
+  line-height: 25px;
+}
+
+.prioritySelect option {
+  color: black;
+}
+
+.deleteButton {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  vertical-align: top;
+  border: 2px solid grey;
+  background-color: white;
+  color: grey;
+}
+
+.deleteButton:hover,
+.deleteButton:active {
+  border: 2px solid red;
+  color: red;
+}
