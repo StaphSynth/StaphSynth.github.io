@@ -32,6 +32,10 @@
   margin: 0.25rem;
 }
 
+.ui {
+  font-family: 'open sans';
+}
+
 #todoAppRoot {
 }
 
