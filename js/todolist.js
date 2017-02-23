@@ -3,44 +3,7 @@ var listApp = angular.module('todolistApp', []);
 
 listApp.controller('todolistController', function(){
   var ctrl = this;
-  ctrl.list = [
-    {
-      task: 'feed the cat, water the cat, take the cat for a walk, skin the cat',
-      priority: 0,
-      complete: true,
-      editing: false
-    },
-    {
-      task: 'wash the dishes',
-      priority: 2,
-      complete: true,
-      editing: false
-    },
-    {
-      task: "learn angular",
-      priority: 1,
-      complete: false,
-      editing: false
-    },
-    {
-      task: "get a job",
-      priority: 0,
-      complete: false,
-      editing: false
-    },
-    {
-      task: "watch paint dry",
-      priority: 2,
-      complete: false,
-      editing: false
-    },
-    {
-      task: "aardvarks: advance",
-      priority: 2,
-      complete: true,
-      editing: false
-    }
-  ];
+  ctrl.list = [];
   ctrl.priorities = [
     {
       id: 0,
