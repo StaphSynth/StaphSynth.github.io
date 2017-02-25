@@ -24,7 +24,7 @@ The above TodoMVC example uses an angular service to accomplish this task, but I
 <script type="text/javascript" src="/js/todolist.js"></script>
 {% raw %}
 <div id="todoAppRoot" ng-app="todolistApp">
-  <h2><center>To Do List</center></h2>
+  <h2><center>To-Do List</center></h2>
   <div id="appContainer" ng-controller="todolistController as ctrl">
     Order by:
     <select ng-model="ctrl.order">
