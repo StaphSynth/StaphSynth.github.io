@@ -1,3 +1,14 @@
+#todoAppRoot {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+#appContainer {
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+}
+
 .itemContainer,
 #inputContainer,
 .taskDiv {
@@ -21,11 +32,6 @@
 .taskDiv span select,
 .taskDiv span input {
   margin: 0.25rem;
-}
-
-#todoAppRoot {
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 .priorityDiv,
