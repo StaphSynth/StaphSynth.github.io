@@ -308,9 +308,13 @@ h3 a {
 }
 
 #article p {
+	line-height: 1.25rem;
 	text-align: justify;
+	padding: 1rem 0;
+}
+
+#article .figure p {
 	padding: 0.5rem 0;
-	line-height: 1.25;
 }
 
 p i {
@@ -331,7 +335,14 @@ p strong {
 }
 
 #article h3 {
+	font-size: 1.125em;
+	padding: 1rem 0 0;
 	text-align: left;
+}
+
+#article .postTitle h3 {
+	font-size: 1em;
+	padding: 0;
 }
 
 /*-------------------
@@ -373,6 +384,10 @@ Tags and post meta-data
 
 #article .entry-date {
 	color: #999;
+}
+
+#article .postData p {
+	padding: 0.5rem 0;
 }
 
 /*-------------------
@@ -486,7 +501,7 @@ blockquote, .highlight {
 }
 
 #article pre {
-	line-height: 1.125rem;
+	line-height: 1.25rem;
 	text-align: left;
 	margin-left: 0;
 	overflow: hidden;
@@ -638,7 +653,7 @@ Small tablets >=500px width
 	}
 
 	#article p {
-		line-height: 1.25em;
+		line-height: 1.33em;
 	}
 
 	.postList li img {
@@ -655,7 +670,11 @@ Small tablets >=500px width
 	}
 
 	#article h3 {
-		font-size: 1.125rem;
+		font-size: 1.25em;
+	}
+
+	#article .postTitle h3 {
+		font-size: 1.125em;
 	}
 
 	/*---Tags---*/
@@ -726,13 +745,21 @@ Larger tablets >=800px width
 	}
 
 	#article h2 {
-		font-size: 1.5rem;
+		font-size: 1.75em;
+	}
+
+	#article h3 {
+		font-size: 1.5em;
 	}
 
 	/*---tags---*/
 	#tags li {
 		flex: 1 0 33.33%;
 		max-width: 33.33%;
+	}
+
+	.figureContainer {
+		margin: 0.5rem 0;
 	}
 
 	/*********************
@@ -818,7 +845,7 @@ Desktop >=1100px width
 	**********************/
 
 	#article .postData {
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.5rem;
 	}
 
 	#article {
@@ -829,6 +856,7 @@ Desktop >=1100px width
 
 	#article p {
 		line-height: 1.33em;
+		font-size: 1.125em;
 	}
 
 	#article h2 {
