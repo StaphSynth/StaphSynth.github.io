@@ -22,7 +22,7 @@ So I decided to do it with a [flex-box](https://scotch.io/tutorials/a-visual-gui
 
 ### HTML
 
-```
+```html
 <html>
   <body>
     <header>
@@ -40,7 +40,7 @@ So I decided to do it with a [flex-box](https://scotch.io/tutorials/a-visual-gui
 
 ### CSS
 
-```
+```css
 html, body {
   height: 100%;
 }
