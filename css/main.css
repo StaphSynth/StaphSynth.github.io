@@ -501,7 +501,7 @@ blockquote, .highlight {
 }
 
 #article pre {
-	line-height: 1.125rem;
+	line-height: 1.25rem;
 	text-align: left;
 	margin-left: 0;
 	overflow: hidden;
