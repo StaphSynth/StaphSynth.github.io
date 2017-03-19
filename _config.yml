@@ -3,6 +3,13 @@ markdown: kramdown
 description: A personal blog of code snippets and electronics projects
 url: http://syntheta.se
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+syntax_highlighter_opts:
+  default_lang: bash
+
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag

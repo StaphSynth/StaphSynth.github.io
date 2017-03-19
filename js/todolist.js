@@ -4,6 +4,20 @@ var listApp = angular.module('todolistApp', []);
 listApp.controller('todolistController', function(){
   var ctrl = this;
   ctrl.list = [];
+  ctrl.priorities = [
+    {
+      id: 0,
+      level: 'high'
+    },
+    {
+      id: 1,
+      level: 'med'
+    },
+    {
+      id: 2,
+      level: 'low'
+    }
+  ];
   ctrl.order ='priority,complete';
   ctrl.userTask = null;
   ctrl.userPriority = 0;

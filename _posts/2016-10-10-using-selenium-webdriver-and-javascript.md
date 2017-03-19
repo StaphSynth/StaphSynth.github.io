@@ -96,7 +96,7 @@ $ sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 
 Finally, we can actually write some code. Create a new file `yourFileName.js` and save it anywhere convenient. Fire up your favourite text editor and add the following code:
 
-```
+```js
 var webdriver = require('/usr/local/node_modules/selenium-webdriver'),
     By = webdriver.By,
     until = webdriver.until;
@@ -110,7 +110,7 @@ This code sets up the `webdriver` and `driver` objects and allows you to begin c
 
 Once we've set up the environmet, we can start telling the browser what to do:
 
-```
+```js
 driver.get('http://www.google.com/ncr');
 driver.findElement(By.name('q')).sendKeys('webdriver');
 driver.findElement(By.name('btnG')).click();

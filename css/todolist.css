@@ -1,8 +1,11 @@
-#appContainer {
+#todoAppRoot {
   max-width: 550px;
   margin: 0 auto;
-  background-color: white;
+}
+
+#appContainer {
   border-radius: 10px;
+  background-color: white;
   padding: 1rem;
   text-align: left;
 }
@@ -32,13 +35,6 @@
   margin: 0.25rem;
 }
 
-.ui {
-  font-family: 'open sans';
-}
-
-#todoAppRoot {
-}
-
 .priorityDiv,
 .taskDiv,
 .deleteDiv {
@@ -47,6 +43,14 @@
 .taskDiv {
   flex-grow: 2;
   line-height: 1.5rem;
+  max-width: 500px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.task {
+  font-size: 1.5rem;
+  max-width: 100%;
 }
 
 .reportingContainer {
@@ -145,15 +149,6 @@
 }
 .complete {
   color: grey;
-}
-
-.task {
-  margin: 0 1rem;
-  font-size: 1.5rem;
-}
-
-.taskInput {
-  /*margin: 0 1rem;*/
 }
 
 form {
