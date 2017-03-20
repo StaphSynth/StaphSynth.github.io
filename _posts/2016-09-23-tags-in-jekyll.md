@@ -34,7 +34,7 @@ The problem comes when you need to access them globally so you can sort them int
 {% raw %}
 ```liquid
 {% for tag in page.tags %}
-  <a href="/tags#{{ tag }}">{{ tag }}</a>{% if forloop.last %}.{% else %},{% endif %}
+  <a href="/tags/#{{ tag | cgi_escape }}">{{ tag }}</a>{% if forloop.last %}.{% else %},{% endif %}
 {% endfor %}
 ```
 {% endraw %}
