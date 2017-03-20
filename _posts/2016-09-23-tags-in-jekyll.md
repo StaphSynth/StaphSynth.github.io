@@ -19,7 +19,7 @@ So what to do? Well, you'll have to write some moderately complex liquid to get 
 
 Firstly, it's easy to give your posts tags by simply adding them as a YAML [collection](http://symfony.com/doc/current/components/yaml/yaml_format.html#collections) in your front matter like so:
 
-```
+```yml
 ---
 layout: post
 tags:
@@ -32,7 +32,7 @@ tags:
 The problem comes when you need to access them globally so you can sort them into a list and associate them with your posts. I modified code I found in [these](http://pavdmyt.com/how-to-implement-tags-at-jekyll-website/) [two](http://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html) blog posts to make that happen here. Before we get into that, though, you need to display the tags in the post itself in the form of links to the "tag" page we will create to display all the tags on the site. To do that, simply modifiy your post.html (or whatever layout you're using to display your posts). Here's what does that on this site:
 
 {% raw %}
-```
+```liquid
 {% for tag in page.tags %}
   <a href="/tags#{{ tag }}">{{ tag }}</a>{% if forloop.last %}.{% else %},{% endif %}
 {% endfor %}
@@ -42,7 +42,7 @@ The problem comes when you need to access them globally so you can sort them int
 Now we can create the new `tags.md` file and get to the interesting stuff. First off, we need to grab all the tag values in the site and store them in a variable, separated by a marker of your choice (I'm using a comma here). Then split it using the marker to form an array of tags.
 
 {% raw %}
-```
+```liquid
 {% comment %}
   Get the tag name for every tag on the site and set them to the 'site_tags' variable.
 {% endcomment %}
@@ -60,7 +60,7 @@ Now we can create the new `tags.md` file and get to the interesting stuff. First
 Then simply loop through the array to print out the tags. Interestingly, we can also print out the number of posts using each tag as well.
 
 {% raw %}
-```
+```liquid
 {% comment %} List all the tags at the top of the page {% endcomment %}
 
 <ul id="tags">
@@ -81,7 +81,7 @@ Then simply loop through the array to print out the tags. Interestingly, we can 
 Finally, loop through all the tags, printing out a list of all the posts that use them with links to the original post URLs.
 
 {% raw %}
-```
+```liquid
 {% comment %} List all the posts under each tag {% endcomment %}
 
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
