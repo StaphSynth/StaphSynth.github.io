@@ -12,6 +12,7 @@ tags:
   - selenium
   - web
   - linux
+  - javascript
 ---
 
 I recently fell down the rabbit-hole of web automation testing. It's been an interesting journey, so I thought I'd document what I've learned so far in a series of posts as a reference for others following the same path. Before we go any further, I should point out that I'm still very much a n00b here. These posts are meant to collate information I've gathered from across the web into a single resource and clear up some confusion I've come across. After reading, you should know how to get some basic test functionality up and running. However, it is not comprehensive.
@@ -34,10 +35,9 @@ The Selenium-Webdriver JavaScript binding comes as a package for [Node.js](https
 
 First off, install Node.js. There are [many](http://www.hostingadvice.com/how-to/install-nodejs-ubuntu-14-04/) [pages](http://ask.xmodulo.com/install-node-js-linux.html) with [instructions](http://www.2daygeek.com/install-nodejs-on-ubuntu-centos-debian-fedora-mint-rhel-opensuse/) covering installation on various Linux distros, including the [official](https://nodejs.org/en/download/package-manager/) Node.js package installation page. When you're done, check that Node.js is correctly installed and working using the console. If it is, it will report the version number.
 
-```
+```terminal
 $ node --version
 v4.6.0
-$
 ```
 
 It's important to note here that Selenium-Webdriver has limited support for different Node.js versions, so the latest and greatest might not work. Make sure the version you install is listed in the [Node Support Policy](https://www.npmjs.com/package/selenium-webdriver#node-support-policy) table on the package doc page.
@@ -46,15 +46,15 @@ It's important to note here that Selenium-Webdriver has limited support for diff
 
 Once you've got Node.js installed, use the node package manager (NPM) to install the Selenium-Webdriver NPM package.
 
-```
+```terminal
 $ npm install selenium-webdriver
 ```
 
 Since Selenium-Webdriver is a node module and not an executable, if you want to check it's all present and correct, you can browse to your `node_modules` folder. On my machine, it is one level above the `bin` folder containing the node executable:
 
-```
+```terminal
 $ cd /usr/local/node_modules
-/usr/local/node_modules $ ls
+$ ls
 selenium-webdriver
 ```
 
@@ -70,7 +70,7 @@ In my case, just to get something up and running, I decided to start from scratc
 
 Chrome installation (Ubuntu):
 
-```
+```terminal
 $ sudo apt-get install libxss1 libappindicator1 libindicator7
 $ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
@@ -80,7 +80,7 @@ $ sudo apt-get install -f
 
 Chromedriver installation (Ubuntu):
 
-```
+```terminal
 $ sudo apt-get install unzip
 
 $ wget -N http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip
@@ -124,7 +124,7 @@ You can see that controlling the browser is done by calling methods on the `driv
 
 To execute the test script, use node from the command line:
 
-```
+```terminal
 $ cd /path/to/your/testScript
 $ node testScript.js
 ```

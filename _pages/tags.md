@@ -1,6 +1,7 @@
 ---
 layout: common
 title: Tags
+permalink: /tags/
 ---
 
 {% comment %} Get the tag name for every tag on the site and set them to the 'site_tags' variable. {% endcomment %}
