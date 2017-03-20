@@ -9,6 +9,7 @@ tags:
   - javascript
   - development
   - portfolio
+  - angular
 ---
 
 Most of my time with JavaScript has been spent with vanilla JS or jQuery. There are, of course, any number of other bandwagons to ride, so I've decided to have a look at some of them.
