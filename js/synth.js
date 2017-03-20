@@ -24,15 +24,4 @@ $(window).resize(function() {
   }
 });//end window resize event
 
-/*Create text-shadow on github social icon in .gitLink when mouse hovers over parent*/
-$(function() {
-  $(".gitLink a").hover(function() {
-    //on hover, add text-shadow
-    $(".gitLink .social").css("text-shadow", "0px 0px 2px  #ddd");
-  }, function() {
-    // on mouseout, remove the text-shadow
-    $(".gitLink .social").css("text-shadow", "none");
-  });
-});
-
 //console.log("synth.js has loaded and run");
