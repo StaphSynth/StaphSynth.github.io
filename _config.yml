@@ -1,15 +1,16 @@
+# general
 name: Syntheta.se
 markdown: kramdown
 description: A personal blog of code snippets and electronics projects
 url: http://syntheta.se
 
+# syntax highlighting
+highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-syntax_highlighter_opts:
-  default_lang: bash
-
+# gems
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
