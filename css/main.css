@@ -107,6 +107,7 @@ h1, h2, h3, h4, #mainMenu, .postList a {
 }
 
 p, footer,
+.gitLink,
 #article .tags {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -234,8 +235,8 @@ a.selected {
 .pl-mq{color:#00acac}
 .pl-mi{font-style:italic;color:#ddd}
 .pl-mb{font-weight:700;color:#ddd}
-.pl-md{color:#bd2c00;background-color:#ffecec}.pl-mi
-1{color:#55a532;background-color:#eaffea}
+.pl-md{color:#bd2c00;background-color:#ffecec}
+.pl-mi1{color:#55a532;background-color:#eaffea}
 .pl-mc{color:#ef9700;background-color:#ffe3b4}
 .pl-mi2{color:#d8d8d8;background-color:grey}
 .pl-mdr{font-weight:700;color:#9774cb}
@@ -652,19 +653,31 @@ Github link at end
 of code articles
 --------------------*/
 
-.gitLink {
-	width: 100%;
+.gitLinkContainer {
 	margin-top: 1rem;
 }
 
-#article .gitLink p {
-	text-align: center;
+.gitLink {
+	margin: 0 auto;
 }
 
 .gitLink .fa-github-square {
 	padding-right: 0.5rem;
 	margin-left: 0;
 	font-size: 2rem!important;
+}
+
+.gitLink {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.gitLink:hover .fa-github-square {
+	text-shadow: 0px 0px 2px  #ddd;
+}
+
+.gitLink:hover a {
+	text-decoration: underline;
 }
 
 
