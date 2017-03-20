@@ -23,7 +23,7 @@ For example:
 
 {% raw %}
 
-```
+```liquid
 ---
 ---
 
@@ -37,7 +37,7 @@ body {
 ### _config.yml
 
 {% raw %}
-```
+```yml
 backgroundColor: #122456
 ```
 {% endraw %}
