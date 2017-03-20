@@ -658,6 +658,7 @@ of code articles
 }
 
 .gitLink {
+	display: inline-block;
 	margin: 0 auto;
 }
 
@@ -665,11 +666,6 @@ of code articles
 	padding-right: 0.5rem;
 	margin-left: 0;
 	font-size: 2rem!important;
-}
-
-.gitLink {
-	display: inline-block;
-	margin: 0 auto;
 }
 
 .gitLink:hover .fa-github-square {
