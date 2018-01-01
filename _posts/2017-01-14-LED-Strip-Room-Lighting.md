@@ -1,11 +1,12 @@
 ---
 layout: post
 title: LED Strip Room Lighting
-imageSource: /img/LED-logo.png
+logo: /img/LED-logo.png
 byline: Construction, repair and lessons learned.
 category: projects
 modified: 2017-01-16
 comments: true
+image: /img/P126-lightbox6.jpg
 tags:
   - electronics
   - lighting

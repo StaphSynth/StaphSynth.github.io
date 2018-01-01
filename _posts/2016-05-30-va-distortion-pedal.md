@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Valve Approximator Distortion Pedal
-imageSource: /img/guitar-logo.jpg
+logo: /img/guitar-logo.jpg
 byline: Re-live the hey days of heavy metal.
 category: projects
 comments: true
 modified: 2016-09-15
+image: /img/va-running.jpg
 tags:
   - guitar
   - electronics

@@ -3,6 +3,7 @@ name: Syntheta.se
 markdown: kramdown
 description: A personal blog of code snippets and electronics projects
 url: http://syntheta.se
+author: David Allen
 
 # syntax highlighting
 highlighter: rouge
@@ -12,7 +13,7 @@ kramdown:
 
 include: ["_pages"]
 
-# gems
-gems:
+# gem plugins
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

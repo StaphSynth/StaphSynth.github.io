@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Church For Life Site
-imageSource: /img/c4l-logo.jpg
+logo: /img/c4l-logo.jpg
 byline: Made a modern site for my parents' church.
 category: coding
 modified: 2016-11-11

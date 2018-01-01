@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Much To-Do About Nothing
-imageSource: /img/angularjs-logo.jpg
+logo: /img/angularjs-logo.jpg
 byline: Making a list and checking it twice...
 category: coding
 modified: 2017-02-23

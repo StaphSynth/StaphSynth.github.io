@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Modding my Stratocaster
-imageSource: /img/guitar-logo.jpg
+logo: /img/guitar-logo.jpg
 byline: Add an extra dimension to your guitar
 description: Modifying a Stratocaster for nine-way pick-up selection and dual capacitor tone knobs. Also bonus fret maintenance and polishing.
 category: projects
 comments: true
 modified: 2016-09-26
+image: /img/strat-top-postmod.jpg
 tags:
   - guitar
   - electronics

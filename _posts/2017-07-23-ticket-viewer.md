@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ticket Viewer
-imageSource: /img/rails-logo.jpg
+logo: /img/rails-logo.jpg
 byline: Solving Rails problems one support ticket at a time.
 category: coding
 modified: 2017-07-28

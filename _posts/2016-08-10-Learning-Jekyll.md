@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning to use Jekyll
-imageSource: /img/jekyll-logo.jpg
+logo: /img/jekyll-logo.jpg
 byline: Making static sites with this interesting tool.
 category: coding
 tags:
