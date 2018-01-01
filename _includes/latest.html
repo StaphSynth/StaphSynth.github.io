@@ -7,14 +7,14 @@
   {% for post in allPosts %}
     {% if codePost == false %}
       {% if post.category == "coding" %}
-        {% include articleListItem.html url=post.url img=post.imageSource title=post.title byline=post.byline %}
+        {% include articleListItem.html url=post.url img=post.logo title=post.title byline=post.byline %}
         {% assign codePost = true %}
       {% endif %}
     {% endif %}
 
     {% if projectPost == false %}
       {% if post.category == "projects" %}
-        {% include articleListItem.html url=post.url img=post.imageSource title=post.title byline=post.byline %}
+        {% include articleListItem.html url=post.url img=post.logo title=post.title byline=post.byline %}
         {% assign projectPost = true %}
       {% endif %}
     {% endif %}

@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Restoring a Yamaha CR-420
-imageSource: /img/speaker-logo.jpg
+logo: /img/speaker-logo.jpg
 byline: Bringing new life to an old friend.
 category: projects
 comments: true
+image: /img/2017-12/yamaha-cr-420.jpg
 tags:
   - electronics
   - amplifiers

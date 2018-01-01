@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Return of the Tux
-imageSource: /img/tux-logo.jpg
+logo: /img/tux-logo.jpg
 byline: Renewed my acquaintance with an old frienemy :)
 category: coding
 tags:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ReactJS: Traps for Young Players"
-imageSource: /img/logos/react.svg
+logo: /img/logos/react.svg
 byline: Help! I'm trapped, like a moth in a bath!
 category: coding
 # modified:

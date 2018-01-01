@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementing Tags in Jekyll
-imageSource: /img/jekyll-logo.jpg
+logo: /img/jekyll-logo.jpg
 byline: A work-around to solve this niggling issue.
 description: How to implement tags in Jekyll/Github pages without plugins.
 category: coding

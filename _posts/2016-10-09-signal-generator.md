@@ -1,11 +1,12 @@
 ---
 layout: post
 title: P86 Audio Oscillator
-imageSource: /img/sinewave-logo.jpg
+logo: /img/sinewave-logo.jpg
 byline: An easy-to-build piece of test gear.
 category: projects
 comments: true
 modified: 2016-10-10
+image: /img/p86-inside.jpg
 tags:
   - electronics
   - test gear
