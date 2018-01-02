@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.url == "/" %}
-              {{ site.name }}
+              {{ site.title }}
             {% else %}
-              {{ page.title | append: " | " | append: site.name }}
+              {{ page.title | append: " | " | append: site.title }}
             {% endif %}
     </title>
     <script type="text/javascript" src="https://use.fontawesome.com/0523816ffe.js"></script>
