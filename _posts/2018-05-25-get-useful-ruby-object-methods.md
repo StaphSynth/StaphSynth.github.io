@@ -4,6 +4,7 @@ title: Getting Useful Object Methods in Ruby
 logo: /img/ruby-logo.jpg
 byline: Make sense from chaos
 category: coding
+modified: 2018-05-26
 tags:
   - ruby
   - development
@@ -16,7 +17,7 @@ A useful tip, then, is to subtract the methods of the base `Object` or other anc
 
 Doing this on a `String` object removes 63 methods that aren't specific to the class.
 
-```
+```ruby
 'string'.methods.count
 => 171
 
