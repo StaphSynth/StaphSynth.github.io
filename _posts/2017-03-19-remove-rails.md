@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Remove-Rails
-logo: /img/angularjs-logo.jpg
+logo: angularjs.jpg
 byline: A front-end data display coding exercise
 category: coding
 # modified:

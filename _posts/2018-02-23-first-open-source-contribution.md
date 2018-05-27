@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Open Source Contribution
-logo: /img/logos/samson-logo.png
+logo: samson.png
 byline: A minor milestone on the journey.
 category: coding
 # modified:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Valve Approximator Distortion Pedal
-logo: /img/guitar-logo.jpg
+logo: guitar.jpg
 byline: Re-live the hey days of heavy metal.
 category: projects
 comments: true

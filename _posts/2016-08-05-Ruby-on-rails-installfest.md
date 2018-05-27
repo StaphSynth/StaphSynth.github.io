@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby on Rails Installfest
-logo: /img/ruby-logo.jpg
+logo: rails.jpg
 byline: Went to a meet-up and installfest in Melbourne with fellow nerds.
 category: coding
 tags:

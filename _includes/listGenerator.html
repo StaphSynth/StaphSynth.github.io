@@ -3,7 +3,7 @@
 <ul class="postList">
   {% for post in site.posts %}
     {% if post.category == page.category %}
-      {% include articleListItem.html url=post.url img=post.logo title=post.title byline=post.byline %}
+      {% include articleListItem.html url=post.url logo=post.logo title=post.title byline=post.byline %}
     {% endif %}
   {% endfor %}
 </ul>

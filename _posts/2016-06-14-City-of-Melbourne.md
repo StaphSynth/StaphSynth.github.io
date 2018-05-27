@@ -1,7 +1,7 @@
 ---
 layout: post
 title: City of Melbourne Mock-up
-logo: /img/cmelb01.png
+logo: cityofmelb.png
 byline: Mocked up a quick demo site, playing with mobile navigation ideas.
 category: coding
 tags:

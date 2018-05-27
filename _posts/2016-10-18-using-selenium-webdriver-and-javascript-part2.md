@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Selenium-Webdriver JavaScript Bindings in Linux 2: Tests and Promises"
-logo: /img/selenium-logo.jpg
+logo: selenium.jpg
 byline: Further down the rabbit-hole of web automation testing.
 description: A 'Getting Started' tutorial on Selenium-Webdriver JavaScript bindings in Linux. Test frameworks and promise handling.
 category: coding

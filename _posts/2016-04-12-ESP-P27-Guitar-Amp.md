@@ -1,7 +1,7 @@
 ---
 layout: post
 title: P27 100W Guitar Amplifier Build
-logo: /img/speaker-logo.jpg
+logo: speaker.jpg
 byline: Part 2 - The Guts
 category: projects
 comments: true
