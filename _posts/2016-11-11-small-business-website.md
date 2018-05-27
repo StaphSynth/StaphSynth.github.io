@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Small Business Website
-logo: /img/jekyll-logo.jpg
+logo: jekyll.jpg
 byline: A simple static site template for small businesses.
 category: coding
 modified: 2017-01-11

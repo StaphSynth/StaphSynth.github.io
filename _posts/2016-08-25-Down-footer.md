@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Down Footer!
-logo: /img/foot-logo.jpg
+logo: foot.jpg
 byline: A simple solution to an annoying problem.
 description: A short tutorial on how to make your web page footer stay down, even when there's not much content on screen
 category: coding

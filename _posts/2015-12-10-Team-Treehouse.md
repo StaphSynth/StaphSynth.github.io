@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Team Treehouse
-logo: /img/treehouse.png
+logo: treehouse.png
 byline: Joined the teaching resource Team Treehouse to start my journey in development.
 category: coding
 tags:

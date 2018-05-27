@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning AngularJS
-logo: /img/angularjs-logo.jpg
+logo: angularjs.jpg
 byline: Includes single-page calculator app! :0
 category: coding
 modified: 2017-02-14

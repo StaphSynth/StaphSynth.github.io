@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fun With Web Scraping
-logo: /img/ruby-logo.jpg
+logo: ruby.jpg
 byline: Automate the things!
 category: coding
 tags:

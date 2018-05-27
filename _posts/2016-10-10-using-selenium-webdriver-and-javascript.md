@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started Using Selenium-Webdriver JavaScript Bindings in Linux
-logo: /img/selenium-logo.jpg
+logo: selenium.jpg
 byline: Down the rabbit-hole of web automation testing.
 description: A 'Getting Started' tutorial on Selenium-Webdriver JavaScript bindings in Linux. Installation, set-up, and running your first test.
 category: coding

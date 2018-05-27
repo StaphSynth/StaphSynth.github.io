@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LED Strip Room Lighting
-logo: /img/LED-logo.png
+logo: led.png
 byline: Construction, repair and lessons learned.
 category: projects
 modified: 2017-01-16

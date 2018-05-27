@@ -1,7 +1,7 @@
 ---
 layout: post
 title: P113 Headphone Amplifier
-logo: /img/headphones-logo.jpg
+logo: headphones.jpg
 byline: Just the thing to drive power-hungry 'phones.
 category: projects
 comments: true

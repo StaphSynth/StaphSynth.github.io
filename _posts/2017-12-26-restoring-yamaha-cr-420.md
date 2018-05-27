@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restoring a Yamaha CR-420
-logo: /img/speaker-logo.jpg
+logo: speaker.jpg
 byline: Bringing new life to an old friend.
 category: projects
 comments: true

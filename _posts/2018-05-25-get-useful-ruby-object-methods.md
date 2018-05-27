@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Useful Object Methods in Ruby
-logo: /img/ruby-logo.jpg
+logo: ruby.jpg
 byline: Make sense from chaos
 category: coding
 modified: 2018-05-26

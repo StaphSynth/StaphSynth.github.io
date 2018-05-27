@@ -1,7 +1,7 @@
 ---
 layout: post
 title: howtoscience.net
-logo: /img/hts-logo.png
+logo: hts.png
 byline: Designed and built howtoscience.net, a free resource for science students.
 category: coding
 modified: 2016-09-19

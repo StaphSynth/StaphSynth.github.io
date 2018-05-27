@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Planit Software Testing Course
-logo: /img/planit-logo.png
+logo: planit.png
 byline: Did a week-long course on software testing and professional test practices.
 category: coding
 tags:

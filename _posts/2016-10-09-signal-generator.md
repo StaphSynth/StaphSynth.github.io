@@ -1,7 +1,7 @@
 ---
 layout: post
 title: P86 Audio Oscillator
-logo: /img/sinewave-logo.jpg
+logo: sinewave.jpg
 byline: An easy-to-build piece of test gear.
 category: projects
 comments: true
