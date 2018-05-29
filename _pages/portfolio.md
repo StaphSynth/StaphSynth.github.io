@@ -15,7 +15,7 @@ In each project, my attention was directed toward developing a certain feature, 
 <ul class="postList">
   {% for post in site.tags['portfolio'] %}
     {% if post.title %}
-      {% include articleListItem.html url=post.url img=post.logo title=post.title byline=post.byline %}
+      {% include articleListItem.html url=post.url logo=post.logo title=post.title byline=post.byline %}
     {% endif %}
   {% endfor %}
 </ul>
