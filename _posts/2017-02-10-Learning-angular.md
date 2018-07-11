@@ -40,4 +40,4 @@ I was thinking about how I might go about implementing it in hardware as I was w
 
 It was really only meant to be an AngularJS learning exercise, but turned into a lesson in the pitfalls of formatting pure numbers in JavaScript, as well as the limitations of using precedural programming techniques to build something that would be far easier to implement using OO practices.
 
-{% include gitLink.html url="https://github.com/StaphSynth/calc" %}
+{% include git-link.html url="https://github.com/StaphSynth/calc" %}

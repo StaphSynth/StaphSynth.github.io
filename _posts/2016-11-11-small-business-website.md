@@ -50,4 +50,4 @@ For the template, I've gone with a look similar to the [church for life]({% post
 
 The site is now [live](http://www.pcelectricalandsolar.com.au), but I think it looks a bit bare and needs some more content. My electrician friend is putting together some photos and other material so we can jazz it up a bit.
 
-{% include gitLink.html url="https://github.com/StaphSynth/pcelectricandsolar.com.au" %}
+{% include git-link.html url="https://github.com/StaphSynth/pcelectricandsolar.com.au" %}

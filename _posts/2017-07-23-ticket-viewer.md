@@ -68,4 +68,4 @@ For end-to-end testing, I used [Capybara](https://github.com/teamcapybara/capyba
 
 I learned a lot about getting a decent test suite up and running in Rails during this exercise. I also learned the value of a good test suite while developing. It was really nice to be able to do a bit of re-factoring and them simply run the suite to verify that everything still worked as expected. I definitely think that spending a bit of time learning this will save me a lot of headaches in the future! :)
 
-{% include gitLink.html url="https://github.com/StaphSynth/zendesk-ticket-viewer" %}
+{% include git-link.html url="https://github.com/StaphSynth/zendesk-ticket-viewer" %}

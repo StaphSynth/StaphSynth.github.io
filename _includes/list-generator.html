@@ -1,0 +1,9 @@
+<hr>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.category == page.category %}
+      {% include article-list-item.html url=post.url logo=post.logo title=post.title byline=post.byline %}
+    {% endif %}
+  {% endfor %}
+</ul>

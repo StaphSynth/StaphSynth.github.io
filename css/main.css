@@ -87,12 +87,12 @@ a, a:visited {
 	text-decoration: underline;
 }
 
-#pageWrapper {
+#page-wrapper {
 	min-height: 100%;
 	position: relative;
 }
 
-#contentWrapper {
+#content-wrapper {
 	padding-bottom: 210px; /*Must be equal to footer height + footer border (5px)*/
 }
 
@@ -102,12 +102,12 @@ a, a:visited {
 FONTS
 ===================================================*/
 
-h1, h2, h3, h4, #mainMenu, .postList a {
+h1, h2, h3, h4, #main-menu, .post-list a {
 	font-family: 'Audiowide', cursive;
 }
 
 p, footer,
-.gitLink,
+.git-link,
 #article .tags,
 #article li {
 	font-family: 'Open Sans', sans-serif;
@@ -131,11 +131,11 @@ body {
 	background-color: #035096;
 }
 
-#masthead h1, h2, h3 {
+#masthead h1, h2, h3, h4 {
 	color: #0871D0;
 }
 
-#mainMenu a, footer,
+#main-menu a, footer,
 #article p, #article li {
   color: #ddd;
 }
@@ -158,7 +158,7 @@ body {
   border-image-slice: 1;
 }
 
-.figureContainer {
+.figure-container {
 	background-color: #444;
 	border: solid 2px #0871D0;
 	box-shadow: 2px 2px 4px #000;
@@ -190,11 +190,11 @@ footer {
 	border-image-slice: 1;
 }
 
-#navIcon, #mainMenu ul, footer, #article {
+#nav-icon, #main-menu ul, footer, #article {
   background-color: #2f2f2f;
 }
 
-#mainMenu li a:active, #mainMenu li a:hover {
+#main-menu li a:active, #main-menu li a:hover {
   background-color: #444;
 	color: #fff;
 }
@@ -203,7 +203,7 @@ footer {
 	text-shadow: 0px 0px 2px  #ddd;
 }
 
-.postList a {
+.post-list a {
 	color: #0871D0;
 }
 
@@ -214,8 +214,8 @@ footer {
 
 /*text at top and bottom of post (meta data and github link)
 also tag.html colour*/
-#article .gitLink a,
-#article .postData,
+#article .git-link a,
+#article .post-data,
 #article .tags {
 	color: #ddd;
 }
@@ -260,24 +260,24 @@ header {
 NAVIGATION
 ===================================================*/
 
-#mainMenu a {
+#main-menu a {
   display: block;
   padding: 1em;
 }
 
 /*Initial menu state: don't show menu struct, just the nav icon*/
-#mainMenu ul {
+#main-menu ul {
   display: none;
 	border-left: solid 0.75rem transparent;
 	border-right: solid 0.75rem transparent;
 }
 
-#mainMenu ul li {
+#main-menu ul li {
 	border-top: solid 1px #444;
 }
 
 /*Mobile drop-down button*/
-#navIcon {
+#nav-icon {
 	color: #ddd;
 	border: none;
 	padding: 1em;
@@ -289,7 +289,7 @@ NAVIGATION
 	/*outline: none;*/
 }
 
-#navIcon:hover {
+#nav-icon:hover {
 	outline: none!important;
 }
 
@@ -309,12 +309,15 @@ General content style
 }
 
 h2, h3, h4 {
-	padding: 0.5rem 0;
 	text-shadow: 2px 2px 4px #000;
 }
 
 h3 a {
 	text-decoration: underline;
+}
+
+.article-header {
+	margin-bottom: 2rem;
 }
 
 #article ul {
@@ -331,15 +334,11 @@ h3 a {
 #article li {
 	line-height: 1.25rem;
 	text-align: justify;
-	padding: 1rem 0;
+	margin: 1rem 0;
 }
 
 #article li {
 	padding: 0.25rem 0;
-}
-
-#article .figure p {
-	padding: 0.5rem 0;
 }
 
 p i {
@@ -361,16 +360,22 @@ p strong {
 
 #article h3 {
 	font-size: 1.125em;
-	padding: 1rem 0 0;
+	margin-top: 2rem;
 	text-align: left;
 }
 
-#article .postTitle h3 {
+#article h4 {
+	font-size: 1em;
+	margin-top: 1.25rem;
+	text-align: left;
+}
+
+#article .post-title h3 {
 	font-size: 1em;
 	padding: 0;
 }
 
-#article .postList li {
+#article .post-list li {
 	margin: 0;
 	list-style: none;
 	padding: 0;
@@ -380,7 +385,7 @@ p strong {
 Tags and post meta-data
 --------------------*/
 
-#article .postData {
+#article .post-data {
 	list-style: none;
 	font-style: italic;
 	margin: 0.5rem 0;
@@ -395,11 +400,12 @@ Tags and post meta-data
 	justify-content: flex-start;
 }
 
-#article .postData li {
+#article .post-data li {
 	padding: 0;
+	margin: 0;
 }
 
-#article .postData .fa {
+#article .post-data .fa {
 	vertical-align: middle;
 }
 
@@ -422,18 +428,18 @@ Tags and post meta-data
 	color: #999;
 }
 
-#article .postData p {
-	padding: 0.5rem 0;
+#article .post-data p {
+	margin: 0;
+	padding: 3px 0;
 }
 
 /*-------------------
 Figures
 --------------------*/
 
-.figureContainer {
+.figure-container {
 	display: inline-block;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
+	margin: 0.5rem 0;
 }
 
 .figure {
@@ -442,8 +448,8 @@ Figures
 
 #article .figure p {
 	display: table-caption;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	margin: 0 7px 6px;
+	/* padding-bottom: 5px; */
 	caption-side: bottom;
 	background-color: #444;
 	white-space: normal;
@@ -461,7 +467,7 @@ styling
 	margin: 0;
 }
 
-.articleListItem a {
+.article-list-item a {
 	margin: 1.5rem 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -477,29 +483,33 @@ styling
 	align-items: center;
 }
 
-.thumbContainer {
+#article .article-list-item h3 {
+	margin: 0;
+}
+
+.thumb-container {
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
 }
 
-.postTitle {
+.post-title {
 	-ms-flex-negative: 100;
 	flex-shrink: 100;
 	padding-left: 0.75rem;
 }
 
-.byline, .postTitle h3 {
+.byline, .post-title h3 {
 	padding: 0;
 }
 
-.thumbContainer img {
+.thumb-container img {
 	border-radius: 50%;
 	height: 40px;
 	width: 40px;
 	vertical-align: middle;
 }
 
-.titleLine {
+.title-section {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -528,8 +538,8 @@ emphasis, etc
 /*inline code*/
 p code.highlighter-rouge {
   border-radius: 3px;
-  padding: 0 1px;
-  background-color: #444;
+  padding: 1px 2px;
+	background-color: #444;
 }
 
 blockquote {
@@ -547,7 +557,8 @@ blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: auto;
+	overflow-x: auto;
+	margin: 1rem 0;
 }
 
 #article pre {
@@ -574,26 +585,26 @@ Github link at end
 of code articles
 --------------------*/
 
-.gitLinkContainer {
+.git-link-container {
 	margin-top: 1rem;
 }
 
-.gitLink {
+.git-link {
 	display: inline-block;
 	margin: 0 auto;
 }
 
-.gitLink .fa-github-square {
+.git-link .fa-github-square {
 	padding-right: 0.5rem;
 	margin-left: 0;
 	font-size: 2rem!important;
 }
 
-.gitLink:hover .fa-github-square {
+.git-link:hover .fa-github-square {
 	text-shadow: 0px 0px 2px  #ddd;
 }
 
-.gitLink:hover a {
+.git-link:hover a {
 	text-decoration: underline;
 }
 
@@ -612,7 +623,7 @@ footer {
 	box-shadow: 0px -4px 8px #000;
 }
 
-#footerContainer {
+#footer-container {
 	padding: 0 0.75rem;
 }
 
@@ -644,9 +655,6 @@ footer ul li {
 /*Social icons padding*/
 #connect ul li~li {
 	padding-left: 1rem;
-}
-
-#connect p {
 }
 
 #licence {
@@ -683,19 +691,19 @@ Small tablets >=500px width
 	/*********************
 	Nav
 	**********************/
-	#mainMenu ul {
+	#main-menu ul {
 		border-top: solid 0.5rem transparent;
 		border-bottom: solid 0.5rem transparent;
 	}
 
-	#mainMenu ul li {
+	#main-menu ul li {
 		display: inline-block;
 		border-top: none;
 		margin-right: -5px; /*Deals with unwanted space between nav elements*/
 	}
 
 	/*Produce the single line border between (and only between) the nav elements*/
-	#mainMenu ul li~li {
+	#main-menu ul li~li {
 		border-left: solid 1px #444;
 	}
 
@@ -703,7 +711,7 @@ Small tablets >=500px width
 	Main content
 	**********************/
 
-	#article .postData .fa {
+	#article .post-data .fa {
 		font-size: 1.5rem;
 	}
 
@@ -712,11 +720,11 @@ Small tablets >=500px width
 		line-height: 1.33em;
 	}
 
-	.postList li img {
+	.post-list li img {
 		display: inline-block;
 	}
 
-	.thumbContainer img {
+	.thumb-container img {
 		height: 70px;
 		width: 70px;
 	}
@@ -729,7 +737,7 @@ Small tablets >=500px width
 		font-size: 1.25em;
 	}
 
-	#article .postTitle h3 {
+	#article .post-title h3 {
 		font-size: 1.125em;
 	}
 
@@ -758,7 +766,7 @@ Larger tablets >=800px width
 	General
 	**********************/
 
-	#contentWrapper {
+	#content-wrapper {
 		padding-bottom: 135px; /*Must == footer height + footer border width (==5px)*/
 	}
 
@@ -774,16 +782,16 @@ Larger tablets >=800px width
 	Navigation
 	**********************/
 
-	#navIcon {
+	#nav-icon {
 		display: none;
 	}
 
-	#mainMenu ul {
+	#main-menu ul {
 		display: block;
 		text-align: center;
 	}
 
-	#mainMenu ul li a {
+	#main-menu ul li a {
 		padding: 0.66rem 1.5rem;
 		font-size: 1.125rem;
 	}
@@ -796,7 +804,7 @@ Larger tablets >=800px width
 		padding: 2.5%;
 	}
 
-	.articleListItem {
+	.article-list-item {
 		margin: 1rem 0;
 	}
 
@@ -808,14 +816,18 @@ Larger tablets >=800px width
 		font-size: 1.5em;
 	}
 
+	#article h4 {
+		font-size: 1.125em;
+	}
+
+	#article .post-data p {
+		padding: 0;
+	}
+
 	/*---tags---*/
 	#tags li {
 		flex: 1 0 33.33%;
 		max-width: 33.33%;
-	}
-
-	.figureContainer {
-		margin: 0.5rem 0;
 	}
 
 	/*********************
@@ -826,7 +838,7 @@ Larger tablets >=800px width
 		height: 130px;
 	}
 
-	#footerContainer {
+	#footer-container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -883,15 +895,11 @@ Desktop >=1100px width
 	Navigation
 	**********************/
 
-	#mainMenu ul {
-		/*border: none;*/
-	}
-
-	#mainMenu ul li {
+	#main-menu ul li {
 		padding: 0 3rem;
 	}
 
-	#mainMenu ul li a {
+	#main-menu ul li a {
 		padding: 0.5rem;
 		font-size: 1.25rem;
 	}
@@ -900,7 +908,7 @@ Desktop >=1100px width
 	Main content
 	**********************/
 
-	#article .postData {
+	#article .post-data {
 		margin-bottom: 0.5rem;
 	}
 

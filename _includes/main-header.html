@@ -1,0 +1,49 @@
+<header>
+  <noscript>
+    <div id="noscript">
+      JavaScript is turned off. Please
+      <a href="http://enable-javascript.com/" target="_blank">
+        enable JavaScript
+      </a>
+      for full use of this site.
+    </div>
+  </noscript>
+
+  <div id="masthead">
+    <div id="heading">
+      <a href="/">
+        <h1>Synthetase's World of Nerd</h1>
+      </a>
+    </div>
+  </div>
+
+  <nav id="main-menu">
+    <button id="nav-icon" type="button">
+      <i class="fa fa-bars"></i>
+      <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </button>
+
+    <ul>
+      {% assign nav_pages = site.pages | sort: 'nav_id' %}
+      {% for nav_page in nav_pages %}
+        {% if nav_page.nav_id %}
+          <li>
+            <a
+              href="{{ nav_page.url }}"
+              {% if page.url contains nav_page.url %}
+                {% if nav_page.url !="/" and page.url.size > 1 %}
+                  class="selected"
+                {% endif %}
+                {% if nav_page.url == page.url %}
+                  class="selected"
+                {% endif %}
+              {% endif %}
+            >
+              {{ nav_page.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
