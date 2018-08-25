@@ -2,6 +2,9 @@
 Very basic four-banger AngularJS calc app
 by David Allen 2017-02-13
 https://github.com/StaphSynth/calc
+
+Update 2018-08-25: This code is so bad I can't even.
+Seriously. I am ashamed.
 ****************************************************/
 
 var calcApp = angular.module('calc-app', []);
