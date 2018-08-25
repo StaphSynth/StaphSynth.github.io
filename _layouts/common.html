@@ -77,22 +77,26 @@
   <!--Loads non-render-critical JavaScript after the page has been rendered-->
   <script type="text/javascript">
     function loadScriptPostRender() {
-      var element = document.createElement("script");
-      element.src = "https://code.jquery.com/jquery-1.11.0.min.js";
-      element.type = "text/javascript";
-      element.async = false;
-      document.body.appendChild(element);
+      const urls = [
+        'https://code.jquery.com/jquery-1.11.0.min.js',
+        '{{ site.url }}/js/synth.js'
+      ];
 
-      element = document.createElement("script");
-      element.src = "{{ site.url }}/js/synth.js";
-      element.type = "text/javascript";
-      element.async = false;
-      document.body.appendChild(element);
+      urls.forEach(function(url) {
+        let script = document.createElement('script');
+        script.src = url;
+        script.type = 'text/javascript';
+        script.async = false;
+        document.body.appendChild(script);
+      });
     }
-    if (window.addEventListener)
-      window.addEventListener("load", loadScriptPostRender, false);
-    else if (window.attachEvent)
-      window.attachEvent("onload", loadScriptPostRender);
-    else window.onload = loadScriptPostRender;
+
+    if (window.addEventListener) {
+      window.addEventListener('load', loadScriptPostRender, false);
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', loadScriptPostRender);
+    } else {
+      window.onload = loadScriptPostRender;
+    }
   </script>
 </html>
