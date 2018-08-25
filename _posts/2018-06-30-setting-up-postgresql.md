@@ -4,7 +4,7 @@ title: Setting up Postgres with Rails
 logo: postgres.png
 byline: Some notes for the curious
 category: coding
-# modified:
+modified: 2018-08-26
 tags:
   - postgres
   - ruby on rails
@@ -18,19 +18,19 @@ Setting up Postgres is a little more fiddly than SQLite3 (in that it will _need_
 
 Postgres needs to be installed on your system for your Rails app to use it. Installing it is fairly easy, visit the [downloads page](https://www.postgresql.org/download/) and pick the method for your operating system. I'm using a macbook for this project, so I installed via [homebrew](https://brew.sh/).
 
-```sh
+```
 $ brew install postgresql
 ```
 
 To start Postgres after installation - and to make sure it's started as a service every time you boot your mac, you can use the following command:
 
-```sh
+```
 $ pg_ctl -D /usr/local/var/postgres start && brew services start postgresql
 ```
 
 Verify that it is installed and available:
 
-```sh
+```
 $ postgres -V
 # => postgres (PostgreSQL) 10.4
 ```
@@ -45,7 +45,7 @@ On installation, Postgres configures some default `role`s for you. It will also 
 
 To see what Postgres has configured after set up, you need to launch the command line utility.
 
-```sh
+```
 $ psql postgres
 
 # =>
@@ -72,20 +72,20 @@ Before you can use Postgres with your Rails app, you'll need to create a new rol
 
 To create a new role, start the utility and type:
 
-```sh
+```
 postgres=# CREATE ROLE my_cool_rails_app WITH LOGIN PASSWORD 'super_strong_pw';
 # => CREATE ROLE
 ```
 
 While you're at it, you should set a password on the default account so it isn't vulnerable:
 
-```sh
+```
 postgres=# \password
 ```
 
 Typing `\du` will show your new role, but it won't have any attributes yet. This means is can't create, read or update databases. To give it some attributes and make it useful requires some more SQL:
 
-```sh
+```
 postgres=# ALTER ROLE my_cool_rails_app CREATEDB;
 # => ALTER ROLE
 ```
@@ -120,7 +120,7 @@ This sets up the databases the Rails app will use in test, development and produ
 
 Then run:
 
-```sh
+```
 $ rake db:setup && rails s
 ```
 
