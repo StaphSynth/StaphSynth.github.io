@@ -519,10 +519,17 @@ Block quotes, code,
 emphasis, etc
 --------------------*/
 
+/*code blocks*/
+.highlighter-rouge {
+  background-color: #222;
+  color: #fff;
+}
+
+/*inline code*/
 p code.highlighter-rouge {
-  background-color: #444;
   border-radius: 3px;
   padding: 0 1px;
+  background-color: #444;
 }
 
 blockquote {
