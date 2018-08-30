@@ -3,13 +3,22 @@ rvm:
 - 2.4.2
 install:
 - bundle install
-script:
-- bundle exec rake build
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: _site
-  target_branch: master
-  on:
-    branch: source
+
+stages:
+  - test
+  - name: deploy
+    if: branch = source
+
+jobs:
+  include:
+    - stage: test
+    script: bundle exec rake test
+    - stage: deploy
+    script: bundle exec rake build
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: _site
+    target_branch: master
+    on:
+      branch: source
