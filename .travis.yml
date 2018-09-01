@@ -10,7 +10,7 @@ branches:
   - master
 
 stages:
-  - test
+  - name: test
     if: branch != source AND branch != master
   - name: deploy
     if: branch = source
