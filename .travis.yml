@@ -5,9 +5,9 @@ install:
 - bundle install
 
 # blocklist - don't 'build' master as we're deploying _to_ master
-branches:
-  except:
-  - master
+# branches:
+#   except:
+#   - master
 
 stages:
   - name: test
