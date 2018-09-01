@@ -5,7 +5,7 @@
 {% endcomment %}
 <div class="figureContainer">
   <div class="figure">
-    <img class="illustration" src="{% if include.url contains "/img/" %}{{ include.url }}{% else %}{{ include.url | prepend: "/img/" }}{% endif %}" alt="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}">
+    <img class="illustration" src="{% if include.url contains "/img/" %}{{ include.url }}{% else %}{{ include.url | prepend: "/img/" }}{% endif %}" alt="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}" />
     <p class="caption">{{ include.caption }}</p>
   </div>
 </div>
