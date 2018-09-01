@@ -6,7 +6,8 @@ end
 
 task :test do
   options = {
-    assume_extension: true
+    assume_extension: true,
+    only_4xx: true
   }
 
   build
