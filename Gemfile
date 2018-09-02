@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-sitemap'
-gem 'jekyll-seo-tag'
 gem 'rouge'
+gem 'rake'
+gem 'html-proofer'
+
+group :jekyll_plugins do
+  gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+end
