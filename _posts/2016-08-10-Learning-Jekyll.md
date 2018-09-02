@@ -22,7 +22,7 @@ This isn't to say that all use of foo/bar is wrong; just that if you're using an
 
 Case in point:
 
-{% include image.html url="/img/jekylldocscn01.jpg" %}
+{% include image.html url="/img/jekylldocscn01.jpg" alt="screenshot of context-free jekyll docs" %}
 
 You can specify meta data. Okay, what exactly does that mean? Meta data can encompass a wide range of things, and a decent example here would help me think about what sorts of things you had in mind when you... oh 'foo: bar'. Yeah, thanks for that. As a reader, I'm just as in the dark after your example as I was before I saw it. So you could have saved yourself some time and bandwidth and not bothered.
 
