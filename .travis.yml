@@ -1,0 +1,27 @@
+language: ruby
+rvm:
+- 2.4.2
+install:
+- bundle install
+
+stages:
+  - name: test
+    if: branch != source AND branch != master
+  - name: build
+    if: branch = source
+
+jobs:
+  include:
+    - stage: test
+      script: bundle exec rake test
+    - stage: build
+      script: bundle exec rake build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: _site
+  target_branch: master
+  on:
+    branch: source
