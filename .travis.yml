@@ -6,20 +6,24 @@ install:
 
 stages:
   - name: test
-    if: branch != source AND branch != master
-  - name: deploy
+    if: branch != master AND "${TRAVIS_PULL_REQUEST}" = "true"
+  - name: build
     if: branch = source
 
 jobs:
   include:
     - stage: test
       script: bundle exec rake test
-    - stage: deploy
+    - stage: build
       script: bundle exec rake build
-      provider: pages
-      skip_cleanup: true
-      github_token: $GITHUB_TOKEN
-      local_dir: _site
-      target_branch: master
-      on:
-        branch: source
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: _site
+  target_branch: master
+  on:
+    branch: source
+
+#force a build
