@@ -4,6 +4,7 @@ markdown: kramdown
 description: A personal blog of code snippets and electronics projects
 url: https://syntheta.se
 author: David Allen
+include: ["_pages"]
 
 # syntax highlighting
 highlighter: rouge
@@ -11,12 +12,14 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-include: ["_pages"]
+jekyll-minifier:
+  compress_javascript: false
 
 # gem plugins
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-minifier
 
 # exclude during build
 exclude:
