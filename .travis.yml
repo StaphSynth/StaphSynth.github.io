@@ -6,7 +6,7 @@ install:
 
 stages:
   - name: test
-    if: branch != master AND branch != source
+    if: (branch != master AND branch != source) OR $TRAVIS_PULL_REQUEST != "false"
   - name: build
     if: branch = source
 
