@@ -4,7 +4,7 @@ task :build do
   build
 end
 
-task :test do
+task :default do
   options = {
     assume_extension: true,
     only_4xx: true
