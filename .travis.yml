@@ -1,21 +1,13 @@
 language: ruby
 rvm:
 - 2.4.2
+
+branches:
+  except:
+    - master
+
 install:
 - bundle install
-
-stages:
-  - name: test
-    if: branch != master AND branch != source
-  - name: build
-    if: branch = source
-
-jobs:
-  include:
-    - stage: test
-      script: bundle exec rake test
-    - stage: build
-      script: bundle exec rake build
 
 deploy:
   provider: pages
