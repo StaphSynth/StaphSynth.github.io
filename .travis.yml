@@ -6,7 +6,7 @@ install:
 
 stages:
   - name: test
-    if: branch != master AND "${TRAVIS_PULL_REQUEST}" = "true"
+    if: branch != master AND branch != source
   - name: build
     if: branch = source
 
@@ -25,5 +25,3 @@ deploy:
   target_branch: master
   on:
     branch: source
-
-#force a build
