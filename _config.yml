@@ -12,9 +12,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-jekyll-minifier:
-  compress_javascript: false
-
 # gem plugins
 plugins:
   - jekyll-sitemap
