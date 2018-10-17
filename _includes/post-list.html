@@ -1,0 +1,41 @@
+<hr />
+
+<ul class="post-list">
+  {% for post in paginator.posts %}
+    {% include article-list-item.html url=post.url logo=post.logo title=post.title byline=post.byline %}
+  {% endfor %}
+</ul>
+
+{% if paginator.total_pages > 1 %}
+  <nav class="menu pagination-menu">
+    <ul>
+      {% if paginator.previous_page %}
+        <li>
+          <a href="{{ paginator.first_page_path }}">
+            <i class="fa fa-angle-double-left"></i>&nbsp;Latest
+          </a>
+        </li>
+        <li>
+          <a href="{{ paginator.previous_page_path }}">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;Later
+          </a>
+        </li>
+      {% endif %}
+      <li>
+        Page {{ paginator.page }}
+      </li>
+      {% if paginator.next_page %}
+        <li>
+          <a href="{{ paginator.next_page_path }}">
+            Older&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{{ paginator.last_page_path }}">
+            Oldest&nbsp;<i class="fa fa-angle-double-right"></i>
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endif %}

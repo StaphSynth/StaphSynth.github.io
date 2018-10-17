@@ -14,4 +14,4 @@ I knocked up this quick demo site to play around with some ideas on mobile-first
 
 {% include image.html url="/img/melbscrn01.jpg" caption="Screenshot of the site's small desktop layout. Needs further styling in the main content area." %}
 
-{% include gitLink.html url="https://github.com/StaphSynth/City-of-Melbourne" %}
+{% include git-link.html url="https://github.com/StaphSynth/City-of-Melbourne" %}

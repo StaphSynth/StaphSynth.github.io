@@ -29,4 +29,4 @@ But it's not all layout, I also pushed my knowledge of Jekyll further with this 
 
 All in all, I'm quite happy with this one so far. I've just sent an email with a [link](https://churchforlife.github.io/) to the site in its current "empty except for place-holder text" to the board members of the church for examination. The site's not complete yet - there are functions, such as the social media icons, that need to be written, but I don't want to spend any more time on it unless it's going to see some use.
 
-{% include gitLink.html url="https://github.com/StaphSynth/Church-For-Life" %}
+{% include git-link.html url="https://github.com/StaphSynth/Church-For-Life" %}

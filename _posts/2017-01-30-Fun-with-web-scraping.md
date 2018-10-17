@@ -61,4 +61,4 @@ I'm going to refine it a bit by adding a few options and storing user settings i
 
 I'm sure there are plenty of other utilities on the 'net that could have done this all for me, but where's the fun in that? I never even went looking for them :)
 
-{% include gitLink.html url="https://github.com/StaphSynth/chproxy" %}
+{% include git-link.html url="https://github.com/StaphSynth/chproxy" %}

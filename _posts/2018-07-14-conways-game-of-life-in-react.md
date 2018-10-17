@@ -42,4 +42,4 @@ I really like the way this has turned out becuase it's so easy to modify. The de
 
 The implementation details of any given part of the system can be ripped out (and, in fact, have been) and replaced without affecting the rest of it. It's also fairly light weight. There's no magic here, just basic JS functions being, well, functional.
 
-{% include gitLink.html url="https://github.com/StaphSynth/game_of_life" %}
+{% include git-link.html url="https://github.com/StaphSynth/game_of_life" %}

@@ -1,7 +1,6 @@
 ---
 layout: common
 title: Home
-navId: 1
 ---
 
 ## Welcome

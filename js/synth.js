@@ -1,7 +1,7 @@
 /*show/hide the main menu when nav icon clicked/tapped on mobile view
 also blurs the button after event and rotates the menu direction caret*/
 $('#navIcon').click(function(event) {
-  $('#mainMenu ul').slideToggle('fast','swing');
+  $('.menu ul').slideToggle('fast','swing');
   $('#navIcon').blur();
   $('.fa-caret-down').toggleClass('fa-rotate-180');
 });
@@ -16,11 +16,11 @@ $('.caption').each(function(){
     $(this).css('text-align', 'center');
 });
 
-/*Remove inline style from #mainMenu ul if window width > 800px on window resize event.
+/*Remove inline style from .menu ul if window width > 800px on window resize event.
 Prevents inline style from over-riding CSS style rules in @media query*/
 $(window).resize(function() {
   if($(window).width() >= 800) {
-    $('#mainMenu ul').removeAttr('style');
+    $('.menu ul').removeAttr('style');
   }
 });
 

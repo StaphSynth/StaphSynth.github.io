@@ -12,10 +12,10 @@ In each project, my attention was directed toward developing a certain feature, 
 
 <hr>
 
-<ul class="postList">
+<ul class="post-list">
   {% for post in site.tags['portfolio'] %}
     {% if post.title %}
-      {% include articleListItem.html url=post.url logo=post.logo title=post.title byline=post.byline %}
+      {% include article-list-item.html url=post.url logo=post.logo title=post.title byline=post.byline %}
     {% endif %}
   {% endfor %}
 </ul>

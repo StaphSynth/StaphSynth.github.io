@@ -88,4 +88,4 @@ The above TodoMVC example uses an angular service to accomplish this task, but I
 </div> <!-- /appRoot -->
 {% endraw %}
 
-{% include gitLink.html url="https://github.com/StaphSynth/todolist" %}
+{% include git-link.html url="https://github.com/StaphSynth/todolist" %}

@@ -9,7 +9,7 @@ By David Allen, except where noted
 Browser reset
 
 http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
+v2.0 | 2011-01-26
 License: none (public domain)
 ================================================*/
 
@@ -49,14 +49,17 @@ html, body {
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -92,7 +95,7 @@ a, a:visited {
 	position: relative;
 }
 
-#contentWrapper {
+.content-wrapper {
 	padding-bottom: 210px; /*Must be equal to footer height + footer border (5px)*/
 }
 
@@ -102,18 +105,18 @@ a, a:visited {
 FONTS
 ===================================================*/
 
-h1, h2, h3, h4, #mainMenu, .postList a {
+h1, h2, h3, h4, .menu li, .post-list a {
 	font-family: 'Audiowide', cursive;
 }
 
 p, footer,
-.gitLink,
-#article .tags,
-#article li {
+.git-link,
+.article .tags
+.article li {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#article code {
+.article code {
 	font-family: 'Fira Mono', monospace;
 }
 
@@ -135,8 +138,8 @@ body {
 	color: #0871D0;
 }
 
-#mainMenu a, footer,
-#article p, #article li {
+.menu a, footer,
+.article p, .article li {
   color: #ddd;
 }
 
@@ -149,7 +152,7 @@ body {
 	border-image-slice: 1;
 }
 
-#article {
+.article {
 	border: solid 5px #0871D0;
 	box-shadow: 4px 4px 8px #000;
   -o-border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
@@ -168,7 +171,7 @@ body {
   border-image-slice: 1;
 }
 
-#article div.highlighter-rouge {
+.article div.highlighter-rouge {
   border: solid 1px #0871D0;
   box-shadow: 1px 1px 2px #000;
   -o-border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
@@ -190,11 +193,11 @@ footer {
 	border-image-slice: 1;
 }
 
-#navIcon, #mainMenu ul, footer, #article {
+#navIcon, .menu ul, footer, .article {
   background-color: #2f2f2f;
 }
 
-#mainMenu li a:active, #mainMenu li a:hover {
+.menu li a:active, .menu li a:hover {
   background-color: #444;
 	color: #fff;
 }
@@ -203,20 +206,20 @@ footer {
 	text-shadow: 0px 0px 2px  #ddd;
 }
 
-.postList a {
+.post-list a {
 	color: #0871D0;
 }
 
 /*Main text link colour*/
-#article p a {
+.article p a {
 	color: #3acfd5;
 }
 
 /*text at top and bottom of post (meta data and github link)
 also tag.html colour*/
-#article .gitLink a,
-#article .postData,
-#article .tags {
+.article .git-link a,
+.article .postData,
+.article .tags {
 	color: #ddd;
 }
 
@@ -260,19 +263,19 @@ header {
 NAVIGATION
 ===================================================*/
 
-#mainMenu a {
+.menu a {
   display: block;
   padding: 1em;
 }
 
 /*Initial menu state: don't show menu struct, just the nav icon*/
-#mainMenu ul {
-  display: none;
+.menu ul {
+	display: none;
 	border-left: solid 0.75rem transparent;
 	border-right: solid 0.75rem transparent;
 }
 
-#mainMenu ul li {
+.menu ul li {
 	border-top: solid 1px #444;
 }
 
@@ -293,6 +296,8 @@ NAVIGATION
 	outline: none!important;
 }
 
+
+
 /*==================================================
 MAIN CONTENT
 ===================================================*/
@@ -301,7 +306,7 @@ MAIN CONTENT
 General content style
 --------------------*/
 
-#article {
+.article {
 	text-align: center; /*To centre child divs, not for the text which is set to justify*/
  	margin: 1.5rem 2.5%;
 	max-width: 1024px;
@@ -317,28 +322,28 @@ h3 a {
 	text-decoration: underline;
 }
 
-#article ul {
+.article ul {
 	list-style: disc;
 	margin-left: 1rem;
 }
 
-#article ol {
+.article ol {
 	list-style: decimal;
 	margin-left: 1rem;
 }
 
-#article p,
-#article li {
+.article p,
+.article li {
 	line-height: 1.25rem;
 	text-align: justify;
 	padding: 1rem 0;
 }
 
-#article li {
+.article li {
 	padding: 0.25rem 0;
 }
 
-#article .figure p {
+.article .figure p {
 	padding: 0.5rem 0;
 }
 
@@ -350,27 +355,27 @@ p strong {
 	font-weight: bold;
 }
 
-#article p a:hover {
+.article p a:hover {
 	text-decoration: underline;
 }
 
-#article h2 {
+.article h2 {
 	font-size: 1.25rem;
 	text-align: left;
 }
 
-#article h3 {
+.article h3 {
 	font-size: 1.125em;
 	padding: 1rem 0 0;
 	text-align: left;
 }
 
-#article .postTitle h3 {
+.article .post-title h3 {
 	font-size: 1em;
 	padding: 0;
 }
 
-#article .postList li {
+.article .post-list li {
 	margin: 0;
 	list-style: none;
 	padding: 0;
@@ -380,7 +385,7 @@ p strong {
 Tags and post meta-data
 --------------------*/
 
-#article .postData {
+.article .postData {
 	list-style: none;
 	font-style: italic;
 	margin: 0.5rem 0;
@@ -395,20 +400,20 @@ Tags and post meta-data
 	justify-content: flex-start;
 }
 
-#article .postData li {
+.article .postData li {
 	padding: 0;
 }
 
-#article .postData .fa {
+.article .postData .fa {
 	vertical-align: middle;
 }
 
-#article .tags {
+.article .tags {
 	text-align: left;
 	line-height: 1.5rem;
 }
 
-#article .tags a:hover {
+.article .tags a:hover {
 	color: #3acfd5;
 	text-decoration: underline;
 }
@@ -418,11 +423,11 @@ Tags and post meta-data
 	flex-direction: column;
 }
 
-#article .entry-date {
+.article .entry-date {
 	color: #999;
 }
 
-#article .postData p {
+.article .postData p {
 	padding: 0.5rem 0;
 }
 
@@ -440,7 +445,7 @@ Figures
 	display: table;
 }
 
-#article .figure p {
+.article .figure p {
 	display: table-caption;
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
@@ -454,14 +459,14 @@ Post list generator
 styling
 --------------------*/
 
-#article p.byline {
+.article p.byline {
 	padding: 0.5rem 0 0;
 	text-align: left;
 	text-shadow: none;
 	margin: 0;
 }
 
-.articleListItem a {
+.article-list-item a {
 	margin: 1.5rem 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -477,22 +482,22 @@ styling
 	align-items: center;
 }
 
-.thumbContainer {
+.thumb-container {
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
 }
 
-.postTitle {
+.post-title {
 	-ms-flex-negative: 100;
 	flex-shrink: 100;
 	padding-left: 0.75rem;
 }
 
-.byline, .postTitle h3 {
+.byline, .post-title h3 {
 	padding: 0;
 }
 
-.thumbContainer img {
+.thumb-container img {
 	border-radius: 50%;
 	height: 40px;
 	width: 40px;
@@ -512,6 +517,10 @@ styling
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+
+.menu ul {
+	margin: 0;
 }
 
 /*-------------------
@@ -539,25 +548,25 @@ blockquote {
 	padding: 1rem;
 }
 
-#article blockquote p {
+.article blockquote p {
 	padding: 0;
 }
 
-#article div.highlighter-rouge {
+.article div.highlighter-rouge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
 }
 
-#article pre {
+.article pre {
   line-height: 1.25rem;
   text-align: left;
   margin-left: 0;
   padding: 0.5rem;
 }
 
-#article code {
+.article code {
   font-size: 1rem;
 }
 
@@ -574,26 +583,26 @@ Github link at end
 of code articles
 --------------------*/
 
-.gitLinkContainer {
+.git-link-container {
 	margin-top: 1rem;
 }
 
-.gitLink {
+.git-link {
 	display: inline-block;
 	margin: 0 auto;
 }
 
-.gitLink .fa-github-square {
+.git-link .fa-github-square {
 	padding-right: 0.5rem;
 	margin-left: 0;
 	font-size: 2rem!important;
 }
 
-.gitLink:hover .fa-github-square {
+.git-link:hover .fa-github-square {
 	text-shadow: 0px 0px 2px  #ddd;
 }
 
-.gitLink:hover a {
+.git-link:hover a {
 	text-decoration: underline;
 }
 
@@ -683,19 +692,19 @@ Small tablets >=500px width
 	/*********************
 	Nav
 	**********************/
-	#mainMenu ul {
+	.menu ul {
 		border-top: solid 0.5rem transparent;
 		border-bottom: solid 0.5rem transparent;
 	}
 
-	#mainMenu ul li {
+	.menu ul li {
 		display: inline-block;
 		border-top: none;
 		margin-right: -5px; /*Deals with unwanted space between nav elements*/
 	}
 
 	/*Produce the single line border between (and only between) the nav elements*/
-	#mainMenu ul li~li {
+	.main-menu ul li~li {
 		border-left: solid 1px #444;
 	}
 
@@ -703,33 +712,33 @@ Small tablets >=500px width
 	Main content
 	**********************/
 
-	#article .postData .fa {
+	.article .postData .fa {
 		font-size: 1.5rem;
 	}
 
-	#article p,
-	#article li {
+	.article p,
+	.article li {
 		line-height: 1.33em;
 	}
 
-	.postList li img {
+	.post-list li img {
 		display: inline-block;
 	}
 
-	.thumbContainer img {
+	.thumb-container img {
 		height: 70px;
 		width: 70px;
 	}
 
-	#article h2 {
+	.article h2 {
 		font-size: 1.5rem;
 	}
 
-	#article h3 {
+	.article h3 {
 		font-size: 1.25em;
 	}
 
-	#article .postTitle h3 {
+	.article .post-title h3 {
 		font-size: 1.125em;
 	}
 
@@ -758,7 +767,7 @@ Larger tablets >=800px width
 	General
 	**********************/
 
-	#contentWrapper {
+	.content-wrapper {
 		padding-bottom: 135px; /*Must == footer height + footer border width (==5px)*/
 	}
 
@@ -778,12 +787,12 @@ Larger tablets >=800px width
 		display: none;
 	}
 
-	#mainMenu ul {
+	.menu ul {
 		display: block;
 		text-align: center;
 	}
 
-	#mainMenu ul li a {
+	.menu ul li a {
 		padding: 0.66rem 1.5rem;
 		font-size: 1.125rem;
 	}
@@ -792,19 +801,19 @@ Larger tablets >=800px width
 	Main content
 	**********************/
 
-	#article {
+	.article {
 		padding: 2.5%;
 	}
 
-	.articleListItem {
+	.article-list-item {
 		margin: 1rem 0;
 	}
 
-	#article h2 {
+	.article h2 {
 		font-size: 1.75em;
 	}
 
-	#article h3 {
+	.article h3 {
 		font-size: 1.5em;
 	}
 
@@ -883,15 +892,15 @@ Desktop >=1100px width
 	Navigation
 	**********************/
 
-	#mainMenu ul {
+	.menu ul {
 		/*border: none;*/
 	}
 
-	#mainMenu ul li {
+	.menu ul li {
 		padding: 0 3rem;
 	}
 
-	#mainMenu ul li a {
+	.menu ul li a {
 		padding: 0.5rem;
 		font-size: 1.25rem;
 	}
@@ -900,23 +909,23 @@ Desktop >=1100px width
 	Main content
 	**********************/
 
-	#article .postData {
+	.article .postData {
 		margin-bottom: 0.5rem;
 	}
 
-	#article {
+	.article {
 		padding: 1.5%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	#article p,
-	#article li {
+	.article p,
+	.article li {
 		line-height: 1.33em;
 		font-size: 1.125rem;
 	}
 
-	#article h2 {
+	.article h2 {
 		font-size: 2em;
 	}
 

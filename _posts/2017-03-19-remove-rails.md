@@ -54,4 +54,4 @@ Writing good tests seems to be something of an artform in itself, and I'm lookin
 
 I learned heaps doing this project. I'm making good progress on getting my head around promises in JavaScript (my only real hang-ups here are determining when something is async or not). I learned how to write an Angular service and use templates. I learned how to get Protractor and Karma working, as well as how to write tests using the Jasmine framework. This project was a lot of fun and I'm already applying my knew knowledge to older problems. Stay tuned for more posts on automation testing!
 
-{% include gitLink.html url="https://github.com/StaphSynth/remove-rails" %}
+{% include git-link.html url="https://github.com/StaphSynth/remove-rails" %}
