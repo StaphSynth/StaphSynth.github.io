@@ -1,26 +1,7 @@
 ---
 layout: common
 ---
-<div class="titleLine">
-  <div class="thumbContainer">
-    <img src="/img/logos/{{ page.logo }}" alt="{{ page.title }}" />
-  </div>
-  <div class="postTitle">
-    <h2>{{ page.title }}</h2>
-  </div>
-</div>
-<ul class="postData">
-  <li><p><i class="fa fa-calendar" aria-hidden="false"></i><noscript>Posted on</noscript> {{ page.date | date_to_long_string }}{% if page.modified or page.tags.size >= 1 %}&ensp;|&ensp;{% endif %}</p></li>
-  {% if page.modified %}
-     <li><p><i class="fa fa-edit" aria-hidden="false"></i><noscript>Last modified on</noscript> {{ page.modified | date_to_long_string }}{% if page.tags.size >= 1 %}&ensp;|&ensp;{% endif %}</p></li>
-  {% endif %}
-  {% if page.tags.size >= 1 %}
-     <li><p><i class="fa fa-tags" aria-hidden="false"></i><noscript>Tagged in</noscript>
-    {% for tag in page.tags %}
-      <a href="/tags/#{{ tag | cgi_escape }}">{{ tag }}</a>{% if forloop.last %}.{% else %},{% endif %}
-    {% endfor %}
-  </p></li>
-  {% endif %}
-</ul> <!-- /postDate -->
+
+{% include article-header.html %}
 {{ content }}
 {% include disqus.html %}

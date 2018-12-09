@@ -40,4 +40,4 @@ It now has an SEO tag generator, using [Jekyll SEO tag](https://github.com/jekyl
 
 I also fixed a couple of other niggling issues with the underlying structure of the site. It still needs work (the code for the main nav section is a bit of a mess, and I haven't yet solved the problem of getting Jekyll to minify production code), but I'm reasonably happy with where it stands at the moment.
 
-{% include gitLink.html url="https://github.com/StaphSynth/howtoscience.net" %}
+{% include git-link.html url="https://github.com/StaphSynth/howtoscience.net" %}

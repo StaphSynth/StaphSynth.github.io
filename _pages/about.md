@@ -2,7 +2,7 @@
 layout: common
 title: About
 permalink: /about/
-navId: 4
+nav_id: 4
 ---
 
 ## About Me
@@ -21,4 +21,4 @@ You may notice on these pages that I like to make stuff. This is really what the
 ## About This Site
 This site is powered by [Jekyll](http://www.jekyllrb.com), a free and open static site generator. Common layout elements (menu structure, header, footer, etc) are written in HTML; and individual pages are written in [kramdown](http://kramdown.gettalong.org/index.html) and assembled with the layouts by Jekyll into what you see now. CSS styling and JS functionality is then applied as per usual.
 
-{% include gitLink.html url="https://github.com/StaphSynth/StaphSynth.github.io" %}
+{% include git-link.html url="https://github.com/StaphSynth/StaphSynth.github.io" %}

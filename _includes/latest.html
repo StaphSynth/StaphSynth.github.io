@@ -1,25 +1,27 @@
-{% comment %}Generates a list of two posts for the front page: one from each major site category, then breaks.{% endcomment %}
+{% comment %}
+Generates a list of two posts for the front page: one from each major site category, then breaks.{% endcomment %}
 
-<ul class="postList">
-  {% assign codePost = false %}
-  {% assign projectPost = false %}
-  {% assign allPosts = site.posts %}
-  {% for post in allPosts %}
-    {% if codePost == false %}
+<ul class="post-list">
+  {% assign code_post = false %}
+  {% assign project_post = false %}
+  {% assign all_posts = site.posts %}
+
+  {% for post in all_posts %}
+    {% if code_post == false %}
       {% if post.category == "coding" %}
-        {% include articleListItem.html url=post.url logo=post.logo title=post.title byline=post.byline %}
-        {% assign codePost = true %}
+        {% include article-list-item.html url=post.url logo=post.logo title=post.title byline=post.byline %}
+        {% assign code_post = true %}
       {% endif %}
     {% endif %}
 
-    {% if projectPost == false %}
+    {% if project_post == false %}
       {% if post.category == "projects" %}
-        {% include articleListItem.html url=post.url logo=post.logo title=post.title byline=post.byline %}
-        {% assign projectPost = true %}
+        {% include article-list-item.html url=post.url logo=post.logo title=post.title byline=post.byline %}
+        {% assign project_post = true %}
       {% endif %}
     {% endif %}
 
-    {% if codePost == true and projectPost == true %}
+    {% if code_post == true and project_post == true %}
       {% break %}
     {% endif %}
   {% endfor %}

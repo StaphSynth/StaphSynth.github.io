@@ -6,6 +6,7 @@ end
 
 task :default do
   options = {
+    internal_domains: ['syntheta.se'],
     assume_extension: true,
     only_4xx: true
   }
