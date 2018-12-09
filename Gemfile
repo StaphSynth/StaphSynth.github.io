@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '~> 3.6.3'
 gem 'rouge'
 gem 'rake'
 gem 'html-proofer'
