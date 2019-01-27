@@ -4,12 +4,12 @@ title: Getting Started With Ruby
 logo: ruby.jpg
 byline: Getting it right the first time
 category: coding
-#modified:
+modified: 2019-01-27
 tags:
   - ruby
 ---
 
-I love Ruby, it's very satisfying and developer-friendly to use. Ironically, despite its focus on developer friendliness, it can be a real pain to set up properly, which leaves a sour taste in the mouth for new users. In this post, we'll walk through setting up Ruby on your Mac (Linux guide coming soon!).
+I love Ruby, it's very satisfying and developer-friendly to use. Ironically, despite its focus on developer friendliness, it can be a real pain to set up properly, which leaves a sour taste in the mouth for new users. In this post, we'll walk through setting up Ruby on your Mac or Linux computer. This post is aimed primarily at inexperienced users, so feel free to ignore the explanations if you're at home editing Bash profiles.
 
 ### First Things First
 
@@ -23,13 +23,14 @@ I've used all of them, but I prefer rbenv, so that's what we'll use here. (As a 
 
 ### Installing Rbenv
 
+#### macOS X
+
 On macOS it's a doddle, you can do it via [homebrew](https://brew.sh/).
 
 ```sh
 $ brew install rbenv
 ```
-
-Once rbenv has been installed, you then set it up like so:
+This one command installs both rbenv and a plugin called ruby-build which allows you to easily install Ruby. Once the installation is complete, you then initialise it like so:
 
 ```sh
 $ rbenv init
@@ -37,9 +38,46 @@ $ rbenv init
 
 This makes sure rbenv is set up and running in your terminal environment. Now you're ready to install Ruby!
 
+#### Linux
+
+Setup on Linux requires a few more manual steps than macOS, but it's still fairly straight forward.
+
+First, you'll need to use git to clone rbenv to your system.
+
+```
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
+
+Once rbenv has been cloned, you need to tell the system that it exists. You do this by adding it to the system [PATH](http://www.linfo.org/path_env_var.html). Every time you type a command at the terminal, the shell searches the system PATH to find the executable you're invoking. We will add rbenv to the PATH so you can use it on the command line.
+
+```
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"\neval "$(rbenv init -)"' >> ~/<YOUR_SHELL_PROFILE_NAME>
+```
+
+The above command will add two lines to the bottom of your shell profile: `export PATH="$HOME/.rbenv/bin:$PATH"`, which adds rbenv to the system PATH; and `eval "$(rbenv init -)"` which will make sure rbenv is initialised every time you start your terminal.
+
+You'll need to replace `<YOUR_SHELL_PROFILE_NAME>` with the name of your profile file. If you're using Bash, it's likely to be either `.bash_profile` or `.bashrc`. If you're using Zsh, it's `.zshrc`.
+
+Once this is done, restart the terminal for it to take effect. To check it has, run
+
+```
+$ commnd -v rbenv
+```
+
+If rbenv is available, this command will output the string `rbenv`, otherwise, it'll do nothing.
+
+The last thing you need to do is install an rbenv plugin called [ruby-build](https://github.com/rbenv/ruby-build) that will make installing new Ruby versions trivial.
+
+```
+$ mkdir -p "$(rbenv root)"/plugins
+$ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+```
+
+Now you're (finally!) ready to install Ruby!
+
 ### Installing Ruby
 
-You can install as many versions of Ruby you like now using the `rbenv install` command.
+Now that you have rbenv installed and working, you can install as many versions of Ruby you like using the `rbenv install` command.
 
 To see a list of Ruby versions available for installation, run `rbenv install -l`. The list this prints out is quite long and comprehensive. For our purposes, we're really only interested in the plain Rubies up the top (the ones that only have numbers in their version names). The others (like JRuby, etc) are different implementations of Ruby written by the wider Ruby community.
 
@@ -48,6 +86,10 @@ Let's install Ruby 2.5.1
 ```sh
 $ rbenv install 2.5.1
 ```
+<hr />
+**Note to Linux users:** The above command downloads Ruby source code and compiles it on your system. You _may_ experience errors here if you do not have a C compiler and the appropriate libraries installed. Due to the sheer number of different Linux distributions and setups, it's impossible to give accurate guidance here. If you experience compilation errors, I suggest googling the error messages or checking help forums for your distribution.
+<hr />
+
 <p></p>
 ### Selecting a Ruby Version
 
@@ -109,8 +151,7 @@ Each version of Ruby on your system will need its own installation of the bundle
 
 ### Conclusions
 
-This does seem like a lot of stuffing around just to use a language, but doing it this way will avoid a lot of headaches in the future. Rbenv allows you to have as many versions of Ruby installed as you need, and keeps them and their gems isolated from each other so your projects don't step on each others toes. Trust me, it's well worth the effort :)
-
+This does seem like a lot of stuffing around just to use a programming language, but doing it this way will avoid a lot of headaches in the future. Rbenv allows you to have as many versions of Ruby installed as you need, and keeps them and their gems isolated from each other so your projects don't step on each others toes. It's well worth a little extra effort now, for the sanity you get to keep later.
 
 ### More Helpful Things
 <p></p>
