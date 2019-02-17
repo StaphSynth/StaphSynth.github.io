@@ -10,7 +10,7 @@ It's true, I'm a nerd. My name is David Allen and I'm a thirty-ish year old boy,
 
 Personal philosophy: (1) Don't be a dick. (2) Don't learn what to think, learn _how_ to think.
 
-{% include image.html url="/img/me-guitar.jpg" caption="What can only be described as an 'artistic' shot of me playing guitar :)" %}
+{% include image.html url="/assets/images/me-guitar.jpg" caption="What can only be described as an 'artistic' shot of me playing guitar :)" %}
 
 I studied science for years. I have a degree (with Honours! ;) in science (I studied [molecular](https://en.wikipedia.org/wiki/Molecular_biology) [microbiology](https://en.wikipedia.org/wiki/Microbiology)). I've worked as a research scientist, teacher, lab technician and general dogsbody. I have a few published peer-reviewed papers to my name. I even did most of a PhD. It's funny, in a way, how pulling things apart for science just didn't cut it for me any more. For various reasons, including an attempt to restore something of my sanity, I decided to leave science and shift my career to my other great love: computers.
 

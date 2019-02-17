@@ -6,7 +6,7 @@ byline: Construction, repair and lessons learned.
 category: projects
 modified: 2017-01-16
 comments: true
-image: /img/P126-lightbox6.jpg
+image: /assets/images/P126-lightbox6.jpg
 tags:
   - electronics
   - lighting
@@ -21,7 +21,7 @@ The plan was fairly straight-forward: buy the LED strip lights, a beefy 12V supp
 
 The first mistake I made was to buy a crappy 360W 12V supply from ebay. These supplies do not have a very good reputation for longevity, and I opted to go with one that provided more power than I actually needed in the hopes that the added headroom would make it last a little longer.
 
-{% include image.html url="/img/12v-crapsupply.jpg" caption="These cheap supplies are all over ebay like a rash. Theyr'e noisy and not of very high quality. I found out later on that they're also not very efficient." %}
+{% include image.html url="/assets/images/12v-crapsupply.jpg" caption="These cheap supplies are all over ebay like a rash. Theyr'e noisy and not of very high quality. I found out later on that they're also not very efficient." %}
 
 After the supply arrived, I pulled it apart to find several very good reasons why these supplies are not well regarded. Completely inadequate thermal management of the switching transistors and high-current rectifier diodes (bolted straight to the case, very poor thermal contact), low quality electrolytic capacitors, and a whiny 60mm fan completed the picture. This project being done on the cheap, however, I decided to press on and see if I could make it work regardless.
 
@@ -29,13 +29,13 @@ I decided to attack the thermal problems first. I moved the main switching trans
 
 Given that this supply was to be mounted in the same room as the stereo, I wanted it to run without a fan unless absolutely necessary. A piece of PVC pipe was used to complete the tunnel on the other side of the sink and a quiet 80mm fan was mounted at the bottom end to blow air up through the heatsink tunnel assembly should the temerature rise too far.
 
-{% include image.html url="/img/P126-lightbox1.jpg" caption="The box during construction. You can see the heatsink and the half-section of PVC pipe I used to complete the tunnel. I also decided to use 6.5mm mono phone sockets as output jacks because I had some lying around and couldn't think of anything better :)" %}
+{% include image.html url="/assets/images/P126-lightbox1.jpg" caption="The box during construction. You can see the heatsink and the half-section of PVC pipe I used to complete the tunnel. I also decided to use 6.5mm mono phone sockets as output jacks because I had some lying around and couldn't think of anything better :)" %}
 
 The fan is controlled by a [P42](http://sound.whsites.net/project42.htm) thermo-fan switching circuit I made quite some time before. The circuit works by sensing the voltage across a couple of ordinary silicon diodes. As the temperature of the P-N junction in a diode rises, the the voltage across it falls. A 741 opamp wired as a comparitor monitors this voltage and compares it with a fixed reference.
 
 Once it hits a certain level (which you set when you calibrate the circuit), the output of the opamp flips and goes low, turning on a PNP transistor that then switches on the fan. In this case, I used a glass of warm water to help me set the circuit to turn the fan on when the heatsink reaches ~45 °C. It almost never turns on except for hot days.
 
-{% include image.html url="/img/P126-lightbox3.jpg" caption="Shot of the P42 fan controller mounted on the right. The sense diodes have not been installed yet. The transistor mounted to the heatsink is what switches the fan on. It doesn't need all that heatsinking, but it was available, so why not?" alt="ESP P42 thermo fan controller mounted to heatsink" %}
+{% include image.html url="/assets/images/P126-lightbox3.jpg" caption="Shot of the P42 fan controller mounted on the right. The sense diodes have not been installed yet. The transistor mounted to the heatsink is what switches the fan on. It doesn't need all that heatsinking, but it was available, so why not?" alt="ESP P42 thermo fan controller mounted to heatsink" %}
 
 The P126 PWM dimmer circuit connects the power supply to the lights and allows adjustment of the brightness of the LEDs via a single 10k potentiometer. The circuit uses a couple of dual opamps to provide the PWM function. Two are set up to form a triangle wave oscillator with a frequency of around 400Hz. A third is wired as a comparitor, and just like in P42, compares the voltage of the triangle wave with the reference voltage across the 10k pot.
 
@@ -45,19 +45,19 @@ Unfortunately, the only MOSFETs I had to hand were a few IRF540s, with a current
 
 This turned out to be a good idea because it halves the current through each MOSFET, doubles the thermal transfer area of the MOSFETs to the heatsink, halves the total current flowing through the main power cables to the LEDs (since there are now two pairs instead of one), and reduces the voltage losses across the cabling as well as cable width requirements. This lunch is not free, but for the small cost of an additional MOSFET, connector, and an extra 2m of cheap speaker cable, it comes heavily discounted :)
 
-{% include image.html url="/img/P126-lightbox2.jpg" caption="In this shot you can see the P126 PWM board mounted on the left of the heatsink, with its switching MOSFETs mounted off to one side with their daughter-board." alt="ESP P126 mounted to heatsink using two MOSFETs rather than one." %}
+{% include image.html url="/assets/images/P126-lightbox2.jpg" caption="In this shot you can see the P126 PWM board mounted on the left of the heatsink, with its switching MOSFETs mounted off to one side with their daughter-board." alt="ESP P126 mounted to heatsink using two MOSFETs rather than one." %}
 
 The P126 PWM MOSFETs are mounted off the board directly on the heatsink, with a small daughter-board made of prototyping board used to provide a mounting point for the heavy power cables and gate resistors required to damp ringing of the control signal from P126.
 
-{% include image.html url="/img/P126-lightbox4.jpg" caption="The finished box mounted to the wall near the room entrance. The switch is for power and the knob for brightness." %}
+{% include image.html url="/assets/images/P126-lightbox4.jpg" caption="The finished box mounted to the wall near the room entrance. The switch is for power and the knob for brightness." %}
 
 The unit is built into a wooden box made of pieces of pine and Tasmanian oak off-cuts. The inside is lined with earthed aluminium foil to help sink EMI. Connections to the outside world are via holes drilled in the wooden panels with a hole-saw. The connectors were then mounted onto a thinner piece of material (such as aluminium sheet) and then screwed to the panels behind the holes.
 
-{% include image.html url="/img/P126-lightbox5.jpg" caption="Underside of the completed light controller, showing the power cord socket and lower ventillation holes produced using a hole saw." %}
+{% include image.html url="/assets/images/P126-lightbox5.jpg" caption="Underside of the completed light controller, showing the power cord socket and lower ventillation holes produced using a hole saw." %}
 
 The vent holes in the top and bottom of the case were covered in flywire to stop insects and inquisitive fingers from making their way into the box. It wasn't strictly necessary because the heatsink blocks off the high-voltage side of the box from the vents, but it seemed like a good idea nonetheless.
 
-{% include image.html url="/img/P126-lightbox6.jpg" caption="The light strip in action." %}
+{% include image.html url="/assets/images/P126-lightbox6.jpg" caption="The light strip in action." %}
 
 ### Repair
 
@@ -65,7 +65,7 @@ The project worked well over a year, but failed one night without much fanfare. 
 
 The primary filter caps were replaced with legit Rubycon 250V 560uF, the closest value I could get with the same footprint. The output filter caps on the secondary were replaced with Panasonic high performance, low ESR caps specifically designed for high-current switching supply filtering. I also replaced all the small electrolytics in the control circuitry, although this probably wasn't really necessary, so they just got cheaper Lelon low ESR parts.
 
-{% include image.html url="/img/P126-lightbox7.jpg" caption="The light controller in its completed state with new capacitors. I used heavy gauge wire to carry the DC out of the unit and high-current diodes are soldered backwards across the sockets to catch any inductive spiking coming back from the power cables and stop it damaging the MOSFETs." %}
+{% include image.html url="/assets/images/P126-lightbox7.jpg" caption="The light controller in its completed state with new capacitors. I used heavy gauge wire to carry the DC out of the unit and high-current diodes are soldered backwards across the sockets to catch any inductive spiking coming back from the power cables and stop it damaging the MOSFETs." %}
 
 After putting it back together, the supply refused to start. I found this puzzling as there were no other obvious signs of damaged or failed parts. Thus the great trouble-shooting saga began. This was hampered by the fact that I couldn't connect most of my test gear to the supply becuase most of it runs at mains potential and I don't have any isolated probes for my oscilloscope. I wasn't going to risk killing the 'scope on a cheap supply, so I was stuck with a multi-meter and my brain.
 
@@ -73,11 +73,11 @@ I probed around with the multi-meter set to DC volts and did some reverse-engine
 
 This was surprising for a couple of reasons: firstly, I expected to find MOSFETs as the primary switching transistors, not high-voltage NPN devices. Secondly, I would have thought that if a transistor was going to fail in this application, it would fail properly short circuit and read almost zero ohms from one side to the other, not this weird half-way value. Still, live and learn and all that :)
 
-{% include image.html url="/img/P126-lightbox8.jpg" caption="Preparing the new power transistors for mounting to their heat-spreader. I used kapton film as an insulator (I threw away the crappy sil-pads that came with the supply when I first pulled it apart)." %}
+{% include image.html url="/assets/images/P126-lightbox8.jpg" caption="Preparing the new power transistors for mounting to their heat-spreader. I used kapton film as an insulator (I threw away the crappy sil-pads that came with the supply when I first pulled it apart)." %}
 
 Anyway, I ordered a couple of new D209L transistors and replaced the old ones. This was a very fiddly job due to the nature of the lightbox and the way I originally built it. The transistors and diodes are attached to the main heatsink via heat-spreading aluminium plates salvaged from the original power supply chassis. The way these are mounted makes accessing them through the other components on the board very difficult.
 
-{% include image.html url="/img/P126-lightbox9.jpg" caption="Getting the transistors mounted back into that tight space was a difficult and fiddly job. In this shot, you can also see one of the P42 temperature sensing diodes glued to the junction of heat-spreader and main sink." %}
+{% include image.html url="/assets/images/P126-lightbox9.jpg" caption="Getting the transistors mounted back into that tight space was a difficult and fiddly job. In this shot, you can also see one of the P42 temperature sensing diodes glued to the junction of heat-spreader and main sink." %}
 
 Still, after replacing these transistors, the supply is now working again. However, it is now making a mildly irritating whining noise. I believe this is due to magnetostriction. Although it used to make a little noise when I first built it, it's now quite a bit louder, so I'll have to figure out a way of damping it.
 

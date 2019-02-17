@@ -7,7 +7,7 @@ description: Modifying a Stratocaster for nine-way pick-up selection and dual ca
 category: projects
 comments: true
 modified: 2016-09-26
-image: /img/strat-top-postmod.jpg
+image: /assets/images/strat-top-postmod.jpg
 tags:
   - guitar
   - electronics

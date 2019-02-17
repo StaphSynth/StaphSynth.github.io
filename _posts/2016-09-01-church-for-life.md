@@ -15,15 +15,15 @@ I'm not a religious person. However, I do believe in freedom of speech. One of t
 
 This looked like an opportunity for me to sharpen my Jekyll skills, so I jumped in and wrote them a blog site that performs the basic static functions a church would want (location, service times, etc); but also allows them to easily add new content to tell the world what they're up to. It's mobile friendly (of course), ready for social media sharing, and basically thoroughly modern in every way their previous site is (was) not.
 
-{% include image.html url="/img/c4l-desktop.jpg" caption="The desktop layout" %}
+{% include image.html url="/assets/images/c4l-desktop.jpg" caption="The desktop layout" %}
 
 The build actually started off pretty badly. I made some poor decisions on colour scheme and was feeling pretty "meh" about the whole thing because it was just so ugly to look at while I was writing it. However, a happy accident resulted in the layout you see above. I chucked out the image I had been using as the background and went looking for an inspiring shot of the [Great Dividing Range](https://en.wikipedia.org/wiki/Great_Dividing_Range), which divides (funnily enough) Australia's Eastern coast-line from the interior of the continent. After finding the shot (basically the first one on the Wikipedia page. It's a great photo :), I was changing some of the colours to suit the new image and accidentally removed the header background altogether. "Hmmm, that looks cool, with all the menu buttons suspended against a beautiful blue sky like that... I wonder what else I can do with this?"
 
-{% include image.html url="/img/c4l-mobile-closed.jpg" caption="The mobile layout with menu closed." %}
+{% include image.html url="/assets/images/c4l-mobile-closed.jpg" caption="The mobile layout with menu closed." %}
 
 Getting rid of the previous hopeless colour gradient scheme of the main content and footer elements, and just going with a semi-transparent white gave the site a really nice open and airy feel. It was also a bit of a happy accident that lead to only rounding one of the corners to the menu elements, giving the illusion of sails and helping the airy theme along. It's exciting, it's inspiring, it's interesting to look at - in short, it's everything a church looking to get their message across could want in a layout. Well I think so, anyway ;)
 
-{% include image.html url="/img/c4l-mobile-open.jpg" caption="And with menu open" %}
+{% include image.html url="/assets/images/c4l-mobile-open.jpg" caption="And with menu open" %}
 
 But it's not all layout, I also pushed my knowledge of Jekyll further with this build, using it in more comprehensive and complex ways than I had up until this point. I'm also applying some of the new things I've learned to the site you're reading now :)
 
