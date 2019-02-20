@@ -19,8 +19,8 @@ Implementing [Conway's game of life](https://en.wikipedia.org/wiki/Conway%27s_Ga
 Click on the game board to add some starting cells. Clicking and dragging adds lots of cells. Once you have some cells, you can use the buttons below to start and stop the game.
 
 <div id="root"></div>
-<script type="text/javascript" src="/js/game-of-life.js"></script>
-<link type="text/css" rel="stylesheet" href="/css/game-of-life.css" />
+<script type="text/javascript" src="/assets/javascript/game-of-life.js"></script>
+<link type="text/css" rel="stylesheet" href="/assets/css/game-of-life.css" />
 
 ### The Why
 

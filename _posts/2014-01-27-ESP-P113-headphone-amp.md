@@ -6,7 +6,7 @@ byline: Just the thing to drive power-hungry 'phones.
 category: projects
 comments: true
 modified: 2016-09-15
-image: /img/P113-front.jpg
+image: /assets/images/P113-front.jpg
 tags:
   - electronics
   - amplifiers
@@ -23,15 +23,15 @@ The board was purchased from ESP and I attached it to a power supply board I bui
 
 The case is made from a 1.5mm thick piece of aluminium sheet, bent into a 'U' shape to form the main cover. Four coats of matte black, followed by four coats of 'satin' clear coat spray paint have given it an almost professional powdercoated look. To cap the ends of the aluminium cover and provide a base plate, I used pieces of pine, sanded to round off the corners, then stained with a mixture of cherry red and Japanese blackwood before finishing with five coats of polyurethane. The end-caps where then glued to the 'U' section and the whole thing screwed down to the base.
 
-{% include image.html url="/img/P113-guts.jpg" caption="Mid-way through a wiring tidy-up. The board on the left is the amp, the right is the supply and the little piece of veroboard in the middle is the crossfeed circuit." %}
+{% include image.html url="/assets/images/P113-guts.jpg" caption="Mid-way through a wiring tidy-up. The board on the left is the amp, the right is the supply and the little piece of veroboard in the middle is the crossfeed circuit." %}
 
 Unfortunately, due to space constraints, I had to glue the boards into the aluminium U with cardboard underneath them as an insulator. If I'd been smart, I'd have used velcro so I could take them out again easily. But I wasn't ;)
 
 I also added a [crossfeed](https://en.wikipedia.org/wiki/Crossfeed) circuit on a piece of veroboard and a switch on the front panel to switch it in and out of circuit. I've played around with a couple of these and never really got any of them to sound any good, so I leave it switched out permanently now.
 
-{% include image.html url="/img/P113-rear.jpg" caption="The rear of the finished unit, showing the two inputs (RCA and 3.5mm jack), as well as the source selection switch and power jack." %}
+{% include image.html url="/assets/images/P113-rear.jpg" caption="The rear of the finished unit, showing the two inputs (RCA and 3.5mm jack), as well as the source selection switch and power jack." %}
 
-{% include image.html url="/img/P113-front.jpg" caption="The front (obviously). From left to right: power, crossfeed, volume, 3.5mm 'phone jack, 6.5mm 'phone jack." %}
+{% include image.html url="/assets/images/P113-front.jpg" caption="The front (obviously). From left to right: power, crossfeed, volume, 3.5mm 'phone jack, 6.5mm 'phone jack." %}
 
 It's a great-sounding amp. And by that, I mean it doesn't appear to colour the sound at all, it's just the music and nothing else. At the time, while this was under construction, I was using an old home theatre receiver to drive the HD800s and the difference was night and day.
 

@@ -18,7 +18,7 @@ In the middle of this, I was set a coding challenge by Zendesk, a company I appl
 
 The external ticket API blocks all cross-origin requests, so getting ticket data using a JS front-end framework was out of the question. Since I now have some experience using Rails, I opted for that instead - although I admit a lighter framework would arguably be more appropriate.
 
-{% include image.html url="/img/2017-07/zd_index.jpg" caption="The index page of the ticket viewer app, displaying a list of dummy tickets. It's not pretty, but that wasn't the object of the exercise." %}
+{% include image.html url="/assets/images/2017-07/zd_index.jpg" caption="The index page of the ticket viewer app, displaying a list of dummy tickets. It's not pretty, but that wasn't the object of the exercise." %}
 
 ### Writing the app
 
@@ -39,7 +39,7 @@ If there are no errors, the class stuffs the response data into an instance vari
 
 The rest of the app is pretty straight forward: the controller handles the requests and calls the appropriate getter methods on the API wrapper module, then renders the results on the page. If the API returns an error code, an error message is displayed to the user instead.
 
-{% include image.html url="/img/2017-07/zd_ticket.jpg" caption="Clicking on a ticket in the list shows it in more detail." %}
+{% include image.html url="/assets/images/2017-07/zd_ticket.jpg" caption="Clicking on a ticket in the list shows it in more detail." %}
 
 ### Testing the app
 
@@ -58,7 +58,7 @@ If you know the API spec, you know how it will respond to any given request and 
 
 Just putting up a mock fascade is one thing, but what happens when your program wants to actually _do_ something with the data it thinks is being returned? Since you're not hitting the external API, you can hardly expect it to give you lots of delicous JSON in response, so what to do? The [Factory_Girl](https://github.com/thoughtbot/factory_girl) gem is your friend here. You can use it to instantiate a series of mock objects, so that your code has something to play with.
 
-{% include image.html url="/img/2017-07/zd_test_spec.jpg" caption="The output of the test suite in verbose documentation mode." %}
+{% include image.html url="/assets/images/2017-07/zd_test_spec.jpg" caption="The output of the test suite in verbose documentation mode." %}
 
 In my case, I created a `Ticket` factory that produced a `Ticket` object for a single ticket request. Then I simply asked for an array of `Tickets` if the request was for a page listing of tickets. I wrapped the call to Factory_Girl in a `MockResponse` module and called the module methods in my Webmock response stubs.
 

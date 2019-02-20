@@ -18,10 +18,10 @@ I've added a couple of extra features, including a task priority property, and t
 
 The above TodoMVC example uses an angular service to accomplish this task, but I'm still not entirely sure how that works, so it's my next area of study. Other than that missing feature, however, the app is largely complete.
 
-<link rel="stylesheet" type="text/css" href="/css/todolist.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/todolist.css">
 <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-<script type="text/javascript" src="/js/todolist.js"></script>
+<script type="text/javascript" src="/assets/javascript/todolist.js"></script>
 {% raw %}
 <div id="todoAppRoot" ng-app="todolistApp">
   <h2><center>To-Do List</center></h2>

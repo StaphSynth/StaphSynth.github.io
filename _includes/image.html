@@ -7,7 +7,7 @@
   <div class="figure">
     <img
       class="illustration"
-      src="{% if include.url contains "/img/" %}{{ include.url }}{% else %}{{ include.url | prepend: "/img/" }}{% endif %}"
+      src="{% if include.url contains "/assets/images/" %}{{ include.url }}{% else %}{{ include.url | prepend: "/assets/images/" }}{% endif %}"
       alt="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}"
     />
     <p class="caption">

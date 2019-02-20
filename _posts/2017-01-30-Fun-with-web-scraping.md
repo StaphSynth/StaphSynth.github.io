@@ -9,7 +9,7 @@ tags:
   - development
 ---
 
-{% include image.html url="/img/youtube-not-available.jpg" caption="We'll just see about that..." alt="Screen-shot of the Youtube 'this video is not available in your country' notice." %}
+{% include image.html url="/assets/images/youtube-not-available.jpg" caption="We'll just see about that..." alt="Screen-shot of the Youtube 'this video is not available in your country' notice." %}
 
 Like many people, I've run into the "video not available in your country" thing on Youtube from time to time. Sometimes I just can't be bothered, so I go watch something else. Other times, I've gone and found a proxy service, fiddled with the network settings on my machine and watched it that way.
 
