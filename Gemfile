@@ -10,3 +10,13 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-minifier'
 end
+
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'geckodriver-helper'
+  gem 'rack-jekyll'
+  gem 'rack'
+  gem 'byebug'
+end

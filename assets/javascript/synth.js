@@ -1,6 +1,6 @@
 /*show/hide the main menu when nav icon clicked/tapped on mobile view
 also blurs the button after event and rotates the menu direction caret*/
-$('#nav-icon').click(function(event) {
+$('#nav-icon').click(function(_event) {
   $('#main-menu ul').slideToggle('fast','swing');
   $('#nav-icon').blur();
   $('.fa-caret-down').toggleClass('fa-rotate-180');
