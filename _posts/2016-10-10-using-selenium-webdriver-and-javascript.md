@@ -6,7 +6,7 @@ byline: Down the rabbit-hole of web automation testing.
 description: A 'Getting Started' tutorial on Selenium-Webdriver JavaScript bindings in Linux. Installation, set-up, and running your first test.
 category: coding
 comments: true
-modified: 2016-10-13
+modified: 2019-06-02
 tags:
   - testing
   - selenium
@@ -15,7 +15,11 @@ tags:
   - javascript
 ---
 
-I recently fell down the rabbit-hole of web automation testing. It's been an interesting journey, so I thought I'd document what I've learned so far in a series of posts as a reference for others following the same path. Before we go any further, I should point out that I'm still very much a n00b here. These posts are meant to collate information I've gathered from across the web into a single resource and clear up some confusion I've come across. After reading, you should know how to get some basic test functionality up and running. However, it is not comprehensive.
+In this post, I intend to walk you through the process of getting Selenium-Webdriver up and running on a *nix system (Linux and macOS, not Windows, sorry); setting up a project with a test framework and writing tests. This post is quite long and broken up into different sections
+
+#### Installation[]
+#### Setup[]
+#### Writing your first test[]
 
 First, some definitions:
 
@@ -25,13 +29,19 @@ First, some definitions:
 
 **<u>Bindings:</u>** Where the rubber meets the road. This is _how_ you tell Selenium what to do. You write code and your instructions are executed by Selenium. There are a different set of bindings for each of the supported languages used to control Selenium-Webdriver: [Java](http://docs.seleniumhq.org/docs/03_webdriver.jsp#java), [C#](http://docs.seleniumhq.org/docs/03_webdriver.jsp#c), [Python](http://docs.seleniumhq.org/docs/03_webdriver.jsp#python), [Ruby](http://docs.seleniumhq.org/docs/03_webdriver.jsp#ruby), [Perl](http://docs.seleniumhq.org/docs/03_webdriver.jsp#perl), [PHP](http://docs.seleniumhq.org/docs/03_webdriver.jsp#php), and [JavaScript](http://docs.seleniumhq.org/docs/03_webdriver.jsp#javascript). So, naturally, you'll need to download and install the package with the bindings you want to use.
 
-I chose the JavaScript package, which was probably a mistake as most of the information you'll find on the web relates to using Java and there are some differences in the approach. This is one of the reasons I'm writing this post: to help other lost souls searching for help using Selenium-Webdriver with JavaScript bindings.
-
 Right, that's enough of that. Let's move on to actually doing stuff.
 
-### Download and Install Node.js
+### Node.js
 
 The Selenium-Webdriver JavaScript binding comes as a package for [Node.js](https://nodejs.org/en/), a stand-alone JS runtime engine. The code you write in JS to control Selenium-Webdriver is executed by the Node.js runtime engine, _not_ the browser itself. I know this seems obvious, but I have noticed some confusion about this on the net, so I thought it was worth mentioning.
+
+Before we install Node.js, we will install a Node.js _version manager_. There are many different versions of Node.js and at some point you will need to be able to switch between them. Adding this step now will reduce pain and frustration later.
+
+There are several Node version managers available, here we will use [nvm](https://github.com/nvm-sh/nvm). Nvm has a comprehensive set of instructions on installation covering the principle *nix operating systems [here](https://github.com/nvm-sh/nvm#installation-and-update). Breifly, open a terminal and run
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+```
 
 First off, install Node.js. There are [many](http://www.hostingadvice.com/how-to/install-nodejs-ubuntu-14-04/) [pages](http://ask.xmodulo.com/install-node-js-linux.html) with [instructions](http://www.2daygeek.com/install-nodejs-on-ubuntu-centos-debian-fedora-mint-rhel-opensuse/) covering installation on various Linux distros, including the [official](https://nodejs.org/en/download/package-manager/) Node.js package installation page. When you're done, check that Node.js is correctly installed and working using the console. If it is, it will report the version number.
 
