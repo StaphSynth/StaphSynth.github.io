@@ -4,7 +4,7 @@ markdown: kramdown
 description: A personal blog of code snippets and electronics projects
 url: https://syntheta.se
 author: David Allen
-include: ["_pages"]
+include: ['_pages']
 
 # syntax highlighting
 highlighter: rouge

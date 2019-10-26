@@ -14,7 +14,7 @@ tags:
 
 Playing with and trouble-shooting audio circuits often requires some kind of signal generator so you can figure out what's going on. You can verify the gain of an amplifier stage, check for distortion, or just follow the signal through the circuit so you can figure out why there's nothing coming out the other end. In the past, I've used a signal generator app on my phone, but I got sick of the interface and constantly having to go through various layers of software UI just to quickly change a setting. I wanted a piece of dedicated hardware to do the job instead.
 
-I decided to build an [ESP](http://sound.whsites.net/index2.html) P86 [mini audio oscillator](http://sound.whsites.net/project86.htm) because it's a compact circuit that produces sine and square-wave output covering the whole audio bandwidth - and because I already had an unpopulated board in a box from a previous order. :)
+I decided to build an [ESP](https://sound-au.com/) P86 [mini audio oscillator](https://sound-au.com/project86.htm) because it's a compact circuit that produces sine and square-wave output covering the whole audio bandwidth - and because I already had an unpopulated board in a box from a previous order. :)
 
 The circuit is fairly simple, and you could easily build it on prototyping board. I bought the PCB because it's cheap, makes my life easier and helps keep the ESP site going. Rod recommends TL062 opamps for battery operation on a single 9V supply, but any industry standard dual opamp with sufficient bandwidth will do. The [TL062](http://www.ti.com/product/TL062) is the low power version of the [TL082](http://www.ti.com/product/TL082) (the ubiquitous [TL072](http://www.ti.com/product/TL072) is the lower noise, higher fidelity version).
 
