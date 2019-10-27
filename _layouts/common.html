@@ -34,27 +34,23 @@
 
   <script type="text/javascript">
     //Loads non-render-critical JavaScript after the page has been rendered
-    function loadScriptPostRender() {
-      var urls = [
-        'https://code.jquery.com/jquery-1.11.0.min.js',
-        '{{ site.url }}/assets/javascript/synth.js'
-      ];
+    (function() {
+      function loadScriptPostRender() {
+        const urls = [
+          'https://code.jquery.com/jquery-1.11.0.min.js',
+          '{{ site.url }}/assets/javascript/synth.js'
+        ];
 
-      urls.forEach(function(url) {
-        var script = document.createElement('script');
-        script.src = url;
-        script.type = 'text/javascript';
-        script.async = false;
-        document.body.appendChild(script);
-      });
-    }
+        urls.forEach(url => {
+          const script = document.createElement('script');
+          script.src = url;
+          script.type = 'text/javascript';
+          script.async = false;
+          document.body.appendChild(script);
+        });
+      }
 
-    if (window.addEventListener) {
       window.addEventListener('load', loadScriptPostRender, false);
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', loadScriptPostRender);
-    } else {
-      window.onload = loadScriptPostRender;
-    }
+    }())
   </script>
 </html>
