@@ -1,27 +1,53 @@
 /*show/hide the main menu when nav icon clicked/tapped on mobile view
 also blurs the button after event and rotates the menu direction caret*/
-$('#nav-icon').click(function(event) {
-  $('#main-menu ul').slideToggle('fast','swing');
-  $('#nav-icon').blur();
-  $('.fa-caret-down').toggleClass('fa-rotate-180');
-});
+// $('#nav-icon').click(function(event) {
+//   $('#main-menu ul').slideToggle('fast','swing');
+//   $('#nav-icon').blur();
+//   $('.fa-caret-down').toggleClass('fa-rotate-180');
+// });
 
-/*For figure captions: centre the caption if there's only one line of text, otherwise leave it justified.
-Calc: get the container height and divide by line hieght. If the answer is 1, then there's only 1 line*/
-$('.caption').each(function(){
-  var height = $(this).height();
-  var lineHeight = $(this).css('line-height');
-  lineHeight = parseFloat(lineHeight);
-  if(Math.round(height / lineHeight) < 2)
-    $(this).css('text-align', 'center');
-});
+(function() {
+  const navIcon = document.querySelector('#nav-icon');
 
-/*Remove inline style from #main-menu ul if window width > 800px on window resize event.
-Prevents inline style from over-riding CSS style rules in @media query*/
-$(window).resize(function() {
-  if($(window).width() >= 800) {
-    $('#main-menu ul').removeAttr('style');
+  const toggleMenuVisibility = event => {
+    console.log(event.type);
+    event.stopPropagation();
+    const menu = document.querySelector('#main-menu ul');
+
+    if (!menu.style.display || menu.style.display === 'none') {
+      menu.style.display = 'block';
+    } else {
+      menu.style.display = 'none';
+    }
   }
-});
 
-//console.log('synth.js has loaded and run');
+  navIcon.addEventListener('click', toggleMenuVisibility);
+  navIcon.addEventListener('touchstart', toggleMenuVisibility);
+  // navIcon.addEventListener('touchend', (e) => e.preventDefault());
+}());
+
+/*
+  For figure captions: centre the caption if there's only one line of text, otherwise leave it justified.
+  Calc: get the container height and divide by line hieght. If the answer is 1, then there's only 1 line
+*/
+(function() {
+  const captions = document.querySelectorAll('#caption');
+
+  captions.forEach(caption => {
+    const height = caption.clientHeight;
+    const lineHeight = parseFloat(caption.style.lineHeight);
+
+    if (Math.round(height / lineHeight) < 2) {
+      caption.style.textAlign = 'center';
+    }
+  });
+}());
+
+
+(function() {
+  window.addEventListener('resize', event => {
+    if (event.target.innerWidth >= 800) {
+      document.querySelector('#main-menu ul').removeAttribute('style');
+    }
+  });
+}());
