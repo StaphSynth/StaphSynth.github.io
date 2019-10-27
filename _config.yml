@@ -6,17 +6,21 @@ url: https://syntheta.se
 author: David Allen
 include: ['_pages']
 
+# gem plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-minifier
+
 # syntax highlighting
 highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# gem plugins
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-minifier
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
 
 # exclude during build
 exclude:
