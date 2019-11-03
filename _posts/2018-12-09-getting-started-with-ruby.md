@@ -4,7 +4,7 @@ title: Getting Started With Ruby
 logo: ruby.jpg
 byline: Getting it right the first time
 category: coding
-modified: 2019-01-27
+modified: 2019-11-03
 tags:
   - ruby
 ---
@@ -61,7 +61,7 @@ You'll need to replace `<YOUR_SHELL_PROFILE_NAME>` with the name of your profile
 Once this is done, restart the terminal for it to take effect. To check it has, run
 
 ```
-$ commnd -v rbenv
+$ command -v rbenv
 ```
 
 If rbenv is available, this command will output the string `rbenv`, otherwise, it'll do nothing.
