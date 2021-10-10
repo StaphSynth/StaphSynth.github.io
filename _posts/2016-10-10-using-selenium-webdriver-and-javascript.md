@@ -33,7 +33,7 @@ Right, that's enough of that. Let's move on to actually doing stuff.
 
 The Selenium-Webdriver JavaScript binding comes as a package for [Node.js](https://nodejs.org/en/), a stand-alone JS runtime engine. The code you write in JS to control Selenium-Webdriver is executed by the Node.js runtime engine, _not_ the browser itself. I know this seems obvious, but I have noticed some confusion about this on the net, so I thought it was worth mentioning.
 
-First off, install Node.js. There are [many](http://www.hostingadvice.com/how-to/install-nodejs-ubuntu-14-04/) [pages](http://ask.xmodulo.com/install-node-js-linux.html) with [instructions](http://www.2daygeek.com/install-nodejs-on-ubuntu-centos-debian-fedora-mint-rhel-opensuse/) covering installation on various Linux distros, including the [official](https://nodejs.org/en/download/package-manager/) Node.js package installation page. When you're done, check that Node.js is correctly installed and working using the console. If it is, it will report the version number.
+First off, install Node.js. There are many [pages](http://ask.xmodulo.com/install-node-js-linux.html) with [instructions](http://www.2daygeek.com/install-nodejs-on-ubuntu-centos-debian-fedora-mint-rhel-opensuse/) covering installation on various Linux distros, including the [official](https://nodejs.org/en/download/package-manager/) Node.js package installation page. When you're done, check that Node.js is correctly installed and working using the console. If it is, it will report the version number.
 
 ```
 $ node --version
