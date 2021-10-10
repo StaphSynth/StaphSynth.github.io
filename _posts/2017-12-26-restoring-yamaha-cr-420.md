@@ -9,6 +9,7 @@ image: /assets/images/2017-12/yamaha-cr-420.jpg
 tags:
   - electronics
   - amplifiers
+  - repairs
 ---
 
 This beautiful amplifier belongs to my uncle, who purchased it brand new in 1979. Over the years, it had become a little careworn and didn't perform as well as it once did. He asked me if I'd give it a once-over and restore it to its former glory. They don't make 'em like this anymore, so of course I would!
