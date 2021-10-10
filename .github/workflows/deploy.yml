@@ -21,7 +21,7 @@ jobs:
         run: bundle install
 
       - name: Build site
-        run: rake build
+        run: bundle exec rake build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
