@@ -11,6 +11,7 @@ tags:
   - electronics
   - lighting
   - power supplies
+  - repairs
 ---
 
 In January of 2015, I built an LED lighting controller and power supply to run about 25 metres of 12V 5050 LED strip lighting. The strip forms a ring around our back rumpus/listening/hobby room. The lights are mounted high up the walls only a few centimetres down from the cornices on L-shaped pine moulding, with the LEDs facing the ceiling so as not to dazzle the eye. It's meant to light the room with a soft warm-white glow around the perimeter to provide a mellow mood for hanging out listening to the stereo, or during parties, etc.
