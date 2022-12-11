@@ -30,7 +30,7 @@ Finally, I set about making the user experience as seemless and easy as possible
 
 Extensive use of the `<noscript>` tag means that the site falls back gracefully if the user doesn't have JavaScript enabled. There isn't much JS in the site, but it's nice to know that special characters loaded through [fontawesome](https://fontawesome.com/){: target="\_blank"} don't just disappear without being replaced with some kind of place-holder. Too many modern sites just sit there and do nothing, without telling the user what's wrong if JS is turned off. As a user of the excellent JS-blote-nuking Firefox plug-in, [NoScript](https://addons.mozilla.org/en-US/firefox/addon/noscript/){: target="\_blank"}, I find their lack of attention irritating.
 
-I'm pretty happy with the end result. The site is fast; it looks good on phones, tablets and desktops; it's easy to navigate; and it gets the message across without being distracting. There are things I'd do differently, of course, but you can say that about any project. If I do ever re-write it again, I think I'll probably use [Jekyll](http://www.jekyllrb.com){: target="\_blank"} and throw away the PHP.
+I'm pretty happy with the end result. The site is fast; it looks good on phones, tablets and desktops; it's easy to navigate; and it gets the message across without being distracting. There are things I'd do differently, of course, but you can say that about any project. If I do ever re-write it again, I think I'll probably use [Jekyll](https://www.jekyllrb.com){: target="\_blank"} and throw away the PHP.
 
 <hr>
 

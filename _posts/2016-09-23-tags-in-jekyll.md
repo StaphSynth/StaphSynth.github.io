@@ -13,7 +13,7 @@ tags:
   - development
 ---
 
-As [others](http://charliepark.org/tags-in-jekyll/) [have](https://blog.brandonparsons.me/2015-using-tags-in-a-jekyll-blog-on-github-pages) [pointed](http://www.minddust.com/post/tags-and-categories-on-github-pages/) [out](https://christianspecht.de/2014/10/25/separate-pages-per-tag-category-with-jekyll-without-plugins/), Jekyll doesn't really support blog tags right out of the box. There are plugins that will do it for you - or you can write your own - but if you're like me and serving your site from github pages, then you have a problem. Github pages only supports bare-bones Jekyll and "native" plugins listed under the [project repo](https://github.com/jekyll).
+As [others](http://charliepark.org/tags-in-jekyll/) [have](https://blog.brandonparsons.me/2015-using-tags-in-a-jekyll-blog-on-github-pages) [pointed out](https://christianspecht.de/2014/10/25/separate-pages-per-tag-category-with-jekyll-without-plugins/), Jekyll doesn't really support blog tags right out of the box. There are plugins that will do it for you - or you can write your own - but if you're like me and serving your site from github pages, then you have a problem. Github pages only supports bare-bones Jekyll and "native" plugins listed under the [project repo](https://github.com/jekyll).
 
 So what to do? Well, you'll have to write some moderately complex liquid to get around this problem. Or, you could do what I did and find someone else who's already solved it and modify their code to suit your needs.
 

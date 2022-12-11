@@ -1,4 +1,5 @@
 _site/
 .byebug_history
 .jekyll-metadata
+.jekyll-cache
 tmp/
