@@ -9,7 +9,7 @@ tags:
   - development
 ---
 
-A friend invited me along to a Rails installfest being run in Melbourne by [Reinteractive](https://reinteractive.net/). It's basically a meetup for Rails n00bs so they can get the environment installed and running on their machines. After installation, they had a simple blog example project to build to get us started.
+A friend invited me along to a Rails installfest being run in Melbourne by [Reinteractive](https://reinteractive.com/). It's basically a meetup for Rails n00bs so they can get the environment installed and running on their machines. After installation, they had a simple blog example project to build to get us started.
 
 It's a good idea. One of the barriers to entry is installing and configuring things like ruby. Going down the rabbit hole of installing package managers that install package managers that install ruby that installs gems can be very confusing. The documentation on these things often assumes advanced knowledge, making it unapproachable for new users. By gathering people into a room with free pizza, they can get over the most difficult part with the help of mentors volunteering their time.
 

@@ -17,6 +17,6 @@ I studied science for years. I have a degree (with Honours! ;) in science (I stu
 I started this blog as something of a portfolio piece and as a way of recording milestones during my transition from academia into tech. Since I'm now employed as a software engineer, its focus has changed, and it's now more about consolidating and recording helpful tidbits of information I've had difficulty finding elsewhere. I hope that others will find some of this useful.
 
 ## About This Site
-This site is powered by [Jekyll](http://www.jekyllrb.com), a free and open static site generator. Common layout elements (menu structure, header, footer, etc) are written in HTML; and individual pages are written in [markdown](https://www.markdownguide.org/basic-syntax) and assembled with the layouts by Jekyll into what you see now. CSS styling and JS functionality is then applied as per usual.
+This site is powered by [Jekyll](https://www.jekyllrb.com), a free and open static site generator. Common layout elements (menu structure, header, footer, etc) are written in HTML; and individual pages are written in [markdown](https://www.markdownguide.org/basic-syntax) and assembled with the layouts by Jekyll into what you see now. CSS styling and JS functionality is then applied as per usual.
 
 {% include git-link.html url="https://github.com/StaphSynth/StaphSynth.github.io" %}

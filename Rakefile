@@ -1,5 +1,9 @@
 require 'html-proofer'
 
+task :dev do
+  sh 'bundle exec jekyll serve'
+end
+
 task :build do
   build
 end
@@ -7,12 +11,15 @@ end
 task :default do
   proofer_options = {
     internal_domains: ['syntheta.se'],
-    assume_extension: true,
-    # check_html: true,
+    assume_extension: '.html',
+    check_html: true,
     only_4xx: true,
-    http_status_ignore: [403],
+    enforce_https: false,
+    ignore_status_codes: [403],
     cache: {
-      timeframe: '6w'
+      timeframe: {
+        external: '6w'
+      }
     }
   }
 
