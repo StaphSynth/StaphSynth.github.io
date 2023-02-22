@@ -5,7 +5,7 @@ logo: jekyll.jpg
 byline: A work-around to solve this niggling issue.
 description: How to implement tags in Jekyll/Github pages without plugins.
 category: coding
-modified: 2016-10-09
+modified: 2023-02-22
 comments: true
 tags:
   - jekyll
@@ -29,7 +29,7 @@ tags:
 ---
 ```
 
-The problem comes when you need to access them globally so you can sort them into a list and associate them with your posts. I modified code I found in [these](http://pavdmyt.com/how-to-implement-tags-at-jekyll-website/) [two](http://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html) blog posts to make that happen here. Before we get into that, though, you need to display the tags in the post itself in the form of links to the "tag" page we will create to display all the tags on the site. To do that, simply modifiy your post.html (or whatever layout you're using to display your posts). Here's what does that on this site:
+The problem comes when you need to access them globally so you can sort them into a list and associate them with your posts. I modified code I found in a couple of blog posts to make that happen here (update from 2023: sadly both these pages are now defunct, so I've removed the broken links). Before we get into that, though, you need to display the tags in the post itself in the form of links to the "tag" page we will create to display all the tags on the site. To do that, simply modifiy your post.html (or whatever layout you're using to display your posts). Here's what does that on this site:
 
 {% raw %}
 ```liquid

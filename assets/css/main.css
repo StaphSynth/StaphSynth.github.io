@@ -196,7 +196,7 @@ h1, h2, h3, h4, #main-menu, .post-list a {
 	font-family: 'Audiowide', cursive;
 }
 
-p, footer,
+p, footer, figcaption,
 .git-link,
 #article .tags,
 #article li {
@@ -226,7 +226,7 @@ body {
 }
 
 #main-menu a, footer,
-#article p, #article li {
+#article p, #article li, #article figcaption {
   color: #ddd;
 }
 
@@ -248,7 +248,7 @@ body {
   border-image-slice: 1;
 }
 
-.figure-container {
+.article-figure-container {
 	background-color: #444;
 	border: solid 2px #0871D0;
 	box-shadow: 2px 2px 4px #000;
@@ -267,7 +267,7 @@ body {
   border-image-slice: 1;
 }
 
-.figure, .figure p {
+.article-figure, .article-figure figcaption {
 	background-color: #444;
 }
 
@@ -421,25 +421,29 @@ h3 a {
 }
 
 #article p,
-#article li {
-	line-height: 1.25rem;
-	text-align: justify;
-	margin: 1rem 0;
+#article li,
+#article figcaption {
+	line-height: 1.33rem;
+	text-align: left;
+	margin: 1.5rem 0;
 }
 
 #article li {
 	padding: 0.25rem 0;
 }
 
-p i {
+p i,
+figcaption i {
 	font-style: italic;
 }
 
-p strong {
+p strong,
+figcaption strong {
 	font-weight: bold;
 }
 
-#article p a:hover {
+#article p a:hover,
+#article figcaption a:hover {
 	text-decoration: underline;
 }
 
@@ -536,19 +540,18 @@ Tags and post meta-data
 Figures
 --------------------*/
 
-.figure-container {
+.article-figure-container {
 	display: inline-block;
 	margin: 0.5rem 0;
 }
 
-.figure {
+.article-figure {
 	display: table;
 }
 
-#article .figure p {
+#article .article-figure figcaption {
 	display: table-caption;
 	margin: 0 7px 6px;
-	/* padding-bottom: 5px; */
 	caption-side: bottom;
 	background-color: #444;
 	white-space: normal;
@@ -726,7 +729,7 @@ footer {
 	padding: 0 0.75rem;
 }
 
-footer div div {
+footer section {
 	padding: 0.75rem 1rem;
 }
 

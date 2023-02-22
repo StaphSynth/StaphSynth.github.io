@@ -3,15 +3,14 @@
   Usage: {% include image.html url="/path/to/image" caption="Your description here..." alt="your alt text here" %}
   The alt is optional, if left out, the caption becomes the alt attribute.
 {% endcomment %}
-<div class="figure-container">
-  <div class="figure">
+<div class="article-figure-container">
+  <figure class="article-figure">
     <img
-      class="illustration"
       src="{% if include.url contains "/assets/images/" %}{{ include.url }}{% else %}{{ include.url | prepend: "/assets/images/" }}{% endif %}"
       alt="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}"
     />
-    <p class="caption">
+    <figcaption>
       {{ include.caption }}
-    </p>
-  </div>
+    </figcaption>
+  </figure>
 </div>

@@ -8,7 +8,7 @@ $('#nav-icon').click(function(event) {
 
 /*For figure captions: centre the caption if there's only one line of text, otherwise leave it justified.
 Calc: get the container height and divide by line hieght. If the answer is 1, then there's only 1 line*/
-$('.caption').each(function(){
+$('figcaption').each(function() {
   var height = $(this).height();
   var lineHeight = $(this).css('line-height');
   lineHeight = parseFloat(lineHeight);
