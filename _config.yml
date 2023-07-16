@@ -6,7 +6,9 @@ url: https://syntheta.se
 author: David Allen
 include: ['_pages']
 
-# gem plugins
+# dev
+host: 0.0.0.0
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
