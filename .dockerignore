@@ -1,0 +1,7 @@
+_site
+.jekyll-cache
+.jekyll-metadata
+tmp
+.github
+Rakefile
+README.md
