@@ -4,7 +4,7 @@ title: Getting Started With Ruby
 logo: ruby.jpg
 byline: Getting it right the first time
 category: coding
-modified: 2019-11-03
+modified: 2023-07-17
 tags:
   - ruby
 ---
@@ -81,10 +81,10 @@ Now that you have rbenv installed and working, you can install as many versions 
 
 To see a list of Ruby versions available for installation, run `rbenv install -l`. The list this prints out is quite long and comprehensive. For our purposes, we're really only interested in the plain Rubies up the top (the ones that only have numbers in their version names). The others (like JRuby, etc) are different implementations of Ruby written by the wider Ruby community.
 
-Let's install Ruby 2.5.1
+Let's install Ruby 3.2.2
 
 ```sh
-$ rbenv install 2.5.1
+$ rbenv install 3.2.2
 ```
 <hr />
 **Note to Linux users:** The above command downloads Ruby source code and compiles it on your system. You _may_ experience errors here if you do not have a C compiler and the appropriate libraries installed. Due to the sheer number of different Linux distributions and setups, it's impossible to give accurate guidance here. If you experience compilation errors, I suggest googling the error messages or checking help forums for your distribution.
@@ -99,55 +99,47 @@ Rbenv acheives this through the use of three variables: `rbenv global`, `rbenv l
 
 #### Rbenv Global
 
-As its name suggests, this sets the 'global' version of Ruby to use in the command line when no other version is specified. Let's set the global Ruby version to the one we just installed like so:
+As its name suggests, this sets the 'global' version of Ruby to use in the command line when no other version is specified. Basically, it'll act like a system default Ruby, but you can override it later if you need to use a different version. Let's set the global Ruby version to the one we just installed like so:
 
 ```sh
-$ rbenv global 2.5.1
+$ rbenv global 3.2.2
 ```
 
-Now all calls to Ruby from anywhere on the command line will be directed by rbenv to version 2.5.1. The global version setting is stored in the `~/.rbenv/version` file.
+Now all calls to Ruby from anywhere on the command line will be directed by rbenv to version 3.2.2. The global version setting is stored in the `~/.rbenv/version` file.
 
+You can check this by running
+
+```sh
+$ ruby --version
+```
+
+You should see something like `ruby 3.2.2` along with some other meta info.
 
 #### Rbenv Local
 
 This sets the Ruby version to be used in the current local folder where the command is run, and overrides the global setting. For example, let's say you're in `~/cool_ruby_project`. If you run the following:
 
 ```
-$ rbenv local 2.3.1
+$ rbenv local 3.1.3
 ```
 
-Then rbenv will create a file in this folder called `.ruby-version` which contains nothing but the text `2.3.1`.
+Then rbenv will create a file in this folder called `.ruby-version` which contains nothing but the text `3.1.3`.
 
-When you try to run a Ruby command in this folder, rbenv will first read this file to determine that Ruby 2.3.1 should be used instead of the global 2.5.1. If you haven't installed version 2.3.1, rbenv will print an error stating that it's not installed.
+When you try to run a Ruby command in this folder, rbenv will first read this file to determine that Ruby 3.1.3 should be used instead of the global 3.2.2. If you haven't installed version 3.1.3, rbenv will print an error stating that it's not installed.
 
 #### Rbenv Shell
 
 This command sets the version for the current terminal session only, and overrides both the global and local settings. To set it:
 
 ```
-$ rbenv shell 2.4.2
+$ rbenv shell 2.7.6
 ```
 
-This sets the local terminal environment variable `RBENV_VERSION` to `2.4.2`. To unset it (and return to the local or global setting):
+This sets the local terminal environment variable `RBENV_VERSION` to `2.7.6`. To unset it (and return to the local or global setting):
 
 ```
 $ rbenv shell --unset
 ```
-
-<p></p>
-### After Selection
-
-Okay, so we've installed rbenv and Ruby 2.5.1, but there's one more thing we need to do to make it really useful: install bundler:
-
-```
-$ gem install bundler
-```
-
-Bundler is Ruby's library package management system and indispensable to working with projects in Ruby. You'll need it to install Ruby libraries called `gems`.
-
-Most Ruby projects have a file called `Gemfile`. This file lists all the gems that the project needs in order to work. Bundler's job is to read the contents of this file, resolve all the dependencies, and fetch and install the gems required by the project.
-
-Each version of Ruby on your system will need its own installation of the bundler gem, so don't forget to run `gem install bundler` after installing a new one!
 
 ### Conclusions
 
