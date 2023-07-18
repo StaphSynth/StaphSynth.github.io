@@ -12,7 +12,7 @@
   <ul class="post-data">
     <li>
       <p>
-        <i class="fa fa-calendar" aria-hidden="false"></i><noscript>Posted on</noscript>
+        <i class="fa fa-calendar" aria-hidden="false" title="First published"></i><noscript>First published</noscript>
         {{ page.date | date_to_long_string }}{% if page.modified or page.tags.size >= 1 %}&ensp;|&ensp;{% endif %}
       </p>
     </li>
@@ -20,7 +20,7 @@
     {% if page.modified %}
       <li>
         <p>
-          <i class="fa fa-edit" aria-hidden="false"></i><noscript>Last modified on</noscript>
+          <i class="fa fa-edit" aria-hidden="false" title="Last modified"></i><noscript>Last modified</noscript>
           {{ page.modified | date_to_long_string }}{% if page.tags.size >= 1 %}&ensp;|&ensp;{% endif %}
         </p>
       </li>
@@ -29,7 +29,7 @@
     {% if page.tags.size >= 1 %}
       <li>
         <p>
-          <i class="fa fa-tags" aria-hidden="false"></i><noscript>Tagged in</noscript>
+          <i class="fa fa-tags" aria-hidden="false" title="Tags"></i><noscript>Tags</noscript>
           {% for tag in page.tags %}
             <a href="/tags/#{{ tag | cgi_escape }}">{{ tag }}</a>{% if forloop.last %}.{% else %},{% endif %}
           {% endfor %}
