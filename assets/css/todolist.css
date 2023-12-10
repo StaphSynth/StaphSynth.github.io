@@ -35,11 +35,6 @@
   margin: 0.25rem;
 }
 
-.priorityDiv,
-.taskDiv,
-.deleteDiv {
-}
-
 .taskDiv {
   flex-grow: 2;
   line-height: 1.5rem;
