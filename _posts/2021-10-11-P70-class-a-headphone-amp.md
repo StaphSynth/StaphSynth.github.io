@@ -4,7 +4,7 @@ title: Death of Zen Class A Headphone Amplifier
 logo: headphones.jpg
 byline: Efficiency is for wimps
 category: projects
-comments: true
+comments: false
 image: /assets/images/2021-10/p70-case-front.jpg
 tags:
   - electronics

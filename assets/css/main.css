@@ -280,11 +280,11 @@ footer {
 	border-image-slice: 1;
 }
 
-#nav-icon, #main-menu ul, footer, #article {
+#nav-icon, .menu-content, footer, #article {
   background-color: #2f2f2f;
 }
 
-#main-menu li a:active, #main-menu li a:hover {
+.menu-content a:active, .menu-content a:hover {
   background-color: #444;
 	color: #fff;
 }
@@ -350,19 +350,30 @@ header {
 NAVIGATION
 ===================================================*/
 
-#main-menu a {
+.menu-content a {
   display: block;
   padding: 1em;
+	transition: all 0.4s ease-out;
 }
 
-/*Initial menu state: don't show menu struct, just the nav icon*/
-#main-menu ul {
-  display: none;
+.menu-container {
+	overflow-y: hidden;
+	max-height: 200px;
+	transition-property: all;
+	transition-duration: .25s;
+	transition-timing-function: ease-in-out;
+}
+
+.menu-content {
 	border-left: solid 0.75rem transparent;
 	border-right: solid 0.75rem transparent;
 }
 
-#main-menu ul li {
+.menu-closed {
+	max-height: 0;
+}
+
+.menu-content li {
 	border-top: solid 1px #444;
 }
 
@@ -371,16 +382,15 @@ NAVIGATION
 	color: #ddd;
 	border: none;
 	padding: 1em;
-	display: block;
 	width: 100%;
 	text-align: left;
 	outline: none;
 	font-size: 1rem;
-	/*outline: none;*/
 }
 
 #nav-icon:hover {
 	outline: none!important;
+	cursor: pointer;
 }
 
 /*==================================================
@@ -793,19 +803,19 @@ Small tablets >=500px width
 	/*********************
 	Nav
 	**********************/
-	#main-menu ul {
+	.menu-content {
 		border-top: solid 0.5rem transparent;
 		border-bottom: solid 0.5rem transparent;
 	}
 
-	#main-menu ul li {
+	.menu-content li {
 		display: inline-block;
 		border-top: none;
 		margin-right: -5px; /*Deals with unwanted space between nav elements*/
 	}
 
 	/*Produce the single line border between (and only between) the nav elements*/
-	#main-menu ul li~li {
+	.menu-content li~li {
 		border-left: solid 1px #444;
 	}
 
@@ -886,12 +896,15 @@ Larger tablets >=800px width
 		display: none;
 	}
 
-	#main-menu ul {
-		display: block;
+	.menu-closed {
+		max-height: 100%;
+	}
+
+	.menu-content {
 		text-align: center;
 	}
 
-	#main-menu ul li a {
+	.menu-content li a {
 		padding: 0.66rem 1.5rem;
 		font-size: 1.125rem;
 	}
@@ -995,11 +1008,11 @@ Desktop >=1100px width
 	Navigation
 	**********************/
 
-	#main-menu ul li {
+	.menu-content li {
 		padding: 0 3rem;
 	}
 
-	#main-menu ul li a {
+	.menu-content li a {
 		padding: 0.5rem;
 		font-size: 1.25rem;
 	}
