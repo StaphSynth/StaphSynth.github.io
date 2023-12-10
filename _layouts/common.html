@@ -34,11 +34,10 @@
 
   <script type="text/javascript">
     //Loads non-render-critical JavaScript after the page has been rendered
-    (function() {
-      function loadScriptPostRender() {
+    (() => {
+      const loadScriptPostRender = () => {
         const urls = [
-          'https://code.jquery.com/jquery-1.11.0.min.js',
-          '{{ site.url }}/assets/javascript/synth.js'
+          '/assets/javascript/main.js'
         ];
 
         urls.forEach(url => {
@@ -50,7 +49,7 @@
         });
       }
 
-      window.addEventListener('load', loadScriptPostRender, false);
-    }())
+      window.addEventListener('load', loadScriptPostRender);
+    })();
   </script>
 </html>

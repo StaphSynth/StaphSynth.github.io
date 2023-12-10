@@ -41,7 +41,7 @@
 .calcTable, .calcButton {
   border: solid 2px #0871D0;
  -o-border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
- border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
- border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
- border-image-slice: 1;
+  border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
 }
