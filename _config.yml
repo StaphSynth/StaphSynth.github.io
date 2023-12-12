@@ -34,3 +34,8 @@ exclude:
   - Rakefile
   - Dockerfile
   - docker-compose.yml
+
+sass:
+  sass_dir: "assets/stylesheets/_sass"
+  style: compressed
+  sourcemap: development
