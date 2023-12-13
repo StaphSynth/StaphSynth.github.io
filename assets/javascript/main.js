@@ -2,11 +2,11 @@
 (() => {
   const menuButton = document.querySelector('#nav-icon');
   const menu = document.querySelector('.menu-container');
-  const caret = document.querySelector('.fa-caret-down');
+  const caret = document.querySelector('.dropdown-caret');
 
   menuButton.addEventListener('click', () => {
     menu.classList.toggle('menu-closed');
-    caret.classList.toggle('fa-rotate-180');
+    caret.classList.toggle('rotate-180');
   });
 })();
 
