@@ -16,7 +16,7 @@ permalink: /tags/
 
 {% assign tags = site_tags | split:',' | sort %}
 
-<h2><i class="fa fa-tags" aria-hidden="true"></i> Tags</h2>
+<h2><i class="icon-tags" aria-hidden="true"></i> Tags</h2>
 
 <div class="tags">
 {% comment %} List all the tags at the top of the page {% endcomment %}

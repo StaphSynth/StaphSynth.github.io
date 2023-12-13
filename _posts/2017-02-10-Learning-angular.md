@@ -18,7 +18,7 @@ I've been learning AngularJS, and decided to write some simple single-page apps 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
 <script type="text/javascript" src="{{site.url}}/assets/javascript/calc.js"></script>
-<link type="text/css" rel="stylesheet" href="{{site.url}}/assets/css/calc.css">
+<link type="text/css" rel="stylesheet" href="{{site.url}}/assets/stylesheets/calc.css">
 {% raw %}
 <div class="calc" ng-app="calc-app">
   <div ng-controller="calc-controller">

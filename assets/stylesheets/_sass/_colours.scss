@@ -1,0 +1,113 @@
+body {
+  background-color: #ddd;
+}
+
+#noscript {
+  background-color: #035096;
+}
+
+#masthead h1,
+h2,
+h3,
+h4 {
+  color: #0871D0;
+}
+
+#main-menu a,
+footer,
+#article p,
+#article li,
+#article figcaption {
+  color: #ddd;
+}
+
+#masthead {
+  border-style: solid;
+  border-width: 0 0 5px;
+  -o-border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
+  border-image: -webkit-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+#article {
+  border: solid 5px #0871D0;
+  box-shadow: 4px 4px 8px #000;
+  -o-border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+.article-figure-container {
+  background-color: #444;
+  border: solid 2px #0871D0;
+  box-shadow: 2px 2px 4px #000;
+  -o-border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+#article div.highlighter-rouge {
+  border: solid 1px #0871D0;
+  box-shadow: 1px 1px 2px #000;
+  -o-border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+.article-figure,
+.article-figure figcaption {
+  background-color: #444;
+}
+
+footer {
+  border-style: solid;
+  border-width: 5px 0 0;
+  -o-border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
+  border-image: -webkit-linear-gradient(left, #3acfd5 0%, #0871D0 100%);
+  border-image: linear-gradient(to right, #3acfd5 0%, #0871D0 100%);
+  border-image-slice: 1;
+}
+
+#nav-icon,
+.menu-content,
+footer,
+#article {
+  background-color: #2f2f2f;
+}
+
+.menu-content a:active,
+.menu-content a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.social:hover {
+  text-shadow: 0px 0px 2px #ddd;
+}
+
+.post-list a {
+  color: #0871D0;
+}
+
+/*Main text link colour*/
+#article p a {
+  color: #3acfd5;
+}
+
+/*text at top and bottom of post (meta data and github link)
+also tag.html colour*/
+#article .git-link a,
+#article .post-data,
+#article .tags {
+  color: #ddd;
+}
+
+/*Main nav 'selected' colour*/
+a.selected {
+  color: #0871D0 !important;
+  text-shadow: 2px 2px 4px #000;
+}

@@ -20,7 +20,7 @@ Click on the game board to add some starting cells. Clicking and dragging adds l
 
 <div id="root"></div>
 <script type="text/javascript" src="/assets/javascript/game-of-life.js"></script>
-<link type="text/css" rel="stylesheet" href="/assets/css/game-of-life.css" />
+<link type="text/css" rel="stylesheet" href="/assets/stylesheets/game-of-life.css" />
 
 ### The Why
 
