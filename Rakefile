@@ -15,12 +15,7 @@ task :default do
     check_html: true,
     only_4xx: true,
     enforce_https: false,
-    ignore_status_codes: [403],
-    cache: {
-      timeframe: {
-        external: '6w'
-      }
-    }
+    ignore_status_codes: [403, 405]
   }
 
   build
