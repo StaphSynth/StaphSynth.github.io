@@ -10,9 +10,12 @@ end
 
 task :default do
   proofer_options = {
-    internal_domains: ['syntheta.se'],
+    swap_urls: {
+      # forces the proofer to find the files locally rather than
+      # trying to visit the live site for internal links
+      /^https:\/\/syntheta.se\// => '/'
+    },
     assume_extension: '.html',
-    check_html: true,
     only_4xx: true,
     enforce_https: false,
     ignore_status_codes: [403, 405]
