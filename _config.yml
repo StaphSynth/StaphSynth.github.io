@@ -21,10 +21,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-jekyll-minifier:
-  uglifier_args:
-    harmony: true
-
 # exclude during build
 exclude:
   - vendor
